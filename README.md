@@ -20,33 +20,37 @@ mkdir -p .cursor/rules
 cp cursor-jira-integration/.cursor/rules/jira-tasks.mdc .cursor/rules/
 ```
 
-You should end up with:
-
-```
-your-project/
-  scripts/jira-api.mjs
-  .cursor/rules/jira-tasks.mdc
-  .env            ← you create this next
-  .env.example
-```
-
 ### 2. Create your `.env`
 
 ```bash
 cp .env.example .env
 ```
 
-Open `.env` and fill in your details:
+Open `.env` and fill in your details (replace placeholders with your own):
+
+- **JIRA_DOMAIN** — your Jira org name (e.g. `yourcompany` for `yourcompany.atlassian.net`); replace `datacomgroup` with your org name.
+- **JIRA_EMAIL** — your Atlassian account email (e.g. `email.address@domainname.com`).
+- **JIRA_API_TOKEN** — paste the token from the link below.
 
 ```
-JIRA_DOMAIN=datacomgroup
-JIRA_EMAIL=your.email@datacom.com
+JIRA_DOMAIN=jiraorgname
+JIRA_EMAIL=email.address@domainname.com
 JIRA_API_TOKEN=paste-your-token-here
 ```
 
 Get your API token here: https://id.atlassian.com/manage-profile/security/api-tokens
 
 Make sure `.env` is in your `.gitignore` — never commit your token.
+
+You should end up with:
+
+```
+your-project/
+  scripts/jira-api.mjs
+  .cursor/rules/jira-tasks.mdc
+  .env            ← you create this in step 2
+  .env.example
+```
 
 ### 3. Test it
 
@@ -90,4 +94,4 @@ The rule uses **DPH** as the default project key. To use a different project, ed
 ## Requirements
 
 - Node 18+
-- Jira Cloud (e.g. `datacomgroup.atlassian.net`)
+- Jira Cloud (e.g. `yourcompany.atlassian.net`)
