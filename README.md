@@ -2,33 +2,74 @@
 
 Talk to Jira directly from Cursor chat. No MCP, no admin approval — just a script and an API token.
 
-## Setup (3 steps)
+## Setup
 
-### 1. Clone into your project
+Pick the use case that matches how you’re using the integration. Both then use the same **Create your `.env`** and **Test it** steps.
+
+---
+
+### Use case A: Add Jira to an existing project
+
+You have a project (e.g. an app) and want to add Jira integration to it.
+
+**Step 1. Get the files into your project**
 
 ```bash
 cd your-project
-git clone https://github.com/your-org/cursor-jira-integration.git
+git clone https://github.com/your-org/cursor-to-jira-integration.git
+cp -r cursor-to-jira-integration/scripts ./scripts
+cp cursor-to-jira-integration/.env.example ./.env.example
+mkdir -p .cursor/rules
+cp cursor-to-jira-integration/.cursor/rules/jira-tasks.mdc .cursor/rules/
 ```
 
-Then move the files into place:
+After step 1, your project root should look like this:
+
+```
+your-project/
+  scripts/jira-api.mjs
+  .cursor/rules/jira-tasks.mdc
+  .env.example
+```
+
+**Step 2. Create your `.env`** → see [Create your `.env`](#create-your-env) below.
+
+**Step 3. Test it** → see [Test it](#test-it) below.
+
+---
+
+### Use case B: Use this repo as your project
+
+You’re using this repo as-is (no other app). The repo root is your project root.
+
+**Step 1. Clone the repo**
 
 ```bash
-cp -r cursor-jira-integration/scripts ./scripts
-cp cursor-jira-integration/.env.example ./.env.example
-mkdir -p .cursor/rules
-cp cursor-jira-integration/.cursor/rules/jira-tasks.mdc .cursor/rules/
+git clone https://github.com/your-org/cursor-to-jira-integration.git
+cd cursor-to-jira-integration
 ```
 
-### 2. Create your `.env`
+The layout (scripts, `.env.example`, `.cursor/rules`) is already in place.
+
+**Step 2. Create your `.env`** → see [Create your `.env`](#create-your-env) below.
+
+**Step 3. Test it** → see [Test it](#test-it) below.
+
+---
+
+### Create your `.env`
+
+*(Same for both use cases. Run from your project root — the folder that contains `scripts/`.)*
+
+Copy the template to a local `.env` (so you can edit it without touching the example), then fill in your values:
 
 ```bash
 cp .env.example .env
 ```
 
-Open `.env` and fill in your details (replace placeholders with your own):
+Open `.env` and set:
 
-- **JIRA_DOMAIN** — your Jira org name (e.g. `yourcompany` for `yourcompany.atlassian.net`); replace `datacomgroup` with your org name.
+- **JIRA_DOMAIN** — your Jira org name (e.g. `yourcompany` for `yourcompany.atlassian.net`).
 - **JIRA_EMAIL** — your Atlassian account email (e.g. `email.address@domainname.com`).
 - **JIRA_API_TOKEN** — paste the token from the link below.
 
@@ -42,23 +83,13 @@ Get your API token here: https://id.atlassian.com/manage-profile/security/api-to
 
 Make sure `.env` is in your `.gitignore` — never commit your token.
 
-You should end up with:
-
-```
-your-project/
-  scripts/jira-api.mjs
-  .cursor/rules/jira-tasks.mdc
-  .env            ← you create this in step 2
-  .env.example
-```
-
-### 3. Test it
+### Test it
 
 ```bash
 node scripts/jira-api.mjs me
 ```
 
-If you see your Jira profile, you're good to go.
+If you see your Jira profile, you’re set.
 
 ## Usage
 
@@ -87,9 +118,9 @@ The Cursor rule handles the rest.
 | `transition DPH-123 "In Progress"` | Change issue status |
 | `comment DPH-123 "text"` | Add a comment |
 
-## Customising
+## Customizing
 
-The rule uses **DPH** as the default project key. To use a different project, edit `.cursor/rules/jira-tasks.mdc` and swap `DPH` for your project key.
+The rule uses **DPH** as the default project key. For a different project, edit `.cursor/rules/jira-tasks.mdc` and replace `DPH` with your project key.
 
 ## Requirements
 
