@@ -16,11 +16,7 @@ You have a project (e.g. an app) and want to add Jira integration to it.
 
 **Step 1. Get the files into your project**
 
-Run these from your project root, one at a time:
-
-```bash
-cd your-project
-```
+From your project root (if you have the project open in Cursor, the terminal is already there). Run these one at a time:
 
 ```bash
 git clone https://github.com/your-org/cursor-to-jira-integration.git
