@@ -16,12 +16,29 @@ You have a project (e.g. an app) and want to add Jira integration to it.
 
 **Step 1. Get the files into your project**
 
+Run these from your project root, one at a time:
+
 ```bash
 cd your-project
+```
+
+```bash
 git clone https://github.com/your-org/cursor-to-jira-integration.git
+```
+
+```bash
 cp -r cursor-to-jira-integration/scripts ./scripts
+```
+
+```bash
 cp cursor-to-jira-integration/.env.example ./.env.example
+```
+
+```bash
 mkdir -p .cursor/rules
+```
+
+```bash
 cp cursor-to-jira-integration/.cursor/rules/jira-tasks.mdc .cursor/rules/
 ```
 
@@ -46,8 +63,13 @@ You’re using this repo as-is (no other app). The repo root is your project roo
 
 **Step 1. Clone the repo**
 
+Run these one at a time:
+
 ```bash
 git clone https://github.com/your-org/cursor-to-jira-integration.git
+```
+
+```bash
 cd cursor-to-jira-integration
 ```
 
