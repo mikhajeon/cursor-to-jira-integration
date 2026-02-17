@@ -1,10 +1,12 @@
 # Cursor to Jira Integration
 
-Talk to Jira directly from Cursor chat. No MCP, no admin approval — just a script and an API token.
+Use Jira from Cursor chat: list your tasks, open issue details, create subtasks, change status, assign work, and add comments without leaving the editor. A small Node script and a Cursor rule call the Jira Cloud API using your own API token — no MCP server and no admin-approved app.
+
+**Two ways to set up:** either add this integration into an existing project (clone and copy the files in), or use this repo as a standalone project (clone and go). Both paths use the same **Create your `.env`** and **Test it** steps below.
 
 ## Setup
 
-Pick the use case that matches how you’re using the integration. Both then use the same **Create your `.env`** and **Test it** steps.
+Pick the use case that matches how you’re using the integration.
 
 ---
 
