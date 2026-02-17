@@ -19,7 +19,7 @@ You have a project (e.g. an app) and want to add Jira integration to it.
 From your project root (if you have the project open in Cursor, the terminal is already there). Run these one at a time:
 
 ```bash
-git clone https://github.com/your-org/cursor-to-jira-integration.git
+git clone https://github.com/mikhajeon/cursor-to-jira-integration.git
 ```
 
 ```bash
@@ -62,7 +62,7 @@ You’re using this repo as-is (no other app). The repo root is your project roo
 Run these one at a time:
 
 ```bash
-git clone https://github.com/your-org/cursor-to-jira-integration.git
+git clone https://github.com/mikhajeon/cursor-to-jira-integration.git
 ```
 
 ```bash
