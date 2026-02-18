@@ -1,0 +1,16 @@
+---
+description: When the user asks about user stories, acceptance criteria, breaking down epics into stories, or formatting stories for Jira/Confluence, read and follow the skill in .cursor/skills/user-stories-formatting/SKILL.md
+alwaysApply: false
+---
+
+# User stories and acceptance criteria
+
+When the user requests any of the following, **read** `.cursor/skills/user-stories-formatting/SKILL.md` and apply its format and rules:
+
+- Writing or generating user stories
+- Breaking down an epic into user stories
+- Reviewing, refining, or consolidating user stories
+- Creating or formatting acceptance criteria
+- Formatting content for Jira or Confluence (user story style)
+
+Use the skill’s templates (title format, As a/I want/So that, AC format, pastable blocks) and project reference (actors, terminology, epic structure) when responding.

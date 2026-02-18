@@ -1,0 +1,21 @@
+---
+description: When the user asks to change Product Hub user stories, subtasks, acceptance criteria, or related content, follow the edit-then-confirm-then-sync workflow
+alwaysApply: false
+---
+
+# Product Hub changes workflow
+
+When the user asks to **change** something in Product Hub (user stories, subtasks, acceptance criteria, story text, etc.):
+
+1. **Edit the .md files first**  
+   Make all changes in `docs/product-hub-jira/` — update the relevant epic folder and .md file(s). Do not update Jira via the API yet.
+
+2. **List the changes and ask for confirmation**  
+   Summarise what you changed (file paths, what was added/removed/edited) and ask: **"Confirm if you want these changes synced to Jira."**
+
+3. **Sync to Jira only after confirmation**  
+   If the user confirms, use the Jira API script (`scripts/jira-api.mjs` update, or other scripts as needed) to apply the same changes to Jira so that Jira matches the .md.
+
+**.md is the source of truth for edits**; Jira is updated only after the user confirms.
+
+When the user asks to **sync** or **pull** from Jira (e.g. "sync the .md with Jira"), run the sync scripts to update the .md from Jira — no confirmation needed for that direction.
