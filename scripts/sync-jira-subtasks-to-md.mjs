@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 /**
- * Fetches from Jira each user story's metadata and subtasks (name, description,
- * story points, priority, assignee, assignees, sprint, linked work items) and
- * updates the corresponding .md files under docs/product-hub-jira with that info.
- *
+ * Fetches from Jira each story/task issue and updates the corresponding .md
+ * under docs/product-hub-jira with:
+ * - Epic details (parent): name, description, work type, status, assignee, priority, linked items.
+ * - Story/Task details: name, description, work type, assignee, assignees, priority,
+ *   story points, sprint, status, linked work items.
+ * - Subtasks: for each, name, description, work type, status, and the same fields as above.
  * Run from project root: node scripts/sync-jira-subtasks-to-md.mjs
  */
 
@@ -39,13 +41,14 @@ async function getIssue(key) {
   return res.json();
 }
 
-function adfToMarkdown(node) {
+/** listIndent: indent string for nested lists so AC sub-items render with correct indentation */
+function adfToMarkdown(node, listIndent = '') {
   if (!node) return '';
   if (typeof node === 'string') return node;
-  if (Array.isArray(node)) return node.map(adfToMarkdown).join('');
+  if (Array.isArray(node)) return node.map((n) => adfToMarkdown(n, listIndent)).join('');
   const { type, content = [], text, marks } = node;
-  if (type === 'doc') return adfToMarkdown(content).trim() + '\n';
-  if (type === 'paragraph') return adfToMarkdown(content) + '\n\n';
+  if (type === 'doc') return adfToMarkdown(content, listIndent).trim() + '\n';
+  if (type === 'paragraph') return adfToMarkdown(content, listIndent) + '\n\n';
   if (type === 'hardBreak') return '\n';
   if (type === 'text') {
     let t = text || '';
@@ -56,13 +59,28 @@ function adfToMarkdown(node) {
     }
     return t;
   }
-  if (type === 'heading') return '#'.repeat(node.attrs?.level || 2) + ' ' + adfToMarkdown(content).trim() + '\n\n';
-  if (type === 'orderedList') return (content || []).filter(c => c.type === 'listItem').map((item, i) => `${i + 1}. ${adfToMarkdown(item).trim()}`).join('\n') + '\n\n';
-  if (type === 'bulletList') return (content || []).filter(c => c.type === 'listItem').map(item => '- ' + adfToMarkdown(item).trim()).join('\n') + '\n\n';
-  if (type === 'listItem') return adfToMarkdown(content).trim().replace(/\n+/g, ' ');
-  if (type === 'blockquote') return content.map(c => '> ' + adfToMarkdown(c).trim()).join('\n') + '\n\n';
+  if (type === 'heading') return '#'.repeat(node.attrs?.level || 2) + ' ' + adfToMarkdown(content, listIndent).trim() + '\n\n';
+  if (type === 'orderedList') {
+    const items = (content || []).filter(c => c.type === 'listItem');
+    const nested = listIndent + '    ';
+    return items.map((item, i) => listIndent + `${i + 1}. ` + adfToMarkdown(item, nested).trimEnd()).join('\n') + '\n\n';
+  }
+  if (type === 'bulletList') {
+    const items = (content || []).filter(c => c.type === 'listItem');
+    const nested = listIndent + '    ';
+    return items.map((item) => listIndent + '- ' + adfToMarkdown(item, nested).trimEnd()).join('\n') + '\n\n';
+  }
+  if (type === 'listItem') {
+    const nested = listIndent + '    ';
+    const parts = (content || []).map((c) => {
+      if (c.type === 'orderedList' || c.type === 'bulletList') return adfToMarkdown(c, nested);
+      return adfToMarkdown(c, listIndent);
+    });
+    return parts.join('').trimEnd();
+  }
+  if (type === 'blockquote') return content.map(c => '> ' + adfToMarkdown(c, listIndent).trim()).join('\n') + '\n\n';
   if (type === 'rule') return '---\n\n';
-  return adfToMarkdown(content);
+  return adfToMarkdown(content, listIndent);
 }
 
 function descToMd(desc) {
@@ -96,22 +114,60 @@ function linkedStrReal(issuelinks) {
   return parts.length ? parts.join(', ') : '—';
 }
 
+function epicDetailsBlock(epicKey, fields) {
+  const name = fields.summary || '—';
+  const description = descToMd(fields.description);
+  const workType = fields.issuetype?.name || '—';
+  const assignee = fields.assignee?.displayName || '—';
+  const assignees = assigneesStr(fields.customfield_24517);
+  const priority = fields.priority?.name || '—';
+  const status = fields.status?.name || '—';
+  const linked = linkedStrReal(fields.issuelinks);
+  return `### Epic details
+
+**Jira:** [${epicKey}](${baseUrl}/browse/${epicKey})
+
+| Field | Value |
+|-------|--------|
+| **Name** | ${name} |
+| **Description** | See below |
+| **Work type** | ${workType} |
+| **Status** | ${status} |
+| **Assignee** | ${assignee} |
+| **Assignees** (extra) | ${assignees} |
+| **Priority** | ${priority} |
+| **Linked work items** | ${linked} |
+
+**Description:**
+
+${description}
+`;
+}
+
 function storyDetailsBlock(fields) {
+  const name = fields.summary || '—';
+  const description = 'See below';
+  const workType = fields.issuetype?.name || '—';
   const assignee = fields.assignee?.displayName || '—';
   const assignees = assigneesStr(fields.customfield_24517);
   const priority = fields.priority?.name || '—';
   const points = fields.customfield_12113 != null ? String(fields.customfield_12113) : '—';
   const sprint = sprintStr(fields.customfield_10106);
   const linked = linkedStrReal(fields.issuelinks);
+  const status = fields.status?.name || '—';
   return `### Story details
 
 | Field | Value |
 |-------|--------|
+| **Name** | ${name} |
+| **Description** | ${description} |
+| **Work type** | ${workType} |
 | **Assignee** | ${assignee} |
 | **Assignees** (extra) | ${assignees} |
 | **Priority** | ${priority} |
 | **Story point estimate** | ${points} |
 | **Sprint** | ${sprint} |
+| **Status** | ${status} |
 | **Linked work items** | ${linked} |
 `;
 }
@@ -120,6 +176,7 @@ function subtaskBlock(st) {
   const name = st.fields?.summary || st.key;
   const key = st.key;
   const desc = descToMd(st.fields?.description);
+  const workType = st.fields?.issuetype?.name || '—';
   const assignee = st.fields?.assignee?.displayName || '—';
   const assignees = assigneesStr(st.fields?.customfield_24517);
   const priority = st.fields?.priority?.name || '—';
@@ -134,7 +191,10 @@ function subtaskBlock(st) {
 
 | Field | Value |
 |-------|--------|
+| **Name** | ${name} |
 | **Description** | See below |
+| **Work type** | ${workType} |
+| **Status** | ${status} |
 | **Story point estimate** | ${points} |
 | **Priority** | ${priority} |
 | **Assignee** | ${assignee} |
@@ -163,6 +223,18 @@ function extractJiraKey(content) {
   return m ? m[1] : null;
 }
 
+function insertOrReplaceEpicDetails(content, block) {
+  const heading = '### Epic details';
+  if (!block) {
+    if (content.includes(heading)) return content.replace(/\n*### Epic details\n[\s\S]*?(?=\n### Story details|\n### Subtasks|\n---|\n#)/, '\n\n');
+    return content;
+  }
+  if (content.includes(heading)) {
+    return content.replace(/### Epic details\n[\s\S]*?(?=\n### Story details|\n### Subtasks|\n---|\n#)/, block.trimEnd() + '\n\n');
+  }
+  return content.replace(/(\*\*Jira:\*\* \[DPH-\d+\][^\n]+\n)\n+(### Story details)/, `$1\n\n${block.trimEnd()}\n\n$2`);
+}
+
 function insertOrReplaceStoryDetails(content, block) {
   if (content.includes('### Story details')) {
     return content.replace(/### Story details\n[\s\S]*?(?=\n### |\n---|\n#)/, block.trimEnd() + '\n\n');
@@ -185,6 +257,12 @@ function replaceSubtasksSection(content, newSubtasks) {
   return content + '\n\n' + newSection + '\n';
 }
 
+function escapeTableCell(s) {
+  if (s == null || s === '') return '—';
+  const t = String(s).replace(/\|/g, '\\|').replace(/\n/g, ' ');
+  return t.length > 80 ? t.slice(0, 77) + '...' : t;
+}
+
 async function main() {
   if (!email || !token) {
     console.error('Set JIRA_EMAIL and JIRA_API_TOKEN (e.g. in .env).');
@@ -192,11 +270,15 @@ async function main() {
   }
 
   const files = collectMdFiles(docsRoot);
+  const results = [];
+
   for (const filePath of files) {
+    const relativePath = filePath.replace(root + '/', '');
     const content = readFileSync(filePath, 'utf8');
     const key = extractJiraKey(content);
     if (!key) {
-      console.log('Skip (no Jira key):', filePath);
+      console.log('Skip (no Jira key):', relativePath);
+      results.push({ file: relativePath, key: '—', status: 'Skipped', summary: 'No Jira key in file', subtasks: '—' });
       continue;
     }
 
@@ -205,13 +287,32 @@ async function main() {
       issue = await getIssue(key);
     } catch (e) {
       console.warn('Fetch failed', key, e.message);
+      results.push({ file: relativePath, key, status: 'Failed', summary: e.message, subtasks: '—' });
       continue;
     }
 
     const fields = issue.fields || {};
     const subtaskKeys = (fields.subtasks || []).map(s => s.key);
+    const storySummary = fields.summary || key;
 
-    let newContent = insertOrReplaceStoryDetails(content, storyDetailsBlock(fields));
+    let newContent = content;
+    const parent = fields.parent;
+    if (parent?.key) {
+      try {
+        const parentIssue = await getIssue(parent.key);
+        if (parentIssue.fields?.issuetype?.name === 'Epic') {
+          newContent = insertOrReplaceEpicDetails(newContent, epicDetailsBlock(parent.key, parentIssue.fields || {}));
+        } else {
+          newContent = insertOrReplaceEpicDetails(newContent, null);
+        }
+      } catch (e) {
+        console.warn('Could not fetch parent Epic', parent.key, e.message);
+        newContent = insertOrReplaceEpicDetails(newContent, null);
+      }
+    } else {
+      newContent = insertOrReplaceEpicDetails(newContent, null);
+    }
+    newContent = insertOrReplaceStoryDetails(newContent, storyDetailsBlock(fields));
 
     let subtasksMd = '';
     if (subtaskKeys.length) {
@@ -228,10 +329,26 @@ async function main() {
       newContent = replaceSubtasksSection(newContent, '_No subtasks in Jira._');
     }
 
+    const changed = content !== newContent;
     writeFileSync(filePath, newContent, 'utf8');
-    console.log('Updated', filePath.replace(root + '/', ''));
+    console.log('Updated', relativePath);
+    results.push({
+      file: relativePath,
+      key,
+      status: changed ? 'Updated' : 'Unchanged',
+      summary: storySummary,
+      subtasks: String(subtaskKeys.length),
+    });
   }
-  console.log('Done.');
+
+  // Print summary table
+  console.log('\n---\n## Sync summary\n');
+  console.log('| File | Jira Key | Status | Story / Task | Subtasks |');
+  console.log('|------|----------|--------|--------------|----------|');
+  for (const r of results) {
+    console.log(`| ${escapeTableCell(r.file)} | ${escapeTableCell(r.key)} | ${escapeTableCell(r.status)} | ${escapeTableCell(r.summary)} | ${escapeTableCell(r.subtasks)} |`);
+  }
+  console.log('\nDone.');
 }
 
 main().catch((err) => {

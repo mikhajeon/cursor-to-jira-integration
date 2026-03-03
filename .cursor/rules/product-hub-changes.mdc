@@ -5,6 +5,17 @@ alwaysApply: false
 
 # Product Hub changes workflow
 
+## Prefer .md over Jira API when reading
+
+When you need **Product Hub content** (user story text, subtask summaries, descriptions, status, assignee, acceptance criteria):
+
+1. **Search or read the .md files first** in `docs/product-hub-jira/` (e.g. by epic folder and `[US-x.y]: …` files). Assume they are in sync with Jira.
+2. **Call the Jira API only when** the .md doesn’t have what you need, or when you must **perform an action** (create issue, update, assign, transition, etc.).
+
+This saves resources and keeps work local when the .md is the source of truth.
+
+---
+
 When the user asks to **change** something in Product Hub (user stories, subtasks, acceptance criteria, story text, etc.):
 
 1. **Edit the .md files first**  

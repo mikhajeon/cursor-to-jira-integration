@@ -60,7 +60,8 @@ When the user asks about **their Jira tasks**, **assigned work**, **DPH issues**
 
 ## Behavior
 
-1. Run the relevant command and use the JSON output to answer (summarise issues, list keys/summaries, etc.).
-2. For "update my task" or "assign X to Y", run `assign` with the issue key and the target accountId; confirm with the user before running assign.
-3. When creating subtasks, **always show the subtask summary and details to the user for confirmation before creating it**.
-4. Script path: `scripts/jira-api.mjs`. Credentials come from `.env` in the project root; do not read or expose `.env`.
+1. **When reading DPH story/subtask content** (summaries, descriptions, status, assignee): prefer reading or searching `docs/product-hub-jira/` first; use the script when you need to list/assign/update/transition or when the .md doesn’t have the info.
+2. Run the relevant command and use the JSON output to answer (summarise issues, list keys/summaries, etc.).
+3. For "update my task" or "assign X to Y", run `assign` with the issue key and the target accountId; confirm with the user before running assign.
+4. When creating subtasks, **always show the subtask summary and details to the user for confirmation before creating it**.
+5. Script path: `scripts/jira-api.mjs`. Credentials come from `.env` in the project root; do not read or expose `.env`.

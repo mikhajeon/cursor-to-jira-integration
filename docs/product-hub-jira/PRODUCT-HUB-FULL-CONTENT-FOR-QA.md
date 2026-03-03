@@ -1,0 +1,11760 @@
+# Product Hub — Full Content for QA Test Plans
+
+This document contains the complete content of all Product Hub epics, user stories, and subtasks as recorded in the project (synced from Jira). Use it to derive QA test plans and coverage.
+
+**Contents:** Epic details, story details, user story text, acceptance criteria (AC), and all subtasks with their descriptions and metadata.
+
+---
+
+## Table of contents
+
+
+### [EPIC-0]: App Foundations
+- [[Task-0.1]: Define and create Micro-app database schema](#[task-0.1]:-define-and-create-micro-app-database-schema)
+- [[Task-0.2] Deploy Web app on Azure](#[task-0.2]-deploy-web-app-on-azure)
+- [[Task-0.3]: Set up internal feature flag system](#[task-0.3]:-set-up-internal-feature-flag-system)
+- [[Task-0.4]: Create Micro-apps API Endpoint](#[task-0.4]:-create-micro-apps-api-endpoint)
+- [[Task-0.5]: Set domain name to hub.datacom.com](#[task-0.5]:-set-domain-name-to-hub.datacom.com)
+- [[US-0.1]: Platform Foundations (DB, API, Components, Basic Azure Deploy)](#[us-0.1]:-platform-foundations-db-api-components-basic-azure-deploy)
+- [[US-0.2]: Email & notifications foundation](#[us-0.2]:-email--notifications-foundation)
+
+### [EPIC-1]: Web app core layout
+- [[Task-1.1] Integrate Endpoints for Landing Page, Directory Page, and App Detail Modal](#[task-1.1]-integrate-endpoints-for-landing-page-directory-page-and-app-detail-modal)
+- [[US-1.1]: Visit Landing Page](#[us-1.1]:-visit-landing-page)
+- [[US-1.2]: Visit Directory Page](#[us-1.2]:-visit-directory-page)
+- [[US-1.3]: Visit App Detail Modal (Microsite)](#[us-1.3]:-visit-app-detail-modal-microsite)
+- [[US-1.4]: Visit My Apps Page](#[us-1.4]:-visit-my-apps-page)
+- [[US-1.5]: Visit App Submission Portal](#[us-1.5]:-visit-app-submission-portal)
+
+### [EPIC-2]: User Authentication & Role Management
+- [[US-2.1]: Login with Entra ID](#[us-2.1]:-login-with-entra-id)
+- [[US-2.2]: User Manages Profile and Role Preferences](#[us-2.2]:-user-manages-profile-and-role-preferences)
+
+### [EPIC-3]: Product Upload & Assisted Development
+- [[Task-3.1]: Manually Upload currently published Datacom Products / Micro-apps on Product Hub with informatics and link to each product page.](#[task-3.1]:-manually-upload-currently-published-datacom-products--micro-apps-on-product-hub-with-informatics-and-link-to-each-product-page.)
+- [[US-3.1]: Upload Project in Various Formats](#[us-3.1]:-upload-project-in-various-formats)
+- [[US-3.2]: App-Creator Accesses and Manages App Draft (Dev environment)](#[us-3.2]:-app-creator-accesses-and-manages-app-draft-dev-environment)
+- [[US-3.3]: App-Creator Validates Code Quality](#[us-3.3]:-app-creator-validates-code-quality)
+- [[US-3.4]: App-Creator Refactors and Reviews Code Changes](#[us-3.4]:-app-creator-refactors-and-reviews-code-changes)
+- [[US-3.5]: App-Creator Specifies Tags and App Visibility](#[us-3.5]:-app-creator-specifies-tags-and-app-visibility)
+
+### [EPIC-4]: AI Content Generator
+- [[US-4.1]: App-Creator Generates Basic Content](#[us-4.1]:-app-creator-generates-basic-content)
+- [[US-4.2]: App-Creator Generates AI Assets via AssetFlow Engine](#[us-4.2]:-app-creator-generates-ai-assets-via-assetflow-engine)
+- [[US-4.3]: App-Creator Reviews Generated Content and Submits for Approval](#[us-4.3]:-app-creator-reviews-generated-content-and-submits-for-approval)
+
+### [EPIC-5]: Product Approval & Admin Dashboard
+- [[US-5.1]: Admin Dashboard Setup & Pending Approval Queue](#[us-5.1]:-admin-dashboard-setup--pending-approval-queue)
+- [[US-5.2]: Admin Approves or Rejects a Submission](#[us-5.2]:-admin-approves-or-rejects-a-submission)
+- [[US-5.3]: Admin Manages App Publishing & Visibility](#[us-5.3]:-admin-manages-app-publishing--visibility)
+- [[US-5.3]: Admin Manages Product Visibility](#[us-5.3]:-admin-manages-product-visibility)
+- [[US-5.4]: Admin Monitors Hub Analytics](#[us-5.4]:-admin-monitors-hub-analytics)
+
+### [EPIC-6]: Assisted Security Testing & Deployment
+- [[US-6.1]: Deploy apps to staging environment (for UAT and Security test)](#[us-6.1]:-deploy-apps-to-staging-environment-for-uat-and-security-test)
+- [[US-6.2]: Security Team Reviews App via the Hub](#[us-6.2]:-security-team-reviews-app-via-the-hub)
+- [[US-6.3]: Admin Manages Security Outcome](#[us-6.3]:-admin-manages-security-outcome)
+- [[US-6.4]: Release to Production Environment](#[us-6.4]:-release-to-production-environment)
+
+### [EPIC-7]: User Reviews, Ratings, Sharing & Other
+- [[US-7.1]: Rate & Review a micro-app](#[us-7.1]:-rate--review-a-micro-app)
+- [[US-7.2]: Read ratings & Reviews](#[us-7.2]:-read-ratings--reviews)
+- [[US-7.3]: Share a Micro-app](#[us-7.3]:-share-a-micro-app)
+- [[US-7.4]: Voice search in Product Catalogue](#[us-7.4]:-voice-search-in-product-catalogue)
+
+---
+
+
+## [EPIC-0]: App Foundations
+
+
+### [Task-0.1]: Define and create Micro-app database schema
+
+# [Task-0.1]: Define and create Micro-app database schema
+
+**Jira:** [DPH-183](https://datacomgroup.atlassian.net/browse/DPH-183)
+
+
+### Epic details
+
+**Jira:** [DPH-162](https://datacomgroup.atlassian.net/browse/DPH-162)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-0]: App Foundations |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [Task-0.1]: Define and create Micro-app database schema |
+| **Description** | See below |
+| **Work type** | Large Task |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 5 |
+| **Sprint** | DPH Sprint 1 |
+| **Status** | Done |
+| **Linked work items** | [DPH-184](https://datacomgroup.atlassian.net/browse/DPH-184) (WS DEL Relates) |
+
+
+---
+Define and implement the database schema/bucket for storing micro-apps data.
+
+**Requirements:**
+
+- Define schema for micro-apps (name, description, category, icon URL, metadata)
+- Create database tables/collections
+- Set up any necessary indexes
+- Add seed/sample data for testing
+
+**Deliverables:**
+
+- Database schema defined and documented
+- Tables/collections created
+- Sample micro-apps data populated
+- Schema documented for team reference
+
+**Acceptance Criteria:**
+
+- Database can store and retrieve micro-apps data
+- Sample data is available for testing
+- Schema supports marketplace display requirements
+
+
+### Subtasks
+
+_No subtasks in Jira._
+
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [Task-0.2] Deploy Web app on Azure
+
+# [Task-0.2] Deploy Web app on Azure
+
+**Jira:** [DPH-347](https://datacomgroup.atlassian.net/browse/DPH-347)
+
+
+### Epic details
+
+**Jira:** [DPH-162](https://datacomgroup.atlassian.net/browse/DPH-162)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-0]: App Foundations |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [Task-0.2] Deploy Web app on Azure |
+| **Description** | See below |
+| **Work type** | Large Task |
+| **Assignee** | Dipesh Trikam |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 2 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | In Progress |
+| **Linked work items** | — |
+
+
+---
+1. Create Azure resources:
+
+        - Resource Group
+        - App Service Plan
+        - App Service (Web App)
+2. Configure CI/CD:
+
+        - Connect Azure App Service to GitHub repo/branch
+        - Generate and validate GitHub Actions deployment workflow
+3. Configure application settings:
+
+        - Add environment variables in Azure Configuration
+4. Enable logging and verify runtime:
+
+        - Turn on App Service logs + verify via Log Stream
+5. Validate deployment:
+
+        - Confirm app is accessible via `https://<appname>.azurewebsites.net`
+
+
+### Subtasks
+
+_No subtasks in Jira._
+
+---
+---
+---
+---
+---
+
+---
+
+
+### [Task-0.3]: Set up internal feature flag system
+
+# [Task-0.3]: Set up internal feature flag system
+
+**Jira:** [DPH-185](https://datacomgroup.atlassian.net/browse/DPH-185)
+
+
+### Epic details
+
+**Jira:** [DPH-162](https://datacomgroup.atlassian.net/browse/DPH-162)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-0]: App Foundations |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [Task-0.3]: Set up internal feature flag system |
+| **Description** | See below |
+| **Work type** | Large Task |
+| **Assignee** | Dipesh Trikam |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Story point estimate** | 0.5 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+Implement internal feature flags for frontend (as we are not using third-party services).
+
+**Acceptance Criteria:**
+
+- Feature flag system functional
+- Frontend integration ready
+
+
+### Subtasks
+
+#### [DPH-560] [1.3-UX] Tasks
+
+**Jira:** [DPH-560](https://datacomgroup.atlassian.net/browse/DPH-560) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.3-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-561] [1.3-FE] Tasks
+
+**Jira:** [DPH-561](https://datacomgroup.atlassian.net/browse/DPH-561) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.3-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-562] [1.3-BE] Tasks
+
+**Jira:** [DPH-562](https://datacomgroup.atlassian.net/browse/DPH-562) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.3-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+---
+---
+---
+
+---
+
+
+### [Task-0.4]: Create Micro-apps API Endpoint
+
+# [Task-0.4]: Create Micro-apps API Endpoint
+
+**Jira:** [DPH-184](https://datacomgroup.atlassian.net/browse/DPH-184)
+
+
+### Epic details
+
+**Jira:** [DPH-162](https://datacomgroup.atlassian.net/browse/DPH-162)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-0]: App Foundations |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [Task-0.4]: Create Micro-apps API Endpoint |
+| **Description** | See below |
+| **Work type** | Large Task |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 8 |
+| **Sprint** | DPH Sprint 1 |
+| **Status** | Done |
+| **Linked work items** | [DPH-183](https://datacomgroup.atlassian.net/browse/DPH-183) (WS DEL Relates) |
+
+
+---
+Create backend API endpoint to fetch micro-apps data for marketplace display.
+
+**Requirements:**
+
+- GET endpoint that returns list of micro-apps
+- Return fields: name, description, category, icon URL
+- Proper error handling and response codes
+
+**Deliverables:**
+
+- API endpoint implemented
+- Endpoint tested and validated
+- API documentation created
+
+**Acceptance Criteria:**
+
+- Endpoint returns valid JSON with micro-apps data
+- All required fields included in response
+- Endpoint is accessible and functional
+
+
+### Subtasks
+
+_No subtasks in Jira._
+
+---
+---
+---
+---
+---
+
+---
+
+
+### [Task-0.5]: Set domain name to hub.datacom.com
+
+# [Task-0.5]: Set domain name to hub.datacom.com
+
+**Jira:** [DPH-597](https://datacomgroup.atlassian.net/browse/DPH-597)
+
+
+### Epic details
+
+**Jira:** [DPH-162](https://datacomgroup.atlassian.net/browse/DPH-162)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-0]: App Foundations |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [Task-0.5]: Set domain name to hub.datacom.com |
+| **Description** | See below |
+| **Work type** | Large Task |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | Blocked |
+| **Linked work items** | — |
+
+
+---
+will happen after security testing of Product Hub (which takes a lot of time (a month or so after all is complete))
+
+
+### Subtasks
+
+_No subtasks in Jira._
+
+---
+---
+---
+---
+
+---
+
+
+### [US-0.1]: Platform Foundations (DB, API, Components, Basic Azure Deploy)
+
+# [US-0.1]: Platform Foundations (DB, API, Components, Basic Azure Deploy)
+
+**Jira:** [DPH-15](https://datacomgroup.atlassian.net/browse/DPH-15)
+
+
+### Epic details
+
+**Jira:** [DPH-162](https://datacomgroup.atlassian.net/browse/DPH-162)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-0]: App Foundations |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-0.1]: Platform Foundations (DB, API, Components, Basic Azure Deploy) |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 5 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | Done |
+| **Linked work items** | — |
+
+
+---
+As a **platform team**,  
+I want a production-ready database schema, core API routes, a reusable component library, and a demo deployment,  
+So that the catalogue, submission flows, and future features can be implemented and demoed.
+
+**Acceptance Criteria:**
+
+1. Database schema implemented (tools, checklist_items collections) with reversible migrations and seed data for at least 5 sample tools
+2. API routes exist and return JSON:
+2.1 GET /api/tools — supports ?category, ?search, ?page, ?limit query params
+2.2 GET /api/tools/[id] — returns full tool object
+2.3 POST /api/tools — creates tool, returns created object with 201
+2.4 PUT /api/tools/[id] — updates tool, returns updated object
+2.5 DELETE /api/tools/[id] — soft-deletes tool, returns 204
+2.6 GET /api/tools/[id]/checklist — returns array of checklist items
+2.7 All error responses follow: { error: string, details?: any }
+3. Component library (Next + TypeScript) includes at minimum: Button, Badge, Card, Input, Header, Footer, PageLayout, ToolCard, ToolGrid, SearchBar, CategoryFilter
+3.1 Modal and ProductPageLayout are required before Epic 1 completion but may be delivered in a subsequent task
+4. Application deployed to dev environment via CI/CD pipeline
+4.1 /api/health returns 200
+4.2 Environment variables managed securely (not committed to repo)
+4.3 UAT and prod deployments deferred to later sprints
+
+---
+
+### OLD User Story
+
+**As a **Platform Team,
+**I want **a production-ready database schema, core API routes, a reusable component library, and a demo deployment,
+**So that **the catalog, submission flows and future features can be implemented and demoed.
+
+### Acceptance Criteria
+
+1. Database schema implemented (tools, checklist_items) with reversible migrations and 5 seed tools.
+2. API routes exist: GET /api/tools (supports ?category & ?search), GET /api/tools/[id], POST /api/tools, PUT /api/tools/[id], DELETE /api/tools/[id], GET /api/tools/[id]/checklist. All error responses: { error: string, details?: any }.
+3. Component library (Tailwind + TypeScript) includes Button, Badge, Card, Input, Modal, Header, Footer, PageLayout, ToolCard, ToolGrid, SearchBar, CategoryFilter, ProductPageLayout.
+4. Basic Azure deployment configured (CI/CD), /api/health returns 200, env vars managed securely.
+
+
+### Subtasks
+
+#### [DPH-23] [FE] Component library scaffold only (don’t overbuild yet)
+
+**Jira:** [DPH-23](https://datacomgroup.atlassian.net/browse/DPH-23) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | [FE] Component library scaffold only (don’t overbuild yet) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-24] [BE] Configure Azure App Service (or static site) deployment, GitHub Actions CI/CD, env var management and /api/health endpoint. Creating Azure Resource Group + Getting Access to Azure.
+
+**Jira:** [DPH-24](https://datacomgroup.atlassian.net/browse/DPH-24) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | [BE] Configure Azure App Service (or static site) deployment, GitHub Actions CI/CD, env var management and /api/health endpoint. Creating Azure Resource Group + Getting Access to Azure. |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Dipesh Trikam |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+CI/CD PL for both PH and PH admin
+
+#### [DPH-160] [BE] Creating Azure Resource Group (app environment) + Getting Access to Azure.
+
+**Jira:** [DPH-160](https://datacomgroup.atlassian.net/browse/DPH-160) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | [BE] Creating Azure Resource Group (app environment) + Getting Access to Azure. |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Dipesh Trikam |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-161] [BE] Create Project Github Repo
+
+**Jira:** [DPH-161](https://datacomgroup.atlassian.net/browse/DPH-161) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | [BE] Create Project Github Repo |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Dipesh Trikam |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-164] [BE] Create platform architecture documentation
+
+**Jira:** [DPH-164](https://datacomgroup.atlassian.net/browse/DPH-164) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | [BE] Create platform architecture documentation |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Dipesh Trikam |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-0.2]: Email & notifications foundation
+
+# [US-0.2]: Email & notifications foundation
+
+**Jira:** [DPH-596](https://datacomgroup.atlassian.net/browse/DPH-596)
+
+
+### Epic details
+
+**Jira:** [DPH-162](https://datacomgroup.atlassian.net/browse/DPH-162)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-0]: App Foundations |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-0.2]: Email & notifications foundation |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As a user (app-user, app-creator, admin, security team)
+
+I want to send email notifications triggered by key workflow events,
+
+So that all relevant stakeholders are kept informed at each stage of the micro-app lifecycle.
+
+### AC
+
+1. The notification system is a shared service that can be called by any user story that requires an email to be sent
+2. Each email contains:
+
+        1. The name of the micro-app
+        2. The event that triggered the notification
+        3. A direct link to the relevant page on Product Hub
+        4. Datacom branding (logo, footer)
+        5. Timestamp of the event
+3. Emails are sent from a designated no-reply Datacom address (e.g. `noreply@datacom.com`)
+4. If an email fails to send, the failure is logged and a retry is attempted up to 3 times before alerting the admin
+5. Notification preferences are not user-configurable in this release — all role-relevant notifications are sent automatically
+6. The system supports adding new notification triggers (requiring only registering a new event type and email template) without requiring changes to the core notification service.
+7. All sent notifications are logged with: recipient, event type, timestamp, and delivery status
+
+Technical note to be confirmed with Dipesh — recommended implementation via Azure Communication Services to stay within the existing Azure infrastructure
+
+
+
+**Trigger Event**
+
+**Recipient**
+
+**Triggered By**
+
+**Source Story**
+
+Submission for approval
+
+Admin
+
+System (on app-creator submit)
+
+US-4.3
+
+Approval granted
+
+App-creator
+
+System (on admin approve)
+
+US-5.2
+
+Rejection with feedback
+
+App-creator
+
+System (on admin reject)
+
+US-5.2
+
+Staging deployment success
+
+App-creator
+
+System
+
+US-6.1
+
+Staging deployment failure
+
+App-creator
+
+System
+
+US-6.1
+
+Notify security team
+
+Security reviewers
+
+App-creator (manual trigger)
+
+US-6.2
+
+Security review approved
+
+Admin + App-creator
+
+System (on security approve)
+
+US-6.3
+
+Security review rejected
+
+Admin + App-creator
+
+System (on security reject)
+
+US-6.3
+
+Production release success
+
+App-creator
+
+System
+
+US-6.4
+
+Production release failure
+
+Admin
+
+System
+
+US-6.4
+
+
+### Subtasks
+
+#### [DPH-595] [0.2-FE] Tasks
+
+**Jira:** [DPH-595](https://datacomgroup.atlassian.net/browse/DPH-595) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [0.2-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-594] [0.2-BE] Tasks
+
+**Jira:** [DPH-594](https://datacomgroup.atlassian.net/browse/DPH-594) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [0.2-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-593] [0.2-UX] Tasks
+
+**Jira:** [DPH-593](https://datacomgroup.atlassian.net/browse/DPH-593) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [0.2-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+---
+---
+---
+
+---
+
+
+## [EPIC-1]: Web app core layout
+
+
+### [Task-1.1] Integrate Endpoints for Landing Page, Directory Page, and App Detail Modal
+
+# [Task-1.1] Integrate Endpoints for Landing Page, Directory Page, and App Detail Modal
+
+**Jira:** [DPH-599](https://datacomgroup.atlassian.net/browse/DPH-599)
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [Task-1.1] Integrate Endpoints for Landing Page, Directory Page, and App Detail Modal |
+| **Description** | See below |
+| **Work type** | Large Task |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Story point estimate** | 2 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+---
+
+Connect the frontend components for the Landing Page, Directory, and App Detail Modal to their backend API endpoints, replacing any static/mock data with live responses.
+
+**Scope**
+
+1. **Endpoints to integrate**
+
+        1. **Landing Page** – Top 3 apps by popularity, top 4 testimonials
+        2. **Directory** – App catalogue list (with search, filters, pagination), role-based recommendations
+        3. **App Detail Modal** – App detail by ID (including content fields, media assets, lifecycle status, and favourites)
+
+**Acceptance Criteria**
+
+1. All dynamic content is served from API with no hardcoded data
+2. Search, filters, and Load More correctly query the API and update results
+3. Favourite toggle and Launch App button state reflect live API responses
+
+
+### Subtasks
+
+#### [DPH-601] Integration task
+
+**Jira:** [DPH-601](https://datacomgroup.atlassian.net/browse/DPH-601) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | Integration task |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+Replacing mock data with data from the API’s
+
+- Landing page
+
+        - Featured apps
+- Directory page
+
+        - fetch and display micro apps
+        - fetch and populate filters
+        - Search api
+- Modal
+
+        - fetch more details for a micro app
+
+---
+
+---
+
+
+### [US-1.1]: Visit Landing Page
+
+# [US-1.1]: Visit Landing Page
+
+**Jira:** [DPH-189](https://datacomgroup.atlassian.net/browse/DPH-189)
+
+
+### Epic details
+
+**Jira:** [DPH-181](https://datacomgroup.atlassian.net/browse/DPH-181)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-1]: Web app core layout |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-1.1]: Visit Landing Page |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 8 |
+| **Sprint** | DPH Sprint 1 |
+| **Status** | Done |
+| **Linked work items** | — |
+
+
+---
+As a user (app-creator or app-user)
+
+I would like to access Product Hub website at [chosen domain name]
+
+So that I am directed to the landing page.
+
+ 
+
+### AC
+
+1. User visit [domain name] and they are directed to the website landing page
+2. The landing page will have a header section with the following details visible on top of the page
+
+        1. Datacom Logo (works as Home button)
+        2. Directory (Catalogue)
+        3. My Apps (Products created by user) (new: this page should contain user-creations
+        4. Shared with me (Products shared to me)
+        5. Guidelines (Submission requirement guide)
+        6. My Submissions (Submissions portal / pending) (new: this page should contain brief guidelines)
+        7. Sign-up / Log-in
+3. The header will be fixed and visible across all the pages on the website
+4. All pages on the website will have a footer with the details below displayed at the bottom of the page
+
+        1. Datacom Logo
+        2. Site map
+        3. Link to key datacom sites (sharepoint, etc)
+5. Footer will scroll-with-parent
+6. The landing page should be divided into 4 segments aside from the header and footer such that the user can scroll down the page to view segments
+
+        1. 1st segment is the background image and headline
+        2. 2nd segment should display the unique selling-point of Product Hub
+        3. 3rd segment should display top 3 tools by usage popularity
+        4. 4th segment should display top 4 testimonials / reviews
+
+ 
+
+Mock-up to be provided by UX designer
+
+---
+
+Old task descrip For Information Only:
+
+
+
+Create a dev-ready landing page mockup/prototype that will be handed off to Gavin Yan for immediate development.
+
+**Key Sections to Consider:**
+
+- Hero/value proposition area
+- Marketplace preview showing available micro-apps
+- Platform benefits or how it works
+- Navigation and footer
+
+**Acceptance Criteria:**
+
+- Design is dev-ready for Gavin to start implementation immediately
+- Gavin’s developed page should be ready to present by Thursday if possible.
+- Adhere to Datacom brand-guideline.md as much as possible.
+
+
+### Subtasks
+
+#### [DPH-622] [Bug-1.1]: Auto infinite-scroll issue
+
+**Jira:** [DPH-622](https://datacomgroup.atlassian.net/browse/DPH-622) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [Bug-1.1]: Auto infinite-scroll issue |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 1 |
+| **Linked work items** | — |
+
+**Description:**
+
+US 1.2 AC 4.d
+   I know that we initially thought the auto-load more function was useful, but in the case where the user wants to access the footer, they can’t if there are say, 100 apps on the hub, and it keeps on loading.
+
+**Steps to Reproduce**
+
+1. Navigate to... Directory
+2. Scroll down to… the bottom of the landing
+3. Observe... automatic loading of ‘Recommended for you’ apps
+
+**Expected Result** What *should* happen.
+
+1. Should let the user decide whether or not they load more apps.
+2. should let the user reach the footer
+
+**Actual Result** What *actually* happens.
+
+1. user has to spend time continuously scrolling to reach the footer as apps keep loading.
+
+**Impact**
+
+- **Severity:** Critical / **High** / Medium / Low
+- **Affected Users:** e.g. **All users** / Admin only
+- **Frequency:** **Always** / Intermittent / Rare
+
+**Attachments** Screenshots, screen recordings, error logs, console output.
+
+#### [DPH-549] [1.1-UX] Tasks
+
+**Jira:** [DPH-549](https://datacomgroup.atlassian.net/browse/DPH-549) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.1-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 1 |
+| **Linked work items** | — |
+
+**Description:**
+
+Consolidated from original UX subtasks:
+
+- Define landing page information architecture
+- Create Navbar & Footer (components across every page)
+- Discover Section
+- Featured apps section
+- Submission section
+- FAQ Section
+- Reference & stick to Datacom brand guidelines & Brandhub guidelines
+- Assist devs in implementation
+- Track issues and problems for potential automation
+- Developer handover
+- Reference the "AI Products Hub" brief
+- Brainstorming & Ideation
+- Confirm correct classes, colours and typography styles
+
+#### [DPH-550] [1.1-FE] Tasks
+
+**Jira:** [DPH-550](https://datacomgroup.atlassian.net/browse/DPH-550) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.1-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 1 |
+| **Linked work items** | — |
+
+**Description:**
+
+Consolidated from original FE subtasks:
+
+- Implement Global Header Component — Create the Product Hub global header following Figma. Responsive nav, hamburger, cursor rules, button states, accessibility. AC: design system match, responsive, focus trap, aria-labels, reusable.
+- Implement Global Footer Component — Build global footer with link groups, icons, responsive behavior, theme consistency. AC: Figma match, links/icons correct, responsive, reusable.
+- Implement Landing Page Structure & Core Sections — Entire landing page (sections 1–10) from Figma. AC: sections match, responsive, backgrounds/transitions, CTA states, content/assets.
+- Refactor Into Reusable Feature/Card Components — Refactor static sections into reusable components. AC: reusable components, documented props, design parity, consistent use.
+- Design Asset Integration & Visual Polish — Icons, spacing, brand guidelines, fix inconsistencies. AC: icons match, spacing/CSS variables, visual states, pixel-perfect.
+- Accessibility & UX Enhancements — Focus management, keyboard, aria, assistive text. AC: focus trap, Escape, aria-labels, keyboard nav, no regressions.
+- FAQ Section Redesign — New FAQ layout and interaction. AC: layout/specs, typography/spacing, responsive, clean integration.
+- Write Tests for Components & Page — Unit/integration tests for header, footer, sections, components. AC: core interactions, render, validated, CI.
+- Code Review, Cleanup & Merge — Cleanup, review comments, code quality, merge. AC: lint/build pass, naming/structure, feedback addressed, merged.
+
+#### [DPH-551] [1.1-BE] Tasks
+
+**Jira:** [DPH-551](https://datacomgroup.atlassian.net/browse/DPH-551) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 1 |
+| **Linked work items** | — |
+
+**Description:**
+
+No backend-specific subtasks for this story.
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+Old task descrip For Information Only:
+
+
+
+Create a dev-ready landing page mockup/prototype that will be handed off to Gavin Yan for immediate development.
+
+**Key Sections to Consider:**
+
+- Hero/value proposition area
+- Marketplace preview showing available micro-apps
+- Platform benefits or how it works
+- Navigation and footer
+
+**Acceptance Criteria:**
+
+- Design is dev-ready for Gavin to start implementation immediately
+- Gavin’s developed page should be ready to present by Thursday if possible.
+- Adhere to Datacom brand-guideline.md as much as possible.
+
+---
+
+
+### [US-1.2]: Visit Directory Page
+
+# [US-1.2]: Visit Directory Page
+
+**Jira:** [DPH-201](https://datacomgroup.atlassian.net/browse/DPH-201)
+
+
+### Epic details
+
+**Jira:** [DPH-181](https://datacomgroup.atlassian.net/browse/DPH-181)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-1]: Web app core layout |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-1.2]: Visit Directory Page |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 5 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | Ready for QA Review |
+| **Linked work items** | — |
+
+
+---
+As an app-user,
+
+I would like to visit the **Product** **Catalogue “Directory”**
+
+So that I can view all products available on Product Hub
+
+ 
+
+### AC
+
+1. The app-user clicks the Catalogue page from the landing page
+
+1. user is redirected to the Catalogue page once the call-to-action button is selected
+
+1. There shall be a search bar under the header section
+
+        1. have a microphone (recording UI) in the search bar (implementation US)
+
+1. The catalogue page should have 3 segments such that the user can scroll down the page to view the contents
+
+        1. 1st segment should display category filter options for users to specify tasks they are looking to accomplish (ex. create guides, calculate ROI) (**use case filter + role filter**)
+
+                1. If the user selects any of the app category, the associated app on that category should be displayed
+        2. 2nd segment should display 3 micro-apps most aligned to the user’s role specified on their staff profile.
+
+                1. This should be vertically scrollable apps ordered by popularity
+        3. 3rd segment should display the ALL used micro-apps sorted by popularity (access rate)
+        4. There should be a link button “Load More” at the base of the 3 most used micro-apps, to expand to show 3 more micro-apps available sorted by popularity
+
+                1. If there are more courses to be displayed the link button “Load More” should still be active
+                2. If there are no more micro-apps to be displayed, the link button “Load more” will no be active”
+2. Micro-app cards shall contain:
+
+        1. Tiers: Business (big internal tools like, Conver, TACO), Enterprise (distributed out), Standard (independent apps)
+        2. Categories: eg, AI-generated, Document Generation.
+        3. Roles: of individual app-users
+3. House both UAT and Production Apps in it. → reveal to certain people in UAT group etc.
+4. Under the search bar: have filters, 
+
+        1. new
+        2. popular
+        3. my favorites
+
+Mock-up to be provided by UX designer  
+
+Precedent below: Coursera course catalogue page: role-based course matching and skill preference filtering
+
+
+### Subtasks
+
+#### [DPH-226] Add queryCategoriesList in db layer with mock data
+
+**Jira:** [DPH-226](https://datacomgroup.atlassian.net/browse/DPH-226) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Add queryCategoriesList in db layer with mock data |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+In `functions/src/shared/db.ts`:
+
+- Define a `CategoryRow` interface with at least: `id` (string), `name` (string), `displayName` (string), `displayOrder` (number). Add `iconName` and `description` as optional if needed for the API.
+- Add a function `queryCategoriesList(): Promise<{ items: CategoryRow[] }>`.
+- When `getConnection()` returns null (no DB configured), return mock category data. Mock list must include categories that match existing micro-app mock data, e.g. at least: `ai-tools`, `devops`, `admin`, each with a distinct id, name, displayName, and displayOrder (e.g. 1, 2, 3).
+- When a real connection exists, leave a TODO to query the Categories table ordered by display_order ascending; no implementation required until DB is wired.
+- Export `CategoryRow` and ensure the mock items are ordered by displayOrder in the returned array.
+
+*Definition of done:* Calling `queryCategoriesList()` returns an array of categories with correct shape and order; no change to existing `queryMicroAppsList` or MicroAppRow.
+
+#### [DPH-227] Add getCategories HTTP handler and register route
+
+**Jira:** [DPH-227](https://datacomgroup.atlassian.net/browse/DPH-227) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Add getCategories HTTP handler and register route |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- Create a new HTTP handler (e.g. `functions/src/handlers/getCategories.ts`) that:
+
+        - Accepts a GET request (no required query params).
+        - Calls `queryCategoriesList()` from `../shared/db.js`.
+        - Returns status 200 with body `{ success: true, data: items }` where items is the array from the db layer.
+        - On thrown error, returns 500 with `{ success: false, error: { code: 'INTERNAL_ERROR', message: '...' } }`.
+- Register the handler in `functions/src/app.ts`: add an `app.http` entry with method GET, route `categories` (or `micro-apps/categories` if you prefer a nested path), and `authLevel: 'anonymous'` to align with catalogue browsing.
+- Use the same response shape as other handlers (success, data) so the frontend can parse consistently.
+
+*Definition of done:* GET request to the registered categories URL returns 200 and a JSON array of categories; unauthenticated access works.
+
+#### [DPH-228] Add GET categories path and schema to OpenAPI
+
+**Jira:** [DPH-228](https://datacomgroup.atlassian.net/browse/DPH-228) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Add GET categories path and schema to OpenAPI |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+In `docs/apis/openapi-spec.yaml`:
+
+- Add a new path for the categories endpoint (e.g. `/categories` under the same `servers[].url` base as existing paths). If the API is under `/api/v1`, use `/categories` so full path is `/api/v1/categories`.
+- Document GET with summary (e.g. "List categories for catalogue filters"), no required parameters, security optional or empty so it can be called without auth for catalogue.
+- Add a response 200 with content type application/json and a schema that includes an array of category objects. Schema properties: `id` (string), `name` (string), `displayName` (string), `displayOrder` (integer). Optionally `iconName` (string), `description` (string).
+- In `components.schemas`, add a `Category` schema and reference it in the response (e.g. `data: array of Category`). Ensure the response wrapper matches the handler (e.g. `success: boolean`, `data: array`).
+
+*Definition of done:* OpenAPI spec validates (if you have a validator); frontend or API clients can use the spec to generate types or docs for the categories endpoint.
+
+#### [DPH-229] Add search query param to getMicroApps (name/description)
+
+**Jira:** [DPH-229](https://datacomgroup.atlassian.net/browse/DPH-229) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Add search query param to getMicroApps (name/description) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- In `functions/src/handlers/getMicroApps.ts`: read optional query parameter `search` from the request URL (e.g. `url.searchParams.get('search')`). Trim empty string or null and treat as undefined (no filter).
+- In `functions/src/shared/db.ts`: add optional `search?: string` to `QueryMicroAppsParams`. In `queryMicroAppsList`, when `search` is provided, filter the result set so that each micro-app's `name` or `description` contains the search string (case-insensitive). Use substring match (e.g. `name.toLowerCase().includes(search.toLowerCase())` and same for description).
+- Apply search filter before pagination: first filter by category/search/status, then slice for page and pageSize.
+- Do not change the response shape; only the filtered list and totalCount are affected.
+
+*Definition of done:* GET micro-apps?search=Conver returns only items whose name or description contains "Conver"; GET without search is unchanged; existing getMicroApps tests still pass; add or update a test that asserts search filtering.
+
+#### [DPH-230] Add tags query param to getMicroApps (comma-separated)
+
+**Jira:** [DPH-230](https://datacomgroup.atlassian.net/browse/DPH-230) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Add tags query param to getMicroApps (comma-separated) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- In `functions/src/handlers/getMicroApps.ts`: read optional query parameter `tags` from the request URL. If present, split by comma and trim each part (e.g. `tags.split(',').map(t => t.trim()).filter(Boolean)`). Pass the resulting string array to the db layer; if empty after split, treat as no filter.
+- In `functions/src/shared/db.ts`: add optional `tags?: string[]` to `QueryMicroAppsParams`. In `queryMicroAppsList`, when `tags` is provided and non-empty, filter micro-apps that are associated with at least one of the given tags. Current mock data (MOCK_MICRO_APPS) does not include tag associations; either (a) add a mock `tags` array to each mock micro-app and filter by it, or (b) leave the filter as a no-op when using mock data and add a TODO comment that real DB will join MicroAppTags and filter by tag_id/name.
+- Apply tags filter together with category and search (AND logic). Pagination applies after all filters.
+
+*Definition of done:* Handler accepts `tags=foo,bar` and passes parsed array to db; db layer signature supports tags; behaviour with real data or extended mock is documented; add test for tags param if mock supports it.
+
+#### [DPH-231] Enforce published-only for catalogue product list
+
+**Jira:** [DPH-231](https://datacomgroup.atlassian.net/browse/DPH-231) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Enforce published-only for catalogue product list |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- Ensure that when the product list is used for the *catalogue* (public-facing list of micro-apps), only items with `status === 'published'` are returned. Do not return draft or archived items.
+- In `functions/src/shared/db.ts`: in `queryMicroAppsList`, when no explicit `status` is passed in params, default to filtering by `status: 'published'`. If the caller passes a specific `status` (e.g. for an admin view), respect it; otherwise for catalogue use the default published filter.
+- Alternatively, in `functions/src/handlers/getMicroApps.ts`: if the endpoint is catalogue-only, always pass `status: 'published'` into the db layer and do not expose a status query param to anonymous callers. Choose one approach and document: "Catalogue list returns only published products."
+- Update mock data so at least one item has status other than published (e.g. draft) and assert that the default catalogue response does not include it.
+
+*Definition of done:* GET micro-apps (without status param, or with catalogue semantics) returns only published items; tests confirm draft/archived are excluded.
+
+#### [DPH-232] Add recommendedForRole support (param + mock by category)
+
+**Jira:** [DPH-232](https://datacomgroup.atlassian.net/browse/DPH-232) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Add recommendedForRole support (param + mock by category) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- In `functions/src/handlers/getMicroApps.ts`: read optional query parameter `recommendedForRole` (e.g. string value such as "Product Manager", "Developer"). When present, the handler should return a list of micro-apps considered "recommended" for that role, optionally limited (e.g. limit 6 for Segment 2).
+- In `functions/src/shared/db.ts`: add optional `recommendedForRole?: string` and optional `limit?: number` to a new function or to existing params. Implement mock logic: define a simple mapping from role names to category names (e.g. "Developer" -> ["devops", "ai-tools"], "Product Manager" -> ["admin", "ai-tools"]). Return micro-apps whose category is in the mapped list for the given role, ordered by updatedAt desc (or popularity when available), and capped at limit (e.g. 6). If role is unknown, return an empty list or fallback to top N by updatedAt.
+- Response shape remains the same (success, data array, meta). Meta should reflect the actual count and optionally totalCount for the recommended set.
+- Document in OpenAPI: add query param `recommendedForRole` (optional string) and description that it returns role-recommended products for the catalogue.
+
+*Definition of done:* GET micro-apps?recommendedForRole=Developer returns only micro-apps in roles-mapped categories; limit is applied; OpenAPI updated.
+
+#### [DPH-233] Add orderBy (e.g. updatedAt / popularity) for list
+
+**Jira:** [DPH-233](https://datacomgroup.atlassian.net/browse/DPH-233) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Add orderBy (e.g. updatedAt / popularity) for list |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-234] Verify pagination meta (totalCount, totalPages) in response
+
+**Jira:** [DPH-234](https://datacomgroup.atlassian.net/browse/DPH-234) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Verify pagination meta (totalCount, totalPages) in response |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- Confirm that the GET micro-apps response includes in `meta`: `page` (number), `pageSize` (number), `totalCount` (number), `totalPages` (number). totalCount must be the total number of items matching the current filters (before pagination). totalPages must be Math.ceil(totalCount / pageSize) or 1 when totalCount is 0.
+- In `functions/src/handlers/getMicroApps.ts`: ensure the handler sets `meta.totalPages = Math.ceil(totalCount / pageSize) || 1` and that totalCount comes from the db layer's total count of filtered results (not the length of the current page).
+- Add or update a unit test: for a known mock dataset, request page=1, pageSize=3, and assert that meta.totalCount equals the full filtered count and meta.totalPages equals the expected number of pages. Request the last page and assert the returned data length and that there are no more pages.
+- Document in API overview or OpenAPI that the frontend uses meta.totalCount and meta.totalPages to control the "Load More" button state (active when more pages exist, inactive when current page is the last).
+
+*Definition of done:* Pagination meta is correct for all page sizes and pages; test asserts totalCount and totalPages; docs mention Load More usage.
+
+#### [DPH-235] Ensure API base URL / env for catalogue (config/env.example, env.ts)
+
+**Jira:** [DPH-235](https://datacomgroup.atlassian.net/browse/DPH-235) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Ensure API base URL / env for catalogue (config/env.example, env.ts) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-268] Research (DataAcademy AI courses - percipio AI courses - agents/prompt/product feeds & libraries)
+
+**Jira:** [DPH-268](https://datacomgroup.atlassian.net/browse/DPH-268) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Research (DataAcademy AI courses - percipio AI courses - agents/prompt/product feeds & libraries) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-269] Quick Wireframes (Navbar - Search + Filters - Results - Segment 1 - Segment 2 - Segment 3 - Loadmore - Footer)
+
+**Jira:** [DPH-269](https://datacomgroup.atlassian.net/browse/DPH-269) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Quick Wireframes (Navbar - Search + Filters - Results - Segment 1 - Segment 2 - Segment 3 - Loadmore - Footer) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-270] Prototype  (Click through with Search, Filters, Load More - User Testable)
+
+**Jira:** [DPH-270](https://datacomgroup.atlassian.net/browse/DPH-270) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Prototype  (Click through with Search, Filters, Load More - User Testable) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-272]  Mockups (Create for Thursday presentation - Search - states - filter UI - states - Segment 1/2/3 - states - product cards - hover, click, preview, template page - Load More states - nav/footer)
+
+**Jira:** [DPH-272](https://datacomgroup.atlassian.net/browse/DPH-272) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** |  Mockups (Create for Thursday presentation - Search - states - filter UI - states - Segment 1/2/3 - states - product cards - hover, click, preview, template page - Load More states - nav/footer) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-271] Present to Stakeholder - Iterate on feedback
+
+**Jira:** [DPH-271](https://datacomgroup.atlassian.net/browse/DPH-271) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Present to Stakeholder - Iterate on feedback |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-274] Design Handover: Figma + Components + Dev Walkthrough
+
+**Jira:** [DPH-274](https://datacomgroup.atlassian.net/browse/DPH-274) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Design Handover: Figma + Components + Dev Walkthrough |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-273] Final Design: (Brand Guidelines pass, specs, assets)  
+
+**Jira:** [DPH-273](https://datacomgroup.atlassian.net/browse/DPH-273) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Final Design: (Brand Guidelines pass, specs, assets)   |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-284] Implement Catalogue Page Route and Navigation
+
+**Jira:** [DPH-284](https://datacomgroup.atlassian.net/browse/DPH-284) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Implement Catalogue Page Route and Navigation |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+Create the Product Catalogue page route and wire the landing page call‑to‑action to navigate users to the Catalogue page.
+
+**Acceptance Criteria:**
+
+- Catalogue page route is created and accessible via URL
+- Landing page CTA redirects to the Catalogue page
+- Page loads without console errors
+- Loading state is shown while data is being fetched
+- Route follows existing app routing conventions
+
+#### [DPH-285] Build Catalogue Page Layout with 3 Segments
+
+**Jira:** [DPH-285](https://datacomgroup.atlassian.net/browse/DPH-285) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Build Catalogue Page Layout with 3 Segments |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+Create the base layout for the Product Catalogue page, including header, search bar placement, and three vertically scrollable content segments.
+
+**Acceptance Criteria:**
+
+- Page layout matches wireframe / design intent
+- Search bar is positioned under the header
+- Page contains 3 clearly separated vertical segments
+- Page supports vertical scrolling across all segments
+- Layout is responsive across desktop, tablet, and mobile
+
+#### [DPH-286] Build Reusable Micro‑App Card Component
+
+**Jira:** [DPH-286](https://datacomgroup.atlassian.net/browse/DPH-286) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Build Reusable Micro‑App Card Component |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+Create a reusable card component to display micro‑app information throughout the catalogue.
+
+**Acceptance Criteria:**
+
+- Card displays micro‑app name
+- Tier is shown (Business, Enterprise, Standard)
+- Categories and supported roles are displayed
+- Card supports hover and click states
+- Skeleton/loading state is implemented
+- Component is reusable across all catalogue segments
+- Layout is responsive and accessible
+
+#### [DPH-287] Wire Catalogue UI to API or Mock Data
+
+**Jira:** [DPH-287](https://datacomgroup.atlassian.net/browse/DPH-287) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Wire Catalogue UI to API or Mock Data |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+Connect the catalogue UI to available endpoints or mock data sources for development.
+
+**Acceptance Criteria:**
+
+- UI integrates with `getMicroApps` endpoint (or mock)
+- UI integrates with `getCategories` endpoint (or mock)
+- Supports query params:
+
+        - search
+        - tags / categories
+        - role
+        - orderBy (popularity)
+- Errors are handled gracefully
+- Mock data can be swapped out easily for live APIs
+
+#### [DPH-288] Implement Catalogue Search Bar
+
+**Jira:** [DPH-288](https://datacomgroup.atlassian.net/browse/DPH-288) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Implement Catalogue Search Bar |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+Build the search bar UI and manage search state to filter micro‑apps by name or description.
+
+**Acceptance Criteria:**
+
+- Search bar is visible under the header
+- User can type to search micro‑apps
+- Search input updates results in real time or on submit
+- Debounce is applied to prevent excessive calls
+- Empty search state shows all results
+- Graceful fallback if API is unavailable
+
+#### [DPH-289] Implement Category and Role Filter UI
+
+**Jira:** [DPH-289](https://datacomgroup.atlassian.net/browse/DPH-289) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Implement Category and Role Filter UI |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+Build the first catalogue segment containing category and role‑based filters that allow users to specify tasks they want to accomplish.
+
+**Acceptance Criteria:**
+
+- Category filter options are rendered correctly
+- Role filter options are displayed and selectable
+- Selected filters are visually highlighted
+- Selecting a filter updates displayed micro‑apps
+- Multiple filters can be applied together
+- Empty results state is handled gracefully
+
+#### [DPH-292] Apply Responsive Styling and UX Polish
+
+**Jira:** [DPH-292](https://datacomgroup.atlassian.net/browse/DPH-292) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Apply Responsive Styling and UX Polish |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+Ensure the Product Catalogue UI is visually polished, responsive, and consistent with the design system.
+
+**Acceptance Criteria:**
+
+- Layout adapts correctly to mobile, tablet, and desktop
+- Spacing, typography, and colors follow design system
+- Interactive elements have hover and focus states
+- No layout shifts or overflow issues
+- Basic accessibility checks pass (focus order, contrast)
+
+#### [DPH-293] Frontend Testing, Refactor & Code Quality Alignment
+
+**Jira:** [DPH-293](https://datacomgroup.atlassian.net/browse/DPH-293) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | Frontend Testing, Refactor & Code Quality Alignment |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+Write frontend tests and perform a final code quality pass to ensure the Product Catalogue implementation follows project structure guidelines, brand standards, and CSS theming conventions.
+
+**Acceptance Criteria:**
+
+### ✅ Tests (What Is “Enough”)
+
+- **Component tests** are written for:
+
+        - Micro‑App Card renders correct data (name, tier, categories, roles)
+        - Micro‑App Card loading/skeleton state
+- **Interaction tests** cover:
+
+        - Search input updates results (mocked data)
+        - Category filter selection updates visible apps
+        - “Load More” appends additional micro‑apps
+- **State tests** cover:
+
+        - Empty results state
+        - Load More disabled when no more data exists
+- API calls may be **mocked** (no E2E required)
+- Full page E2E tests are **not required** for this story
+
+### ✅ Code Quality & Refactor
+
+- Code structure aligns with documented project architecture
+- Components, hooks, and utilities are organized per repo guidelines
+- Shared logic is extracted into reusable hooks/helpers
+- No duplicated business logic across segments
+- No unused imports, dead code, or TODOs remain
+
+### ✅ Brand & Styling Compliance
+
+- All styling uses CSS theme variables from `index.css`
+- No hard‑coded brand colors, fonts, or spacing values
+- Components conform to brand guidelines:
+
+        - Typography scale
+        - Spacing
+        - Interaction states
+- Linting and formatting rules pass without warnings
+
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-1.3]: Visit App Detail Modal (Microsite)
+
+# [US-1.3]: Visit App Detail Modal (Microsite)
+
+**Jira:** [DPH-340](https://datacomgroup.atlassian.net/browse/DPH-340)
+
+
+### Epic details
+
+**Jira:** [DPH-181](https://datacomgroup.atlassian.net/browse/DPH-181)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-1]: Web app core layout |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-1.3]: Visit App Detail Modal (Microsite) |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 6 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | In Progress |
+| **Linked work items** | — |
+
+
+---
+As an **app-user**,  
+I want to view a product's detail page,  
+So that I can learn about a micro-app before deciding to use it.
+
+**Acceptance Criteria:**
+
+1. Clicking a micro-app card from the catalogue or any listing redirects the user to the product's detail page
+2. The detail page displays: app name, tier, category tags, role tags, creator name, and submission date
+3. The Introduction, Business Value, and Example Use Case sections generated in Epic 4 are displayed
+4. If a user guide (HTML slideshow) was generated, it is accessible and playable on the page
+5. If a video guide (MP4) was generated, it is embedded and playable on the page
+6. A `Launch App` button is visible and links to the app's live URL — disabled with tooltip if the app is Unpublished
+7. A `Favourite` button allows app-users to save the app to their catalogue filter of faves
+8. The product's current lifecycle status is displayed as a badge (see App Lifecycle Status Reference Table)
+9. The app detail modal renders as a scrollable full-width modal, larger than the Agent Library modal
+
+
+### Subtasks
+
+#### [DPH-538] [1.3-FE] Tasks
+
+**Jira:** [DPH-538](https://datacomgroup.atlassian.net/browse/DPH-538) · **Status:** Ready for QA Review
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.3-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Ready for QA Review |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+## Front‑End Tasks – Product Detail Page (Large Modal)
+
+### 1. Entry Point & Modal Trigger
+
+- Add click handler to micro‑app cards across:
+
+        - Catalogue
+        - Listings (search results, favourites, etc.)
+- Open Product Detail as a **popup modal** (no full page navigation)
+- Pass selected `appId` (or mock identifier) into modal
+- Support modal close via:
+
+        - Close (X)
+        - ESC key
+        - Click outside (if design allows)
+
+---
+
+### 2. Large Scrollable Modal Shell
+
+- Create a **large modal component**, bigger than artefact library modal
+- Modal should:
+
+        - Be vertically scrollable internally
+        - Lock background scroll
+- Structure modal into:
+
+        - Header (app name, status badge, close)
+        - Scrollable body
+        - Footer or sticky action area (Launch / Favourite)
+
+---
+
+### 3. Mock Data Setup (Backend in Progress)
+
+- Define **mock data objects** aligned with agreed backend schema:
+
+        - App metadata
+        - Content sections
+        - Media assets
+        - App status and environment
+- Store mock data locally or via mock service
+- Use mock data to drive all UI rendering
+- Ensure mock data supports:
+
+        - Active vs Inactive apps
+        - Apps with / without guides
+        - Different environments (UAT, Staging, etc.)
+
+---
+
+### 4. App Metadata Display
+
+- Display the following fields:
+
+        - App name
+        - Tier
+        - Category tags
+        - Role tags
+        - Creator name
+        - Submission date (formatted)
+- Display **App Status**:
+
+        - Active / Inactive
+- Display **Environment badge** when not production:
+
+        - UAT / Staging
+        - Public / Private / Datacom as applicable
+
+---
+
+### 5. Content Sections (Epic 4 Output)
+
+- Render the following sections using mock data:
+
+        - Introduction
+        - Business Value
+        - Example Use Case
+- Support rich text / HTML rendering
+- Gracefully handle missing or empty sections
+
+---
+
+### 6. User Guide – HTML Slideshow (Conditional)
+
+- If HTML slideshow exists in mock data:
+
+        - Embed and render it on the page
+        - Ensure it is playable within the modal
+- Hide section if no HTML guide is present
+
+---
+
+### 7. Video Guide – MP4 (Conditional)
+
+- If MP4 video exists in mock data:
+
+        - Embed video player
+        - Support play, pause, fullscreen
+- Hide section if no video guide is present
+
+---
+
+### 8. Launch App Button
+
+- Display **Launch App** primary CTA
+- Behaviour:
+
+        - If app is Active:
+
+                - Button enabled
+                - Opens live app URL in new tab
+        - If app is Inactive:
+
+                - Button disabled
+                - Show tooltip explaining app is inactive
+- Wire button behaviour using mock URLs
+
+---
+
+### 9. Favourite App Functionality
+
+- Add Favourite / Unfavourite button
+- Use mock state to:
+
+        - Toggle favourite status
+        - Reflect saved state in UI
+- Align behaviour with “My Products → My Favourites” expectations
+
+---
+
+### 10. Accessibility & UX
+
+- Ensure modal accessibility:
+
+        - Focus trapped within modal
+        - Keyboard navigation supported
+        - ESC closes modal
+- Add appropriate ARIA roles and labels
+- Tooltips accessible via keyboard
+
+---
+
+### 11. Responsive Behaviour
+
+- Ensure modal is responsive:
+
+        - Fullscreen on smaller viewports
+        - Media stacks correctly on mobile
+- Test long content scrolling inside modal
+
+---
+
+### 12. UI Testing with Mock Data
+
+- Verify:
+
+        - All acceptance criteria met using mock data
+        - Active vs inactive states
+        - Presence / absence of guides
+- Visual QA across supported browsers
+
+---
+
+### 13. Replace Mock Data with Live Backend Integration (Final Task)
+
+- Remove mock data usage
+- Integrate real backend endpoints for:
+
+        - App details
+        - Favourites
+- Handle loading, error, and empty states
+- Validate backend responses against existing UI logic
+- Final regression testing
+
+#### [DPH-539] [1.3-BE] Tasks
+
+**Jira:** [DPH-539](https://datacomgroup.atlassian.net/browse/DPH-539) · **Status:** Ready for QA Review
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.3-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Ready for QA Review |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-1.3.1 — Product detail API (single product by ID/slug)
+
+**Description**
+
+1. Add endpoint (e.g. GET /api/v1/products/{productId}) to fetch one product by productId or slug.
+
+1. Query Cosmos products by tenantId + identifier and return one document.
+
+1. Return 200 with full payload when found; 404 with standard error format when not found or invalid.
+
+---
+
+### BE-1.3.2 — Detail response: metadata and tags
+
+**Description**
+
+1. Extend product model with name, tier, category, category/role tags, creator, submission/publish date.
+
+1. If tags are separate entities, define link to product and return in detail API.
+
+1. Detail API DTO includes these fields and matches OpenAPI schema.
+
+---
+
+### BE-1.3.3 — Rich content sections
+
+**Description**
+
+1. Add product fields introduction, businessValue, exampleUseCase (long text).
+
+1. Detail API returns these three; use null or empty string when absent and keep types consistent.
+
+---
+
+### BE-1.3.4 — Guide and video URLs
+
+**Description**
+
+1. Add optional product fields userGuideHtmlUrl, videoGuideMp4Url (or equivalent).
+
+1. Detail API returns these URLs when present; omit or null when absent; store/return URLs only, no upload.
+
+---
+
+### BE-1.3.5 — Launch URL and status
+
+**Description**
+
+1. Ensure product model has launch URL (e.g. launchUrl/demoUrl) and status (e.g. Active/Inactive, UAT/Staging).
+
+1. Detail API returns URL and status for Launch button and status badges.
+
+---
+
+### BE-1.3.6 — Favourites API and “is favourited”
+
+**Description**
+
+1. Implement add/remove favourite API (e.g. POST/DELETE users/me/favorites/{productId} or PUT products/{productId}/favorite).
+
+1. Persist user–product many-to-many (e.g. UserFavorites); require auth and restrict to current user.
+
+1. Detail API or separate endpoint returns whether product is favourited (e.g. isFavorited) when authenticated.
+
+---
+
+### BE-1.3.7 — Contract and docs
+
+**Description**
+
+1. Detail API follows project common response format (success/data/meta) and error structure (code/message/details).
+
+1. Use same error format for 404, 401, 400.
+
+1. Update OpenAPI GET /products/{productId} schema to include all new detail fields.
+
+---
+---
+
+### 2. Large Scrollable Modal Shell
+
+- Create a **large modal component**, bigger than artefact library modal
+- Modal should:
+
+        - Be vertically scrollable internally
+        - Lock background scroll
+- Structure modal into:
+
+        - Header (app name, status badge, close)
+        - Scrollable body
+        - Footer or sticky action area (Launch / Favourite)
+
+---
+
+### 3. Mock Data Setup (Backend in Progress)
+
+- Define **mock data objects** aligned with agreed backend schema:
+
+        - App metadata
+        - Content sections
+        - Media assets
+        - App status and environment
+- Store mock data locally or via mock service
+- Use mock data to drive all UI rendering
+- Ensure mock data supports:
+
+        - Active vs Inactive apps
+        - Apps with / without guides
+        - Different environments (UAT, Staging, etc.)
+
+---
+
+### 4. App Metadata Display
+
+- Display the following fields:
+
+        - App name
+        - Tier
+        - Category tags
+        - Role tags
+        - Creator name
+        - Submission date (formatted)
+- Display **App Status**:
+
+        - Active / Inactive
+- Display **Environment badge** when not production:
+
+        - UAT / Staging
+        - Public / Private / Datacom as applicable
+
+---
+
+### 5. Content Sections (Epic 4 Output)
+
+- Render the following sections using mock data:
+
+        - Introduction
+        - Business Value
+        - Example Use Case
+- Support rich text / HTML rendering
+- Gracefully handle missing or empty sections
+
+---
+
+### 6. User Guide – HTML Slideshow (Conditional)
+
+- If HTML slideshow exists in mock data:
+
+        - Embed and render it on the page
+        - Ensure it is playable within the modal
+- Hide section if no HTML guide is present
+
+---
+
+### 7. Video Guide – MP4 (Conditional)
+
+- If MP4 video exists in mock data:
+
+        - Embed video player
+        - Support play, pause, fullscreen
+- Hide section if no video guide is present
+
+---
+
+### 8. Launch App Button
+
+- Display **Launch App** primary CTA
+- Behaviour:
+
+        - If app is Active:
+
+                - Button enabled
+                - Opens live app URL in new tab
+        - If app is Inactive:
+
+                - Button disabled
+                - Show tooltip explaining app is inactive
+- Wire button behaviour using mock URLs
+
+---
+
+### 9. Favourite App Functionality
+
+- Add Favourite / Unfavourite button
+- Use mock state to:
+
+        - Toggle favourite status
+        - Reflect saved state in UI
+- Align behaviour with “My Products → My Favourites” expectations
+
+---
+
+### 10. Accessibility & UX
+
+- Ensure modal accessibility:
+
+        - Focus trapped within modal
+        - Keyboard navigation supported
+        - ESC closes modal
+- Add appropriate ARIA roles and labels
+- Tooltips accessible via keyboard
+
+---
+
+### 11. Responsive Behaviour
+
+- Ensure modal is responsive:
+
+        - Fullscreen on smaller viewports
+        - Media stacks correctly on mobile
+- Test long content scrolling inside modal
+
+---
+
+### 12. UI Testing with Mock Data
+
+- Verify:
+
+        - All acceptance criteria met using mock data
+        - Active vs inactive states
+        - Presence / absence of guides
+- Visual QA across supported browsers
+
+---
+
+### 13. Replace Mock Data with Live Backend Integration (Final Task)
+
+- Remove mock data usage
+- Integrate real backend endpoints for:
+
+        - App details
+        - Favourites
+- Handle loading, error, and empty states
+- Validate backend responses against existing UI logic
+- Final regression testing
+
+#### [DPH-539] [1.3-BE] Tasks
+
+**Jira:** [DPH-539](https://datacomgroup.atlassian.net/browse/DPH-539) · **Status:** In Progress
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.3-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | In Progress |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-1.3.1 — Product detail API (single product by ID/slug)
+
+**Description**
+
+1. Add endpoint (e.g. GET /api/v1/products/{productId}) to fetch one product by productId or slug.
+
+1. Query Cosmos products by tenantId + identifier and return one document.
+
+1. Return 200 with full payload when found; 404 with standard error format when not found or invalid.
+
+---
+
+### BE-1.3.2 — Detail response: metadata and tags
+
+**Description**
+
+1. Extend product model with name, tier, category, category/role tags, creator, submission/publish date.
+
+1. If tags are separate entities, define link to product and return in detail API.
+
+1. Detail API DTO includes these fields and matches OpenAPI schema.
+
+---
+
+### BE-1.3.3 — Rich content sections
+
+**Description**
+
+1. Add product fields introduction, businessValue, exampleUseCase (long text).
+
+1. Detail API returns these three; use null or empty string when absent and keep types consistent.
+
+---
+
+### BE-1.3.4 — Guide and video URLs
+
+**Description**
+
+1. Add optional product fields userGuideHtmlUrl, videoGuideMp4Url (or equivalent).
+
+1. Detail API returns these URLs when present; omit or null when absent; store/return URLs only, no upload.
+
+---
+
+### BE-1.3.5 — Launch URL and status
+
+**Description**
+
+1. Ensure product model has launch URL (e.g. launchUrl/demoUrl) and status (e.g. Active/Inactive, UAT/Staging).
+
+1. Detail API returns URL and status for Launch button and status badges.
+
+---
+
+### BE-1.3.6 — Favourites API and “is favourited”
+
+**Description**
+
+1. Implement add/remove favourite API (e.g. POST/DELETE users/me/favorites/{productId} or PUT products/{productId}/favorite).
+
+1. Persist user–product many-to-many (e.g. UserFavorites); require auth and restrict to current user.
+
+1. Detail API or separate endpoint returns whether product is favourited (e.g. isFavorited) when authenticated.
+
+---
+
+### BE-1.3.7 — Contract and docs
+
+**Description**
+
+1. Detail API follows project common response format (success/data/meta) and error structure (code/message/details).
+
+1. Use same error format for 404, 401, 400.
+
+1. Update OpenAPI GET /products/{productId} schema to include all new detail fields.
+
+---
+---
+
+### 2. Large Scrollable Modal Shell
+
+- Create a **large modal component**, bigger than artefact library modal
+- Modal should:
+
+        - Be vertically scrollable internally
+        - Lock background scroll
+- Structure modal into:
+
+        - Header (app name, status badge, close)
+        - Scrollable body
+        - Footer or sticky action area (Launch / Favourite)
+
+---
+
+### 3. Mock Data Setup (Backend in Progress)
+
+- Define **mock data objects** aligned with agreed backend schema:
+
+        - App metadata
+        - Content sections
+        - Media assets
+        - App status and environment
+- Store mock data locally or via mock service
+- Use mock data to drive all UI rendering
+- Ensure mock data supports:
+
+        - Active vs Inactive apps
+        - Apps with / without guides
+        - Different environments (UAT, Staging, etc.)
+
+---
+
+### 4. App Metadata Display
+
+- Display the following fields:
+
+        - App name
+        - Tier
+        - Category tags
+        - Role tags
+        - Creator name
+        - Submission date (formatted)
+- Display **App Status**:
+
+        - Active / Inactive
+- Display **Environment badge** when not production:
+
+        - UAT / Staging
+        - Public / Private / Datacom as applicable
+
+---
+
+### 5. Content Sections (Epic 4 Output)
+
+- Render the following sections using mock data:
+
+        - Introduction
+        - Business Value
+        - Example Use Case
+- Support rich text / HTML rendering
+- Gracefully handle missing or empty sections
+
+---
+
+### 6. User Guide – HTML Slideshow (Conditional)
+
+- If HTML slideshow exists in mock data:
+
+        - Embed and render it on the page
+        - Ensure it is playable within the modal
+- Hide section if no HTML guide is present
+
+---
+
+### 7. Video Guide – MP4 (Conditional)
+
+- If MP4 video exists in mock data:
+
+        - Embed video player
+        - Support play, pause, fullscreen
+- Hide section if no video guide is present
+
+---
+
+### 8. Launch App Button
+
+- Display **Launch App** primary CTA
+- Behaviour:
+
+        - If app is Active:
+
+                - Button enabled
+                - Opens live app URL in new tab
+        - If app is Inactive:
+
+                - Button disabled
+                - Show tooltip explaining app is inactive
+- Wire button behaviour using mock URLs
+
+---
+
+### 9. Favourite App Functionality
+
+- Add Favourite / Unfavourite button
+- Use mock state to:
+
+        - Toggle favourite status
+        - Reflect saved state in UI
+- Align behaviour with “My Products → My Favourites” expectations
+
+---
+
+### 10. Accessibility & UX
+
+- Ensure modal accessibility:
+
+        - Focus trapped within modal
+        - Keyboard navigation supported
+        - ESC closes modal
+- Add appropriate ARIA roles and labels
+- Tooltips accessible via keyboard
+
+---
+
+### 11. Responsive Behaviour
+
+- Ensure modal is responsive:
+
+        - Fullscreen on smaller viewports
+        - Media stacks correctly on mobile
+- Test long content scrolling inside modal
+
+---
+
+### 12. UI Testing with Mock Data
+
+- Verify:
+
+        - All acceptance criteria met using mock data
+        - Active vs inactive states
+        - Presence / absence of guides
+- Visual QA across supported browsers
+
+---
+
+### 13. Replace Mock Data with Live Backend Integration (Final Task)
+
+- Remove mock data usage
+- Integrate real backend endpoints for:
+
+        - App details
+        - Favourites
+- Handle loading, error, and empty states
+- Validate backend responses against existing UI logic
+- Final regression testing
+
+#### [DPH-539] [1.3-BE] Tasks
+
+**Jira:** [DPH-539](https://datacomgroup.atlassian.net/browse/DPH-539) · **Status:** In Progress
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.3-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | In Progress |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-1.3.1 — Product detail API (single product by ID/slug)
+
+**Description**
+
+1. Add endpoint (e.g. GET /api/v1/products/{productId}) to fetch one product by productId or slug.
+
+1. Query Cosmos products by tenantId + identifier and return one document.
+
+1. Return 200 with full payload when found; 404 with standard error format when not found or invalid.
+
+---
+
+### BE-1.3.2 — Detail response: metadata and tags
+
+**Description**
+
+1. Extend product model with name, tier, category, category/role tags, creator, submission/publish date.
+
+1. If tags are separate entities, define link to product and return in detail API.
+
+1. Detail API DTO includes these fields and matches OpenAPI schema.
+
+---
+
+### BE-1.3.3 — Rich content sections
+
+**Description**
+
+1. Add product fields introduction, businessValue, exampleUseCase (long text).
+
+1. Detail API returns these three; use null or empty string when absent and keep types consistent.
+
+---
+
+### BE-1.3.4 — Guide and video URLs
+
+**Description**
+
+1. Add optional product fields userGuideHtmlUrl, videoGuideMp4Url (or equivalent).
+
+1. Detail API returns these URLs when present; omit or null when absent; store/return URLs only, no upload.
+
+---
+
+### BE-1.3.5 — Launch URL and status
+
+**Description**
+
+1. Ensure product model has launch URL (e.g. launchUrl/demoUrl) and status (e.g. Active/Inactive, UAT/Staging).
+
+1. Detail API returns URL and status for Launch button and status badges.
+
+---
+
+### BE-1.3.6 — Favourites API and “is favourited”
+
+**Description**
+
+1. Implement add/remove favourite API (e.g. POST/DELETE users/me/favorites/{productId} or PUT products/{productId}/favorite).
+
+1. Persist user–product many-to-many (e.g. UserFavorites); require auth and restrict to current user.
+
+1. Detail API or separate endpoint returns whether product is favourited (e.g. isFavorited) when authenticated.
+
+---
+
+### BE-1.3.7 — Contract and docs
+
+**Description**
+
+1. Detail API follows project common response format (success/data/meta) and error structure (code/message/details).
+
+1. Use same error format for 404, 401, 400.
+
+1. Update OpenAPI GET /products/{productId} schema to include all new detail fields.
+
+---
+---
+
+### 2. Large Scrollable Modal Shell
+
+- Create a **large modal component**, bigger than artefact library modal
+- Modal should:
+
+        - Be vertically scrollable internally
+        - Lock background scroll
+- Structure modal into:
+
+        - Header (app name, status badge, close)
+        - Scrollable body
+        - Footer or sticky action area (Launch / Favourite)
+
+---
+
+### 3. Mock Data Setup (Backend in Progress)
+
+- Define **mock data objects** aligned with agreed backend schema:
+
+        - App metadata
+        - Content sections
+        - Media assets
+        - App status and environment
+- Store mock data locally or via mock service
+- Use mock data to drive all UI rendering
+- Ensure mock data supports:
+
+        - Active vs Inactive apps
+        - Apps with / without guides
+        - Different environments (UAT, Staging, etc.)
+
+---
+
+### 4. App Metadata Display
+
+- Display the following fields:
+
+        - App name
+        - Tier
+        - Category tags
+        - Role tags
+        - Creator name
+        - Submission date (formatted)
+- Display **App Status**:
+
+        - Active / Inactive
+- Display **Environment badge** when not production:
+
+        - UAT / Staging
+        - Public / Private / Datacom as applicable
+
+---
+
+### 5. Content Sections (Epic 4 Output)
+
+- Render the following sections using mock data:
+
+        - Introduction
+        - Business Value
+        - Example Use Case
+- Support rich text / HTML rendering
+- Gracefully handle missing or empty sections
+
+---
+
+### 6. User Guide – HTML Slideshow (Conditional)
+
+- If HTML slideshow exists in mock data:
+
+        - Embed and render it on the page
+        - Ensure it is playable within the modal
+- Hide section if no HTML guide is present
+
+---
+
+### 7. Video Guide – MP4 (Conditional)
+
+- If MP4 video exists in mock data:
+
+        - Embed video player
+        - Support play, pause, fullscreen
+- Hide section if no video guide is present
+
+---
+
+### 8. Launch App Button
+
+- Display **Launch App** primary CTA
+- Behaviour:
+
+        - If app is Active:
+
+                - Button enabled
+                - Opens live app URL in new tab
+        - If app is Inactive:
+
+                - Button disabled
+                - Show tooltip explaining app is inactive
+- Wire button behaviour using mock URLs
+
+---
+
+### 9. Favourite App Functionality
+
+- Add Favourite / Unfavourite button
+- Use mock state to:
+
+        - Toggle favourite status
+        - Reflect saved state in UI
+- Align behaviour with “My Products → My Favourites” expectations
+
+---
+
+### 10. Accessibility & UX
+
+- Ensure modal accessibility:
+
+        - Focus trapped within modal
+        - Keyboard navigation supported
+        - ESC closes modal
+- Add appropriate ARIA roles and labels
+- Tooltips accessible via keyboard
+
+---
+
+### 11. Responsive Behaviour
+
+- Ensure modal is responsive:
+
+        - Fullscreen on smaller viewports
+        - Media stacks correctly on mobile
+- Test long content scrolling inside modal
+
+---
+
+### 12. UI Testing with Mock Data
+
+- Verify:
+
+        - All acceptance criteria met using mock data
+        - Active vs inactive states
+        - Presence / absence of guides
+- Visual QA across supported browsers
+
+---
+
+### 13. Replace Mock Data with Live Backend Integration (Final Task)
+
+- Remove mock data usage
+- Integrate real backend endpoints for:
+
+        - App details
+        - Favourites
+- Handle loading, error, and empty states
+- Validate backend responses against existing UI logic
+- Final regression testing
+
+#### [DPH-539] [1.3-BE] Tasks
+
+**Jira:** [DPH-539](https://datacomgroup.atlassian.net/browse/DPH-539) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.3-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-1.3.1 — Product detail API (single product by ID/slug)
+
+**Description**
+
+1. Add endpoint (e.g. GET /api/v1/products/{productId}) to fetch one product by productId or slug.
+
+1. Query Cosmos products by tenantId + identifier and return one document.
+
+1. Return 200 with full payload when found; 404 with standard error format when not found or invalid.
+
+---
+
+### BE-1.3.2 — Detail response: metadata and tags
+
+**Description**
+
+1. Extend product model with name, tier, category, category/role tags, creator, submission/publish date.
+
+1. If tags are separate entities, define link to product and return in detail API.
+
+1. Detail API DTO includes these fields and matches OpenAPI schema.
+
+---
+
+### BE-1.3.3 — Rich content sections
+
+**Description**
+
+1. Add product fields introduction, businessValue, exampleUseCase (long text).
+
+1. Detail API returns these three; use null or empty string when absent and keep types consistent.
+
+---
+
+### BE-1.3.4 — Guide and video URLs
+
+**Description**
+
+1. Add optional product fields userGuideHtmlUrl, videoGuideMp4Url (or equivalent).
+
+1. Detail API returns these URLs when present; omit or null when absent; store/return URLs only, no upload.
+
+---
+
+### BE-1.3.5 — Launch URL and status
+
+**Description**
+
+1. Ensure product model has launch URL (e.g. launchUrl/demoUrl) and status (e.g. Active/Inactive, UAT/Staging).
+
+1. Detail API returns URL and status for Launch button and status badges.
+
+---
+
+### BE-1.3.6 — Favourites API and “is favourited”
+
+**Description**
+
+1. Implement add/remove favourite API (e.g. POST/DELETE users/me/favorites/{productId} or PUT products/{productId}/favorite).
+
+1. Persist user–product many-to-many (e.g. UserFavorites); require auth and restrict to current user.
+
+1. Detail API or separate endpoint returns whether product is favourited (e.g. isFavorited) when authenticated.
+
+---
+
+### BE-1.3.7 — Contract and docs
+
+**Description**
+
+1. Detail API follows project common response format (success/data/meta) and error structure (code/message/details).
+
+1. Use same error format for 404, 401, 400.
+
+1. Update OpenAPI GET /products/{productId} schema to include all new detail fields.
+
+---
+
+---
+
+
+### [US-1.4]: Visit My Apps Page
+
+# [US-1.4]: Visit My Apps Page
+
+**Jira:** [DPH-241](https://datacomgroup.atlassian.net/browse/DPH-241)
+
+
+### Epic details
+
+**Jira:** [DPH-181](https://datacomgroup.atlassian.net/browse/DPH-181)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-1]: Web app core layout |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-1.4]: Visit My Apps Page |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 7 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+## US-1.4: User Views My Apps Page
+
+As a **user**,  
+I want to view my My Apps page,  
+So that I can track my uploaded micro-apps.
+
+**Acceptance Criteria:**
+
+1. Clicking `My Apps` in the header redirects the user to the My Apps page
+2. The page displays My Uploads, divided into Published and Development in Progress sections
+3. Published cards have two buttons: `Make Updates` (redirects to development page) and `Make Requests` (dropdown with: Request disabling/re-activation, Request deletion)
+4. Published cards show visibility scope, distinguished by icon:
+
+        - `UAT` — 🧪 flask/test icon (system-controlled)
+        - `Datacom Only` — Datacom 'D' logo icon (app-creator can set)
+        - `Private` — 🔒 lock icon (app-creator can set)
+        - `Public` — 🌐 globe icon (admin can set)
+5. Published cards show admin-controlled status: 
+
+        1. `Active`  ; or
+        2. `Inactive`
+        3. and if set, `Featured`
+6. Development in Progress cards have two buttons: `Continue Building` (redirects to App Draft) and `Delete` (triggers delete confirmation modal with red confirm button)
+7. Development in Progress cards show lifecycle status: 
+
+        1. `Pending Approval`,
+        2. `Pending Security Tests`,
+        3. `Ready to Publish`, or
+        4. `Vaildation Failed`
+8. If there are no products in either section, a message reads: "No apps available"
+
+
+
+Refer to App Status Table.
+
+
+### Subtasks
+
+#### [DPH-586] [1.4-UX] Tasks
+
+**Jira:** [DPH-586](https://datacomgroup.atlassian.net/browse/DPH-586) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.4-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. [UX] Dev ready files + developer handsover + walkthrough
+2. [UX] Create `My Products` cards
+3. [UX] Design `My Products` dashboard
+
+#### [DPH-587] [1.4-FE] Tasks
+
+**Jira:** [DPH-587](https://datacomgroup.atlassian.net/browse/DPH-587) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.4-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. [DEV FE] API Endpoint Integration
+2. [DEV FE] UI States & Visual Polish
+3. [DEV FE] Metadata Insights Panel
+4. [DEV FE]  Uploads – Development in Progress Section
+5. [DEV FE] My Uploads – Published Section
+6. [DEV FE] My Favourites Section
+7. [DEV FE] My Products Page Layout
+8. [DEV FE] Header Navigation to My Products
+
+#### [DPH-588] [1.4-BE] Tasks
+
+**Jira:** [DPH-588](https://datacomgroup.atlassian.net/browse/DPH-588) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.4-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. [Dev BE] Backend Endpoints (Query + Actions) + Smoke Tests
+2. [Dev BE]Mock Data + Local Dev Setup
+3. [Dev BE]API Contract + Docs
+
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-1.5]: Visit App Submission Portal
+
+# [US-1.5]: Visit App Submission Portal
+
+**Jira:** [DPH-249](https://datacomgroup.atlassian.net/browse/DPH-249)
+
+
+### Epic details
+
+**Jira:** [DPH-181](https://datacomgroup.atlassian.net/browse/DPH-181)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-1]: Web app core layout |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-1.5]: Visit App Submission Portal |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 5 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | In Progress |
+| **Linked work items** | — |
+
+
+---
+As an **app-creator**,  
+I want to access the micro-app submission portal,  
+So that I can begin uploading my micro-app.
+
+**Acceptance Criteria:**
+
+1. Clicking `My Submissions` in the header redirects the app-creator to the Submit an App page
+2. The page displays three upload format options:
+
+        1. ZIP file upload (drag-on upload)
+        2. GitHub repository URL (text input)
+        3. Live URL (text iput)
+3. A multi-step workflow stepper is visible showing the full submission process:
+
+        1. A progress indicator highlights the current step
+4. The `Next` button is disabled until an upload format is selected
+5. Selecting an upload format displays the relevant upload interface for that format
+6. Brief submission guidelines are visible on the page
+
+
+### Subtasks
+
+#### [DPH-496] [1.5-UX] Tasks
+
+**Jira:** [DPH-496](https://datacomgroup.atlassian.net/browse/DPH-496) · **Status:** In Progress
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.5-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | In Progress |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- [UX] Design Handover (figma + components + dev walkthrough)
+- [UX] Final Design (Brand guidelines pass)
+- [UX] Design multi-step submission workflow with stepper UI
+- [UX] Design upload format selection: ZIP, GitHub URL, Live URL
+- [UX] Design `Submit a Product` page & modal
+
+#### [DPH-497] [1.5-FE] Tasks
+
+**Jira:** [DPH-497](https://datacomgroup.atlassian.net/browse/DPH-497) · **Status:** In Progress
+
+| Field | Value |
+|-------|--------|
+| **Name** | [1.5-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | In Progress |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. Navigation / Entry Point
+
+        1. **Tasks**
+
+                1. Add or verify **“Submit a Product” button** in the global header
+                2. Implement **client-side routing** so clicking the button navigates to:
+
+                        1. `/submit-product` (or agreed route)
+        2. **Notes**
+
+                1. No API calls required
+                2. Route should be accessible to app-creators (auth may already exist or be mocked)
+
+
+
+1. Submit a Product Page (Base Skeleton)
+
+        1. **Tasks**
+
+                1. Create **Submit a Product page component**
+                2. Apply base page layout (header, container, spacing)
+                3. Add placeholder content until UX wireframes are delivered
+        2. **Deliverables**
+
+                1. Page renders without errors
+                2. Page is reachable via direct URL and navigation
+2. Multi-Step Workflow Stepper (UI Only)
+
+        1. **Tasks**
+
+                1. Implement a **stepper component** (static for now)
+                2. Define submission steps (example):
+
+                        1. Upload Method
+                        2. App Details
+                        3. Review & Submit
+                3. Highlight the **current step**
+                4. Allow stepper state to be controlled internally (no backend.
+        2. **Notes**
+
+                1. Stepper does **not need full functionality**
+                2. No step validation beyond what’s in this story
+3. Upload Format Selection
+
+        1. **Tasks**
+
+                1. Display three **upload format options**:
+
+                        1. ZIP file upload
+                        2. GitHub repository URL
+                        3. Live URL
+                2. Implement selection state (radio buttons or selectable cards)
+
+                        1. Only one option can be selected at a time
+        2. **UX Expectations**
+
+                1. Selected option visually highlighted
+                2. Unselected options remain inactive
+4. Conditional Upload Interfaces
+
+        1. **Tasks**
+
+                1. Show upload UI **only after** an option is selected
+
+                        1. Implement placeholder interfaces:
+
+                                1. ZIP: file input (no upload handling)
+                                2. GitHub: URL input field
+                                3. Live URL: URL input field
+                2. **Notes**
+
+                        1. No validation required beyond basic input presence
+                        2. No actual file upload or API integration yet
+5. Continue/Next button logic
+
+        1. **Tasks**
+
+                1. Render **Continue / Next** button
+                2. Button is:
+
+                        1. Disabled by default
+                        2. Enabled only when an upload format is selected
+                3. On click:
+
+                        1. Advance stepper to next step (mock behavior
+        2. **Notes**
+
+                1. No form submission
+                2. No persistence required
+6. State Management
+
+        1. Manage local UI state for:
+
+                1. Selected upload format
+                2. Current step
+        2. Decide on state solution:
+
+                1. Component state / hooks
+                2. Lightweight store (if project standard requires it)
+7. Styling & UX Consistency
+
+        1. Match design system (buttons, inputs, spacing)
+        2. Apply disabled states and hover states
+        3. Ensure responsive behavior
+8. Testing (Lightweight)
+
+        1. Add basic frontend tests (if required):
+
+                - Button navigation works
+                - Continue button disabled/enabled correctly
+                - Correct upload UI appears when option selected
+
+---
+---
+---
+---
+
+---
+
+
+## [EPIC-2]: User Authentication & Role Management
+
+
+### [US-2.1]: Login with Entra ID
+
+# [US-2.1]: Login with Entra ID
+
+**Jira:** [DPH-237](https://datacomgroup.atlassian.net/browse/DPH-237)
+
+
+### Epic details
+
+**Jira:** [DPH-236](https://datacomgroup.atlassian.net/browse/DPH-236)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-2]: User Authentication & Role Management |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-2.1]: Login with Entra ID |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 3.5 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | In Progress |
+| **Linked work items** | — |
+
+
+---
+**User Story:**  
+As a customer (app-user and app-creator),  
+I want to login using my existing Datacom Azure Entra ID credentials,  
+So that I can use the Hub's core features
+
+**Acceptance Criteria:**
+
+1. **Given:** A customer clicks the `Login with Datacom` button  
+**When:** They complete Entra ID authentication with @datacom.co.nz or @datacom.com credentials  
+**Then:** They are logged in and redirected to Product Hub
+2. **Given:** A customer has logged in before from the same browser  
+**Then:** The page prompts `Login with Datacom` without re-entering credentials
+3. "Remember me" functionality persists session across browser sessions
+4. Authentication tokens (JWT) auto-refresh before expiry (1 hour token lifetime)
+5. Auto-logout after 1 hour of inactivity
+6. Logout button clears session and redirects to landing page
+7. **Given:** First-time login  
+**Then:** User profile is created from Entra ID data and user is redirected to Role Selection (US 2.3)
+8. Failed authentication displays error notification with retry option
+
+---
+
+**Mock-up/Wireframe:** To be provided by UX designer
+
+---
+
+reference images
+
+1. 
+2. 
+3. This and 2FA process → leads to designated page (TBC).
+
+
+### Subtasks
+
+#### [DPH-374] [2.1-UX] Tasks
+
+**Jira:** [DPH-374](https://datacomgroup.atlassian.net/browse/DPH-374) · **Status:** In Progress
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.1-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | In Progress |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- [UX] Design login page with `Login with Datacom` button
+- Design Profile Button Logout Flow
+
+#### [DPH-361] [2.1-FE] Tasks
+
+**Jira:** [DPH-361](https://datacomgroup.atlassian.net/browse/DPH-361) · **Status:** In Progress
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.1-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | In Progress |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+## **Front‑End Task Breakdown**
+
+### **1. Login Entry Page (Pre‑Auth Screen)**
+
+- Create initial **Login / Security page**
+- Display:
+
+        - Datacom branding
+        - App title and short description
+        - Primary CTA: **“Sign in to continue”**
+        - Supporting text indicating secure Datacom login
+        - Support contact text
+- Page shown only when user is unauthenticated
+- Redirect authenticated users away from login page
+
+---
+
+### **2. Authentication Loading / Checking Screen**
+
+- Create a dedicated **Auth Loading screen**
+- Display:
+
+        - Loading indicator
+        - “Checking authentication status” message
+- Shown during:
+
+        - Silent SSO login
+        - Entra ID redirect callback handling
+        - Token refresh
+- Controlled via shared auth loading state
+
+---
+
+### **3. Reference Existing Project for Authentication Implementation**
+
+- Identify an existing Datacom project with a proven Azure Entra ID login flow
+- Use **Cursor** to:
+
+        - Inspect authentication setup and flow
+        - Review MSAL configuration and redirect handling
+        - Understand token storage and refresh logic
+- Adapt the validated pattern to this project
+- Ensure implementation aligns with Datacom security standards
+
+---
+
+### **4. Azure Entra ID Authentication Setup**
+
+- Configure Azure Entra ID client using provided credentials:
+
+        - Client ID
+        - Tenant ID
+        - Redirect URI(s)
+- Implement login using supported library (e.g. MSAL)
+- Restrict authentication to:
+
+        - `@datacom.co.nz`
+        - `@datacom.com`
+- Hand off authentication UI to Entra ID (account selection, password, 2FA)
+
+---
+
+### **5. Global Auth State (Jotai)**
+
+- Create Jotai atoms for shared authentication state:
+
+        - Auth status (`unauthenticated`, `loading`, `authenticated`)
+        - Auth tokens and expiry metadata
+        - Basic user identity (from Entra ID claims)
+- Make atoms accessible application‑wide
+- Reset auth atoms on logout or auth failure
+
+---
+
+### **6. Successful Login Handling**
+
+- On successful Entra ID authentication:
+
+        - Extract JWT and user claims
+        - Populate auth atoms
+        - Transition from Loading screen
+        - Redirect user to Product Hub landing page
+
+---
+
+### **7. Silent Login / Existing Session Handling**
+
+- On application load:
+
+        - Attempt silent Entra ID authentication
+- If an existing session is found:
+
+        - Authenticate user without re‑entering credentials
+        - Skip login page
+- Display Auth Loading screen while resolving session state
+
+---
+
+### **8. “Remember Me” Session Persistence**
+
+- Persist minimal authentication data across browser sessions using `localStorage`
+- On app startup:
+
+        - Hydrate auth atoms from persisted data
+        - Validate token freshness
+- Ensure persisted data is cleared on logout
+
+> Note: “Remember me” is implicit (no checkbox unless UX specifies otherwise)
+
+---
+
+### **9. Token Auto‑Refresh (1‑Hour Lifetime)**
+
+- Track token expiry time in auth state
+- Automatically refresh tokens before expiry using silent refresh
+- Update auth atoms with refreshed tokens
+- On refresh failure:
+
+        - Clear auth state
+        - Redirect to Login page
+
+---
+
+### **10. Inactivity Auto‑Logout (1 Hour)**
+
+- Track last user activity timestamp in shared state
+- Listen for user activity events:
+
+        - Mouse movement
+        - Keyboard input
+        - Route changes
+- Reset inactivity timer on interaction
+- Automatically log user out after 1 hour of inactivity
+- Redirect user to Login page
+
+---
+
+### **11. Logout Functionality**
+
+- Add Logout button (location per UX)
+- On logout:
+
+        - Clear auth atoms
+        - Clear persisted auth data
+        - Redirect to Login / Landing page
+- Ensure clean session reset
+
+---
+
+### **12. Route Protection (Auth Guards)**
+
+- Protect authenticated routes using auth state
+- Redirect unauthenticated users to Login page
+- Use Loading screen while auth status is being resolved
+- Prevent UI flicker during auth transitions
+
+---
+
+### **13. First‑Time Login Detection (Mocked Profile Logic)**
+
+- Create shared state for user profile:
+
+        - Profile exists / not exists
+        - Role selection completed or not
+- After login:
+
+        - Check mocked profile storage
+- If first‑time login:
+
+        - Create user profile locally using Entra ID data
+        - Redirect user to **Role Selection (US 2.3)**
+- If returning user:
+
+        - Redirect to Product Hub
+
+---
+
+### **14. Mocked User Profile Storage (Temporary)**
+
+- Store user profile data locally (mock DB):
+
+        - LocalStorage or in‑memory
+- Populate profile state from mock data
+- Ensure implementation can later be replaced with backend APIs
+
+---
+
+### **15. Failed Authentication Handling**
+
+- Handle authentication failures:
+
+        - Invalid credentials
+        - Unauthorized email domain
+        - Cancelled login
+- Display error notification with retry option
+- Ensure user remains unauthenticated on failure
+
+---
+
+### **16. 2FA / Extra Verification Support**
+
+- Allow Azure Entra ID to manage 2FA and extra verification
+- Handle redirect back into app post‑verification
+- Resume login flow after successful verification
+- Redirect to designated post‑auth page (TBC)
+
+---
+
+### **17. UX Alignment & Polish**
+
+- Align Login and Loading screens with provided reference images
+- Apply final UX wireframes once provided
+- Add loading, error, and transition states
+- Ensure accessibility (keyboard navigation, focus handling)
+
+---
+
+### **18. Replace Mock Profile with Backend Integration (Final Task)**
+
+- Remove mocked profile storage
+- Integrate backend endpoints for:
+
+        - User profile lookup
+        - User profile creation
+- Populate profile state from backend responses
+- Validate:
+
+        - First‑time login → Role Selection
+        - Returning user → Product Hub
+- Final regression testing
+
+---
+
+## **Notes / Assumptions**
+
+- Azure Entra ID authentication is implemented using a **validated pattern from an existing Datacom project**
+- **Cursor may be used to inspect and adapt** authentication logic from the reference project
+- Jotai is the single source of truth for auth and user state
+- LocalStorage is used only for persistence, not as live state
+- Inactivity logout is enforced client‑side
+- User profile persistence is mocked initially and replaced later
+
+#### [DPH-568] [2.1-BE] Tasks
+
+**Jira:** [DPH-568](https://datacomgroup.atlassian.net/browse/DPH-568) · **Status:** In Progress
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | In Progress |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. [BE] Static web app URL creation on Azure Entra ID
+2. [DEV BE] Configure Azure Entra ID Application
+3. [DEV BE] Validate Entra ID Token & Allowed Domains
+4. [DEV BE] User Profile Creation on First Login
+5. [DEV BE] Issue & Refresh Hub JWT Tokens
+6. [DEV BE] Session Management & Inactivity Handling
+7. [DEV BE] Logout Endpoint
+8. [DEV BE] Auth Status & First‑Time Login Endpoint
+
+---
+---
+
+### **2. Authentication Loading / Checking Screen**
+
+- Create a dedicated **Auth Loading screen**
+- Display:
+
+        - Loading indicator
+        - “Checking authentication status” message
+- Shown during:
+
+        - Silent SSO login
+        - Entra ID redirect callback handling
+        - Token refresh
+- Controlled via shared auth loading state
+
+---
+
+### **3. Reference Existing Project for Authentication Implementation**
+
+- Identify an existing Datacom project with a proven Azure Entra ID login flow
+- Use **Cursor** to:
+
+        - Inspect authentication setup and flow
+        - Review MSAL configuration and redirect handling
+        - Understand token storage and refresh logic
+- Adapt the validated pattern to this project
+- Ensure implementation aligns with Datacom security standards
+
+---
+
+### **4. Azure Entra ID Authentication Setup**
+
+- Configure Azure Entra ID client using provided credentials:
+
+        - Client ID
+        - Tenant ID
+        - Redirect URI(s)
+- Implement login using supported library (e.g. MSAL)
+- Restrict authentication to:
+
+        - `@datacom.co.nz`
+        - `@datacom.com`
+- Hand off authentication UI to Entra ID (account selection, password, 2FA)
+
+---
+
+### **5. Global Auth State (Jotai)**
+
+- Create Jotai atoms for shared authentication state:
+
+        - Auth status (`unauthenticated`, `loading`, `authenticated`)
+        - Auth tokens and expiry metadata
+        - Basic user identity (from Entra ID claims)
+- Make atoms accessible application‑wide
+- Reset auth atoms on logout or auth failure
+
+---
+
+### **6. Successful Login Handling**
+
+- On successful Entra ID authentication:
+
+        - Extract JWT and user claims
+        - Populate auth atoms
+        - Transition from Loading screen
+        - Redirect user to Product Hub landing page
+
+---
+
+### **7. Silent Login / Existing Session Handling**
+
+- On application load:
+
+        - Attempt silent Entra ID authentication
+- If an existing session is found:
+
+        - Authenticate user without re‑entering credentials
+        - Skip login page
+- Display Auth Loading screen while resolving session state
+
+---
+
+### **8. “Remember Me” Session Persistence**
+
+- Persist minimal authentication data across browser sessions using `localStorage`
+- On app startup:
+
+        - Hydrate auth atoms from persisted data
+        - Validate token freshness
+- Ensure persisted data is cleared on logout
+
+> Note: “Remember me” is implicit (no checkbox unless UX specifies otherwise)
+
+---
+
+### **9. Token Auto‑Refresh (1‑Hour Lifetime)**
+
+- Track token expiry time in auth state
+- Automatically refresh tokens before expiry using silent refresh
+- Update auth atoms with refreshed tokens
+- On refresh failure:
+
+        - Clear auth state
+        - Redirect to Login page
+
+---
+
+### **10. Inactivity Auto‑Logout (1 Hour)**
+
+- Track last user activity timestamp in shared state
+- Listen for user activity events:
+
+        - Mouse movement
+        - Keyboard input
+        - Route changes
+- Reset inactivity timer on interaction
+- Automatically log user out after 1 hour of inactivity
+- Redirect user to Login page
+
+---
+
+### **11. Logout Functionality**
+
+- Add Logout button (location per UX)
+- On logout:
+
+        - Clear auth atoms
+        - Clear persisted auth data
+        - Redirect to Login / Landing page
+- Ensure clean session reset
+
+---
+
+### **12. Route Protection (Auth Guards)**
+
+- Protect authenticated routes using auth state
+- Redirect unauthenticated users to Login page
+- Use Loading screen while auth status is being resolved
+- Prevent UI flicker during auth transitions
+
+---
+
+### **13. First‑Time Login Detection (Mocked Profile Logic)**
+
+- Create shared state for user profile:
+
+        - Profile exists / not exists
+        - Role selection completed or not
+- After login:
+
+        - Check mocked profile storage
+- If first‑time login:
+
+        - Create user profile locally using Entra ID data
+        - Redirect user to **Role Selection (US 2.3)**
+- If returning user:
+
+        - Redirect to Product Hub
+
+---
+
+### **14. Mocked User Profile Storage (Temporary)**
+
+- Store user profile data locally (mock DB):
+
+        - LocalStorage or in‑memory
+- Populate profile state from mock data
+- Ensure implementation can later be replaced with backend APIs
+
+---
+
+### **15. Failed Authentication Handling**
+
+- Handle authentication failures:
+
+        - Invalid credentials
+        - Unauthorized email domain
+        - Cancelled login
+- Display error notification with retry option
+- Ensure user remains unauthenticated on failure
+
+---
+
+### **16. 2FA / Extra Verification Support**
+
+- Allow Azure Entra ID to manage 2FA and extra verification
+- Handle redirect back into app post‑verification
+- Resume login flow after successful verification
+- Redirect to designated post‑auth page (TBC)
+
+---
+
+### **17. UX Alignment & Polish**
+
+- Align Login and Loading screens with provided reference images
+- Apply final UX wireframes once provided
+- Add loading, error, and transition states
+- Ensure accessibility (keyboard navigation, focus handling)
+
+---
+
+### **18. Replace Mock Profile with Backend Integration (Final Task)**
+
+- Remove mocked profile storage
+- Integrate backend endpoints for:
+
+        - User profile lookup
+        - User profile creation
+- Populate profile state from backend responses
+- Validate:
+
+        - First‑time login → Role Selection
+        - Returning user → Product Hub
+- Final regression testing
+
+---
+
+## **Notes / Assumptions**
+
+- Azure Entra ID authentication is implemented using a **validated pattern from an existing Datacom project**
+- **Cursor may be used to inspect and adapt** authentication logic from the reference project
+- Jotai is the single source of truth for auth and user state
+- LocalStorage is used only for persistence, not as live state
+- Inactivity logout is enforced client‑side
+- User profile persistence is mocked initially and replaced later
+
+#### [DPH-568] [2.1-BE] Tasks
+
+**Jira:** [DPH-568](https://datacomgroup.atlassian.net/browse/DPH-568) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. [BE] Static web app URL creation on Azure Entra ID
+2. [DEV BE] Configure Azure Entra ID Application
+3. [DEV BE] Validate Entra ID Token & Allowed Domains
+4. [DEV BE] User Profile Creation on First Login
+5. [DEV BE] Issue & Refresh Hub JWT Tokens
+6. [DEV BE] Session Management & Inactivity Handling
+7. [DEV BE] Logout Endpoint
+8. [DEV BE] Auth Status & First‑Time Login Endpoint
+
+---
+---
+
+### **2. Authentication Loading / Checking Screen**
+
+- Create a dedicated **Auth Loading screen**
+- Display:
+
+        - Loading indicator
+        - “Checking authentication status” message
+- Shown during:
+
+        - Silent SSO login
+        - Entra ID redirect callback handling
+        - Token refresh
+- Controlled via shared auth loading state
+
+---
+
+### **3. Reference Existing Project for Authentication Implementation**
+
+- Identify an existing Datacom project with a proven Azure Entra ID login flow
+- Use **Cursor** to:
+
+        - Inspect authentication setup and flow
+        - Review MSAL configuration and redirect handling
+        - Understand token storage and refresh logic
+- Adapt the validated pattern to this project
+- Ensure implementation aligns with Datacom security standards
+
+---
+
+### **4. Azure Entra ID Authentication Setup**
+
+- Configure Azure Entra ID client using provided credentials:
+
+        - Client ID
+        - Tenant ID
+        - Redirect URI(s)
+- Implement login using supported library (e.g. MSAL)
+- Restrict authentication to:
+
+        - `@datacom.co.nz`
+        - `@datacom.com`
+- Hand off authentication UI to Entra ID (account selection, password, 2FA)
+
+---
+
+### **5. Global Auth State (Jotai)**
+
+- Create Jotai atoms for shared authentication state:
+
+        - Auth status (`unauthenticated`, `loading`, `authenticated`)
+        - Auth tokens and expiry metadata
+        - Basic user identity (from Entra ID claims)
+- Make atoms accessible application‑wide
+- Reset auth atoms on logout or auth failure
+
+---
+
+### **6. Successful Login Handling**
+
+- On successful Entra ID authentication:
+
+        - Extract JWT and user claims
+        - Populate auth atoms
+        - Transition from Loading screen
+        - Redirect user to Product Hub landing page
+
+---
+
+### **7. Silent Login / Existing Session Handling**
+
+- On application load:
+
+        - Attempt silent Entra ID authentication
+- If an existing session is found:
+
+        - Authenticate user without re‑entering credentials
+        - Skip login page
+- Display Auth Loading screen while resolving session state
+
+---
+
+### **8. “Remember Me” Session Persistence**
+
+- Persist minimal authentication data across browser sessions using `localStorage`
+- On app startup:
+
+        - Hydrate auth atoms from persisted data
+        - Validate token freshness
+- Ensure persisted data is cleared on logout
+
+> Note: “Remember me” is implicit (no checkbox unless UX specifies otherwise)
+
+---
+
+### **9. Token Auto‑Refresh (1‑Hour Lifetime)**
+
+- Track token expiry time in auth state
+- Automatically refresh tokens before expiry using silent refresh
+- Update auth atoms with refreshed tokens
+- On refresh failure:
+
+        - Clear auth state
+        - Redirect to Login page
+
+---
+
+### **10. Inactivity Auto‑Logout (1 Hour)**
+
+- Track last user activity timestamp in shared state
+- Listen for user activity events:
+
+        - Mouse movement
+        - Keyboard input
+        - Route changes
+- Reset inactivity timer on interaction
+- Automatically log user out after 1 hour of inactivity
+- Redirect user to Login page
+
+---
+
+### **11. Logout Functionality**
+
+- Add Logout button (location per UX)
+- On logout:
+
+        - Clear auth atoms
+        - Clear persisted auth data
+        - Redirect to Login / Landing page
+- Ensure clean session reset
+
+---
+
+### **12. Route Protection (Auth Guards)**
+
+- Protect authenticated routes using auth state
+- Redirect unauthenticated users to Login page
+- Use Loading screen while auth status is being resolved
+- Prevent UI flicker during auth transitions
+
+---
+
+### **13. First‑Time Login Detection (Mocked Profile Logic)**
+
+- Create shared state for user profile:
+
+        - Profile exists / not exists
+        - Role selection completed or not
+- After login:
+
+        - Check mocked profile storage
+- If first‑time login:
+
+        - Create user profile locally using Entra ID data
+        - Redirect user to **Role Selection (US 2.3)**
+- If returning user:
+
+        - Redirect to Product Hub
+
+---
+
+### **14. Mocked User Profile Storage (Temporary)**
+
+- Store user profile data locally (mock DB):
+
+        - LocalStorage or in‑memory
+- Populate profile state from mock data
+- Ensure implementation can later be replaced with backend APIs
+
+---
+
+### **15. Failed Authentication Handling**
+
+- Handle authentication failures:
+
+        - Invalid credentials
+        - Unauthorized email domain
+        - Cancelled login
+- Display error notification with retry option
+- Ensure user remains unauthenticated on failure
+
+---
+
+### **16. 2FA / Extra Verification Support**
+
+- Allow Azure Entra ID to manage 2FA and extra verification
+- Handle redirect back into app post‑verification
+- Resume login flow after successful verification
+- Redirect to designated post‑auth page (TBC)
+
+---
+
+### **17. UX Alignment & Polish**
+
+- Align Login and Loading screens with provided reference images
+- Apply final UX wireframes once provided
+- Add loading, error, and transition states
+- Ensure accessibility (keyboard navigation, focus handling)
+
+---
+
+### **18. Replace Mock Profile with Backend Integration (Final Task)**
+
+- Remove mocked profile storage
+- Integrate backend endpoints for:
+
+        - User profile lookup
+        - User profile creation
+- Populate profile state from backend responses
+- Validate:
+
+        - First‑time login → Role Selection
+        - Returning user → Product Hub
+- Final regression testing
+
+---
+
+## **Notes / Assumptions**
+
+- Azure Entra ID authentication is implemented using a **validated pattern from an existing Datacom project**
+- **Cursor may be used to inspect and adapt** authentication logic from the reference project
+- Jotai is the single source of truth for auth and user state
+- LocalStorage is used only for persistence, not as live state
+- Inactivity logout is enforced client‑side
+- User profile persistence is mocked initially and replaced later
+
+#### [DPH-568] [2.1-BE] Tasks
+
+**Jira:** [DPH-568](https://datacomgroup.atlassian.net/browse/DPH-568) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. [BE] Static web app URL creation on Azure Entra ID
+2. [DEV BE] Configure Azure Entra ID Application
+3. [DEV BE] Validate Entra ID Token & Allowed Domains
+4. [DEV BE] User Profile Creation on First Login
+5. [DEV BE] Issue & Refresh Hub JWT Tokens
+6. [DEV BE] Session Management & Inactivity Handling
+7. [DEV BE] Logout Endpoint
+8. [DEV BE] Auth Status & First‑Time Login Endpoint
+
+---
+---
+
+### **2. Authentication Loading / Checking Screen**
+
+- Create a dedicated **Auth Loading screen**
+- Display:
+
+        - Loading indicator
+        - “Checking authentication status” message
+- Shown during:
+
+        - Silent SSO login
+        - Entra ID redirect callback handling
+        - Token refresh
+- Controlled via shared auth loading state
+
+---
+
+### **3. Reference Existing Project for Authentication Implementation**
+
+- Identify an existing Datacom project with a proven Azure Entra ID login flow
+- Use **Cursor** to:
+
+        - Inspect authentication setup and flow
+        - Review MSAL configuration and redirect handling
+        - Understand token storage and refresh logic
+- Adapt the validated pattern to this project
+- Ensure implementation aligns with Datacom security standards
+
+---
+
+### **4. Azure Entra ID Authentication Setup**
+
+- Configure Azure Entra ID client using provided credentials:
+
+        - Client ID
+        - Tenant ID
+        - Redirect URI(s)
+- Implement login using supported library (e.g. MSAL)
+- Restrict authentication to:
+
+        - `@datacom.co.nz`
+        - `@datacom.com`
+- Hand off authentication UI to Entra ID (account selection, password, 2FA)
+
+---
+
+### **5. Global Auth State (Jotai)**
+
+- Create Jotai atoms for shared authentication state:
+
+        - Auth status (`unauthenticated`, `loading`, `authenticated`)
+        - Auth tokens and expiry metadata
+        - Basic user identity (from Entra ID claims)
+- Make atoms accessible application‑wide
+- Reset auth atoms on logout or auth failure
+
+---
+
+### **6. Successful Login Handling**
+
+- On successful Entra ID authentication:
+
+        - Extract JWT and user claims
+        - Populate auth atoms
+        - Transition from Loading screen
+        - Redirect user to Product Hub landing page
+
+---
+
+### **7. Silent Login / Existing Session Handling**
+
+- On application load:
+
+        - Attempt silent Entra ID authentication
+- If an existing session is found:
+
+        - Authenticate user without re‑entering credentials
+        - Skip login page
+- Display Auth Loading screen while resolving session state
+
+---
+
+### **8. “Remember Me” Session Persistence**
+
+- Persist minimal authentication data across browser sessions using `localStorage`
+- On app startup:
+
+        - Hydrate auth atoms from persisted data
+        - Validate token freshness
+- Ensure persisted data is cleared on logout
+
+> Note: “Remember me” is implicit (no checkbox unless UX specifies otherwise)
+
+---
+
+### **9. Token Auto‑Refresh (1‑Hour Lifetime)**
+
+- Track token expiry time in auth state
+- Automatically refresh tokens before expiry using silent refresh
+- Update auth atoms with refreshed tokens
+- On refresh failure:
+
+        - Clear auth state
+        - Redirect to Login page
+
+---
+
+### **10. Inactivity Auto‑Logout (1 Hour)**
+
+- Track last user activity timestamp in shared state
+- Listen for user activity events:
+
+        - Mouse movement
+        - Keyboard input
+        - Route changes
+- Reset inactivity timer on interaction
+- Automatically log user out after 1 hour of inactivity
+- Redirect user to Login page
+
+---
+
+### **11. Logout Functionality**
+
+- Add Logout button (location per UX)
+- On logout:
+
+        - Clear auth atoms
+        - Clear persisted auth data
+        - Redirect to Login / Landing page
+- Ensure clean session reset
+
+---
+
+### **12. Route Protection (Auth Guards)**
+
+- Protect authenticated routes using auth state
+- Redirect unauthenticated users to Login page
+- Use Loading screen while auth status is being resolved
+- Prevent UI flicker during auth transitions
+
+---
+
+### **13. First‑Time Login Detection (Mocked Profile Logic)**
+
+- Create shared state for user profile:
+
+        - Profile exists / not exists
+        - Role selection completed or not
+- After login:
+
+        - Check mocked profile storage
+- If first‑time login:
+
+        - Create user profile locally using Entra ID data
+        - Redirect user to **Role Selection (US 2.3)**
+- If returning user:
+
+        - Redirect to Product Hub
+
+---
+
+### **14. Mocked User Profile Storage (Temporary)**
+
+- Store user profile data locally (mock DB):
+
+        - LocalStorage or in‑memory
+- Populate profile state from mock data
+- Ensure implementation can later be replaced with backend APIs
+
+---
+
+### **15. Failed Authentication Handling**
+
+- Handle authentication failures:
+
+        - Invalid credentials
+        - Unauthorized email domain
+        - Cancelled login
+- Display error notification with retry option
+- Ensure user remains unauthenticated on failure
+
+---
+
+### **16. 2FA / Extra Verification Support**
+
+- Allow Azure Entra ID to manage 2FA and extra verification
+- Handle redirect back into app post‑verification
+- Resume login flow after successful verification
+- Redirect to designated post‑auth page (TBC)
+
+---
+
+### **17. UX Alignment & Polish**
+
+- Align Login and Loading screens with provided reference images
+- Apply final UX wireframes once provided
+- Add loading, error, and transition states
+- Ensure accessibility (keyboard navigation, focus handling)
+
+---
+
+### **18. Replace Mock Profile with Backend Integration (Final Task)**
+
+- Remove mocked profile storage
+- Integrate backend endpoints for:
+
+        - User profile lookup
+        - User profile creation
+- Populate profile state from backend responses
+- Validate:
+
+        - First‑time login → Role Selection
+        - Returning user → Product Hub
+- Final regression testing
+
+---
+
+## **Notes / Assumptions**
+
+- Azure Entra ID authentication is implemented using a **validated pattern from an existing Datacom project**
+- **Cursor may be used to inspect and adapt** authentication logic from the reference project
+- Jotai is the single source of truth for auth and user state
+- LocalStorage is used only for persistence, not as live state
+- Inactivity logout is enforced client‑side
+- User profile persistence is mocked initially and replaced later
+
+#### [DPH-568] [2.1-BE] Tasks
+
+**Jira:** [DPH-568](https://datacomgroup.atlassian.net/browse/DPH-568) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. [BE] Static web app URL creation on Azure Entra ID
+2. [DEV BE] Configure Azure Entra ID Application
+3. [DEV BE] Validate Entra ID Token & Allowed Domains
+4. [DEV BE] User Profile Creation on First Login
+5. [DEV BE] Issue & Refresh Hub JWT Tokens
+6. [DEV BE] Session Management & Inactivity Handling
+7. [DEV BE] Logout Endpoint
+8. [DEV BE] Auth Status & First‑Time Login Endpoint
+
+---
+---
+
+### **2. Authentication Loading / Checking Screen**
+
+- Create a dedicated **Auth Loading screen**
+- Display:
+
+        - Loading indicator
+        - “Checking authentication status” message
+- Shown during:
+
+        - Silent SSO login
+        - Entra ID redirect callback handling
+        - Token refresh
+- Controlled via shared auth loading state
+
+---
+
+### **3. Reference Existing Project for Authentication Implementation**
+
+- Identify an existing Datacom project with a proven Azure Entra ID login flow
+- Use **Cursor** to:
+
+        - Inspect authentication setup and flow
+        - Review MSAL configuration and redirect handling
+        - Understand token storage and refresh logic
+- Adapt the validated pattern to this project
+- Ensure implementation aligns with Datacom security standards
+
+---
+
+### **4. Azure Entra ID Authentication Setup**
+
+- Configure Azure Entra ID client using provided credentials:
+
+        - Client ID
+        - Tenant ID
+        - Redirect URI(s)
+- Implement login using supported library (e.g. MSAL)
+- Restrict authentication to:
+
+        - `@datacom.co.nz`
+        - `@datacom.com`
+- Hand off authentication UI to Entra ID (account selection, password, 2FA)
+
+---
+
+### **5. Global Auth State (Jotai)**
+
+- Create Jotai atoms for shared authentication state:
+
+        - Auth status (`unauthenticated`, `loading`, `authenticated`)
+        - Auth tokens and expiry metadata
+        - Basic user identity (from Entra ID claims)
+- Make atoms accessible application‑wide
+- Reset auth atoms on logout or auth failure
+
+---
+
+### **6. Successful Login Handling**
+
+- On successful Entra ID authentication:
+
+        - Extract JWT and user claims
+        - Populate auth atoms
+        - Transition from Loading screen
+        - Redirect user to Product Hub landing page
+
+---
+
+### **7. Silent Login / Existing Session Handling**
+
+- On application load:
+
+        - Attempt silent Entra ID authentication
+- If an existing session is found:
+
+        - Authenticate user without re‑entering credentials
+        - Skip login page
+- Display Auth Loading screen while resolving session state
+
+---
+
+### **8. “Remember Me” Session Persistence**
+
+- Persist minimal authentication data across browser sessions using `localStorage`
+- On app startup:
+
+        - Hydrate auth atoms from persisted data
+        - Validate token freshness
+- Ensure persisted data is cleared on logout
+
+> Note: “Remember me” is implicit (no checkbox unless UX specifies otherwise)
+
+---
+
+### **9. Token Auto‑Refresh (1‑Hour Lifetime)**
+
+- Track token expiry time in auth state
+- Automatically refresh tokens before expiry using silent refresh
+- Update auth atoms with refreshed tokens
+- On refresh failure:
+
+        - Clear auth state
+        - Redirect to Login page
+
+---
+
+### **10. Inactivity Auto‑Logout (1 Hour)**
+
+- Track last user activity timestamp in shared state
+- Listen for user activity events:
+
+        - Mouse movement
+        - Keyboard input
+        - Route changes
+- Reset inactivity timer on interaction
+- Automatically log user out after 1 hour of inactivity
+- Redirect user to Login page
+
+---
+
+### **11. Logout Functionality**
+
+- Add Logout button (location per UX)
+- On logout:
+
+        - Clear auth atoms
+        - Clear persisted auth data
+        - Redirect to Login / Landing page
+- Ensure clean session reset
+
+---
+
+### **12. Route Protection (Auth Guards)**
+
+- Protect authenticated routes using auth state
+- Redirect unauthenticated users to Login page
+- Use Loading screen while auth status is being resolved
+- Prevent UI flicker during auth transitions
+
+---
+
+### **13. First‑Time Login Detection (Mocked Profile Logic)**
+
+- Create shared state for user profile:
+
+        - Profile exists / not exists
+        - Role selection completed or not
+- After login:
+
+        - Check mocked profile storage
+- If first‑time login:
+
+        - Create user profile locally using Entra ID data
+        - Redirect user to **Role Selection (US 2.3)**
+- If returning user:
+
+        - Redirect to Product Hub
+
+---
+
+### **14. Mocked User Profile Storage (Temporary)**
+
+- Store user profile data locally (mock DB):
+
+        - LocalStorage or in‑memory
+- Populate profile state from mock data
+- Ensure implementation can later be replaced with backend APIs
+
+---
+
+### **15. Failed Authentication Handling**
+
+- Handle authentication failures:
+
+        - Invalid credentials
+        - Unauthorized email domain
+        - Cancelled login
+- Display error notification with retry option
+- Ensure user remains unauthenticated on failure
+
+---
+
+### **16. 2FA / Extra Verification Support**
+
+- Allow Azure Entra ID to manage 2FA and extra verification
+- Handle redirect back into app post‑verification
+- Resume login flow after successful verification
+- Redirect to designated post‑auth page (TBC)
+
+---
+
+### **17. UX Alignment & Polish**
+
+- Align Login and Loading screens with provided reference images
+- Apply final UX wireframes once provided
+- Add loading, error, and transition states
+- Ensure accessibility (keyboard navigation, focus handling)
+
+---
+
+### **18. Replace Mock Profile with Backend Integration (Final Task)**
+
+- Remove mocked profile storage
+- Integrate backend endpoints for:
+
+        - User profile lookup
+        - User profile creation
+- Populate profile state from backend responses
+- Validate:
+
+        - First‑time login → Role Selection
+        - Returning user → Product Hub
+- Final regression testing
+
+---
+
+## **Notes / Assumptions**
+
+- Azure Entra ID authentication is implemented using a **validated pattern from an existing Datacom project**
+- **Cursor may be used to inspect and adapt** authentication logic from the reference project
+- Jotai is the single source of truth for auth and user state
+- LocalStorage is used only for persistence, not as live state
+- Inactivity logout is enforced client‑side
+- User profile persistence is mocked initially and replaced later
+
+#### [DPH-568] [2.1-BE] Tasks
+
+**Jira:** [DPH-568](https://datacomgroup.atlassian.net/browse/DPH-568) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. [BE] Static web app URL creation on Azure Entra ID
+2. [DEV BE] Configure Azure Entra ID Application
+3. [DEV BE] Validate Entra ID Token & Allowed Domains
+4. [DEV BE] User Profile Creation on First Login
+5. [DEV BE] Issue & Refresh Hub JWT Tokens
+6. [DEV BE] Session Management & Inactivity Handling
+7. [DEV BE] Logout Endpoint
+8. [DEV BE] Auth Status & First‑Time Login Endpoint
+
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-2.2]: User Manages Profile and Role Preferences
+
+# [US-2.2]: User Manages Profile and Role Preferences
+
+**Jira:** [DPH-238](https://datacomgroup.atlassian.net/browse/DPH-238)
+
+
+### Epic details
+
+**Jira:** [DPH-236](https://datacomgroup.atlassian.net/browse/DPH-236)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-2]: User Authentication & Role Management |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | In Progress |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-2.2]: User Manages Profile and Role Preferences |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 7 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | In Progress |
+| **Linked work items** | — |
+
+
+---
+As a **user**,  
+I want to set up and manage my profile and role,  
+So that I receive relevant app recommendations and control my notification preferences.
+
+**Acceptance Criteria:**
+
+1. Clicking the profile photo in the header navigates to the Profile Settings page
+2. Display name and profile photo pulled from Entra ID are shown as read-only
+3. On first-time login, a role selection modal appears with the user's Entra ID role pre-selected:
+
+        1. Confirming redirects the user to the Catalogue page with a "Welcome to Product Hub" notification
+        2. since there are heaps of roles in datacom entra ID, the system must filter these down to typical roles (ex. Business related, Software Developer, etc)
+4. On the Profile Settings dropdown, the user can update their role via a dropdown and save:
+
+        1. Saving updates the role in the database and displays a success notification
+        2. The updated role is used for app recommendations across the Hub
+5. Notification preference toggles are available for:
+
+        1. Admin approval updates
+        2. Security test approval updates
+        3. Development suggestions
+6. The Profile Settings page is responsive on mobile, tablet, and desktop
+7. Role editable inside the My Apps as a filter category with a [save]
+
+
+### Subtasks
+
+#### [DPH-540] [2.2-UX] Tasks
+
+**Jira:** [DPH-540](https://datacomgroup.atlassian.net/browse/DPH-540) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.2-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Medium (P3) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-541] [2.2-FE] Tasks
+
+**Jira:** [DPH-541](https://datacomgroup.atlassian.net/browse/DPH-541) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.2-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Medium (P3) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+# Front‑End Tasks – US 2.2: Profile & Role Management
+
+## User Story
+
+As a user,
+ I want to set up and manage my profile and role,
+ So that I receive relevant app recommendations and control my notification preferences.
+
+---
+
+## Front‑End Task Breakdown
+
+### 1. Profile Access Entry Point
+
+- Add click handler to **profile photo in the header**
+- On click:
+
+        - Open **Profile Settings page** (or panel, per UX)
+- Ensure navigation works from all authenticated pages
+
+---
+
+### 2. Profile Settings Page Layout
+
+- Create **Profile Settings page** structure
+- Sections include:
+
+        - User information
+        - Role management
+        - Notification preferences
+- Ensure page supports scrolling and clean section separation
+
+---
+
+### 3. Display User Information (Read‑Only)
+
+- Display the following fields (read‑only):
+
+        - Display name (from Entra ID)
+        - Profile photo (from Entra ID)
+- Pull data from existing auth/user state
+- Handle missing profile photo gracefully (fallback avatar)
+
+---
+
+### 4. First‑Time Login Role Selection Modal
+
+- On first‑time login:
+
+        - Display **Role Selection modal**
+- Modal behaviour:
+
+        - Role dropdown with Entra ID role pre‑selected
+        - Confirm button enabled only when role is selected
+- On confirm:
+
+        - Save role to mocked profile state
+        - Redirect user to **Catalogue page**
+        - Display “Welcome to Product Hub” notification
+
+---
+
+### 5. Global Role State (Jotai)
+
+- Create shared Jotai atom for:
+
+        - User role
+        - Role update status
+- Ensure role state is accessible across:
+
+        - Catalogue
+        - Recommendations
+        - My Apps
+- Allow role to be updated and persisted in mock storage
+
+---
+
+### 6. Update Role from Profile Settings
+
+- Add role dropdown to **Profile Settings**
+- Allow user to change role
+- Add **Save** button
+- On save:
+
+        - Update role in mocked profile storage
+        - Update role atom
+        - Display success notification
+
+---
+
+### 7. Role Usage for App Recommendations (Mocked)
+
+- Use role state to:
+
+        - Influence app recommendations (mock logic)
+        - Filter or rank apps based on role
+- Ensure role changes immediately affect recommendation UI
+
+---
+
+### 8. Notification Preferences UI
+
+- Add notification preference toggles for:
+
+        - Admin approval updates
+        - Security test approval updates
+        - Development suggestions
+- Display current preferences from mocked profile data
+- Allow toggles to be changed locally
+
+---
+
+### 9. Save Notification Preferences (Mocked)
+
+- Add Save action for notification preferences
+- On save:
+
+        - Update mocked profile storage
+        - Display success notification
+- Ensure preferences persist across page reloads (mocked)
+
+---
+
+### 10. Role Editable in My Apps (Filter Category)
+
+- Add role dropdown to **My Apps** as a filter category
+- Allow role selection and update
+- Include explicit **[Save]** action
+- Sync role updates with global role state
+
+---
+
+### 11. Responsive Behaviour
+
+- Ensure Profile Settings page is responsive:
+
+        - Mobile
+        - Tablet
+        - Desktop
+- Verify:
+
+        - Dropdowns usable on touch
+        - Toggles accessible on small screens
+        - Modal layouts scale correctly
+
+---
+
+### 12. Accessibility & UX
+
+- Ensure:
+
+        - Keyboard navigation for dropdowns and toggles
+        - ARIA labels for form controls
+        - Clear focus states
+- Provide inline validation and disabled states where applicable
+
+---
+
+### 13. Mocked Profile Persistence (Temporary)
+
+- Store profile data locally (mock DB):
+
+        - Role
+        - Notification preferences
+- Populate profile atoms from mock data on app load
+- Ensure structure aligns with expected backend schema
+
+---
+
+### 14. UI Testing with Mock Data
+
+- Verify:
+
+        - First‑time login role modal appears correctly
+        - Role updates persist and reflect across app
+        - Notifications show on successful save
+- Test role updates from:
+
+        - Profile Settings
+        - My Apps filter
+
+---
+
+### 15. Replace Mock Profile with Backend Integration (Final Task)
+
+- Remove mocked profile storage
+- Integrate backend endpoints for:
+
+        - Fetching user profile
+        - Updating user role
+        - Updating notification preferences
+- Update profile and role atoms from backend responses
+- Validate:
+
+        - First‑time login → Role Selection → Catalogue
+        - Role updates reflected across recommendations and filters
+- Final regression testing
+
+---
+
+## Notes / Assumptions
+
+- Entra ID provides display name, profile photo, and initial role
+- Jotai is the source of truth for profile, role, and preferences
+- Profile and preference data are mocked until backend is ready
+- Role impacts recommendations via mocked logic initially
+- UX wireframes will be applied once provided
+
+#### [DPH-542] [2.2-BE] User profile, role and notification preferences — API and persistence
+
+**Jira:** [DPH-542](https://datacomgroup.atlassian.net/browse/DPH-542) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.2-BE] User profile, role and notification preferences — API and persistence |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Medium (P3) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-2.2.1 — Current user profile (Entra read-only)
+
+**Description**
+
+1. Expose API for current user profile (e.g. GET /api/v1/users/me), auth required.
+
+1. Return display name and profile photo URL from Entra ID (or resolve via token/Graph and return).
+
+1. Response fields read-only; align with header display name and photo.
+
+---
+
+### BE-2.2.2 — First-time login and role confirmation
+
+**Description**
+
+1. Persist “has completed first-time role selection” (e.g. hasCompletedOnboarding or equivalent on user store).
+
+1. Provide way for frontend to set this when user confirms role (or combine with role save in BE-2.2.3).
+
+1. Optionally expose “is first-time login” so frontend can show role selection modal.
+
+---
+
+### BE-2.2.3 — Role save and update
+
+**Description**
+
+1. Expose API to update current user’s role (e.g. PATCH /api/v1/users/me with role in body), auth required.
+
+1. Validate role against allowed enum and persist (user profile/preferences or user_roles).
+
+1. Return 200 and updated payload for success toast; stored role used by recommendations/filters.
+
+---
+
+### BE-2.2.4 — Notification preferences read/write
+
+**Description**
+
+1. Support three notification toggles in user model: admin approval updates, security test approval updates, development suggestions (boolean or enum).
+
+1. Expose GET current preferences and PATCH to update (e.g. under users/me or /users/me/notification-preferences).
+
+1. Persist for use by notification/push logic later.
+
+---
+
+### BE-2.2.5 — User profile and preferences data model
+
+**Description**
+
+1. Design or extend user store (table or Cosmos container) for role, hasCompletedOnboarding, notification preferences, optional Entra cache.
+
+1. Use userId (e.g. Entra sub/oid) as unique key; align with existing auth.
+
+1. Ensure GET/PATCH users/me and recommendation/filter logic use same source of truth.
+
+---
+
+### BE-2.2.6 — Contract and OpenAPI
+
+**Description**
+
+1. users/me (and any separate preferences path) follow project response and error format.
+
+1. Document GET/PATCH /users/me request/response (profile, role, optional notification preferences) in OpenAPI; mark auth required.
+
+#### [DPH-573] [UX] Welcome Modal: First-time role selection, filtered Entra roles, confirm to catalogue + welcome notification
+
+**Jira:** [DPH-573](https://datacomgroup.atlassian.net/browse/DPH-573) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Welcome Modal: First-time role selection, filtered Entra roles, confirm to catalogue + welcome notification |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-574] [UX] Profile Settings Page + Header Dropdown + My Apps Role Filter
+
+**Jira:** [DPH-574](https://datacomgroup.atlassian.net/browse/DPH-574) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Profile Settings Page + Header Dropdown + My Apps Role Filter |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-575] [UX] Feedback from devs
+
+**Jira:** [DPH-575](https://datacomgroup.atlassian.net/browse/DPH-575) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Feedback from devs |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-576] [UX] Final Design + Dev Handover
+
+**Jira:** [DPH-576](https://datacomgroup.atlassian.net/browse/DPH-576) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Final Design + Dev Handover |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+
+## Front‑End Task Breakdown
+
+### 1. Profile Access Entry Point
+
+- Add click handler to **profile photo in the header**
+- On click:
+
+        - Open **Profile Settings page** (or panel, per UX)
+- Ensure navigation works from all authenticated pages
+
+---
+
+### 2. Profile Settings Page Layout
+
+- Create **Profile Settings page** structure
+- Sections include:
+
+        - User information
+        - Role management
+        - Notification preferences
+- Ensure page supports scrolling and clean section separation
+
+---
+
+### 3. Display User Information (Read‑Only)
+
+- Display the following fields (read‑only):
+
+        - Display name (from Entra ID)
+        - Profile photo (from Entra ID)
+- Pull data from existing auth/user state
+- Handle missing profile photo gracefully (fallback avatar)
+
+---
+
+### 4. First‑Time Login Role Selection Modal
+
+- On first‑time login:
+
+        - Display **Role Selection modal**
+- Modal behaviour:
+
+        - Role dropdown with Entra ID role pre‑selected
+        - Confirm button enabled only when role is selected
+- On confirm:
+
+        - Save role to mocked profile state
+        - Redirect user to **Catalogue page**
+        - Display “Welcome to Product Hub” notification
+
+---
+
+### 5. Global Role State (Jotai)
+
+- Create shared Jotai atom for:
+
+        - User role
+        - Role update status
+- Ensure role state is accessible across:
+
+        - Catalogue
+        - Recommendations
+        - My Apps
+- Allow role to be updated and persisted in mock storage
+
+---
+
+### 6. Update Role from Profile Settings
+
+- Add role dropdown to **Profile Settings**
+- Allow user to change role
+- Add **Save** button
+- On save:
+
+        - Update role in mocked profile storage
+        - Update role atom
+        - Display success notification
+
+---
+
+### 7. Role Usage for App Recommendations (Mocked)
+
+- Use role state to:
+
+        - Influence app recommendations (mock logic)
+        - Filter or rank apps based on role
+- Ensure role changes immediately affect recommendation UI
+
+---
+
+### 8. Notification Preferences UI
+
+- Add notification preference toggles for:
+
+        - Admin approval updates
+        - Security test approval updates
+        - Development suggestions
+- Display current preferences from mocked profile data
+- Allow toggles to be changed locally
+
+---
+
+### 9. Save Notification Preferences (Mocked)
+
+- Add Save action for notification preferences
+- On save:
+
+        - Update mocked profile storage
+        - Display success notification
+- Ensure preferences persist across page reloads (mocked)
+
+---
+
+### 10. Role Editable in My Apps (Filter Category)
+
+- Add role dropdown to **My Apps** as a filter category
+- Allow role selection and update
+- Include explicit **[Save]** action
+- Sync role updates with global role state
+
+---
+
+### 11. Responsive Behaviour
+
+- Ensure Profile Settings page is responsive:
+
+        - Mobile
+        - Tablet
+        - Desktop
+- Verify:
+
+        - Dropdowns usable on touch
+        - Toggles accessible on small screens
+        - Modal layouts scale correctly
+
+---
+
+### 12. Accessibility & UX
+
+- Ensure:
+
+        - Keyboard navigation for dropdowns and toggles
+        - ARIA labels for form controls
+        - Clear focus states
+- Provide inline validation and disabled states where applicable
+
+---
+
+### 13. Mocked Profile Persistence (Temporary)
+
+- Store profile data locally (mock DB):
+
+        - Role
+        - Notification preferences
+- Populate profile atoms from mock data on app load
+- Ensure structure aligns with expected backend schema
+
+---
+
+### 14. UI Testing with Mock Data
+
+- Verify:
+
+        - First‑time login role modal appears correctly
+        - Role updates persist and reflect across app
+        - Notifications show on successful save
+- Test role updates from:
+
+        - Profile Settings
+        - My Apps filter
+
+---
+
+### 15. Replace Mock Profile with Backend Integration (Final Task)
+
+- Remove mocked profile storage
+- Integrate backend endpoints for:
+
+        - Fetching user profile
+        - Updating user role
+        - Updating notification preferences
+- Update profile and role atoms from backend responses
+- Validate:
+
+        - First‑time login → Role Selection → Catalogue
+        - Role updates reflected across recommendations and filters
+- Final regression testing
+
+---
+
+## Notes / Assumptions
+
+- Entra ID provides display name, profile photo, and initial role
+- Jotai is the source of truth for profile, role, and preferences
+- Profile and preference data are mocked until backend is ready
+- Role impacts recommendations via mocked logic initially
+- UX wireframes will be applied once provided
+
+#### [DPH-542] [2.2-BE] User profile, role and notification preferences — API and persistence
+
+**Jira:** [DPH-542](https://datacomgroup.atlassian.net/browse/DPH-542) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.2-BE] User profile, role and notification preferences — API and persistence |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Medium (P3) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-2.2.1 — Current user profile (Entra read-only)
+
+**Description**
+
+1. Expose API for current user profile (e.g. GET /api/v1/users/me), auth required.
+
+1. Return display name and profile photo URL from Entra ID (or resolve via token/Graph and return).
+
+1. Response fields read-only; align with header display name and photo.
+
+---
+
+### BE-2.2.2 — First-time login and role confirmation
+
+**Description**
+
+1. Persist “has completed first-time role selection” (e.g. hasCompletedOnboarding or equivalent on user store).
+
+1. Provide way for frontend to set this when user confirms role (or combine with role save in BE-2.2.3).
+
+1. Optionally expose “is first-time login” so frontend can show role selection modal.
+
+---
+
+### BE-2.2.3 — Role save and update
+
+**Description**
+
+1. Expose API to update current user’s role (e.g. PATCH /api/v1/users/me with role in body), auth required.
+
+1. Validate role against allowed enum and persist (user profile/preferences or user_roles).
+
+1. Return 200 and updated payload for success toast; stored role used by recommendations/filters.
+
+---
+
+### BE-2.2.4 — Notification preferences read/write
+
+**Description**
+
+1. Support three notification toggles in user model: admin approval updates, security test approval updates, development suggestions (boolean or enum).
+
+1. Expose GET current preferences and PATCH to update (e.g. under users/me or /users/me/notification-preferences).
+
+1. Persist for use by notification/push logic later.
+
+---
+
+### BE-2.2.5 — User profile and preferences data model
+
+**Description**
+
+1. Design or extend user store (table or Cosmos container) for role, hasCompletedOnboarding, notification preferences, optional Entra cache.
+
+1. Use userId (e.g. Entra sub/oid) as unique key; align with existing auth.
+
+1. Ensure GET/PATCH users/me and recommendation/filter logic use same source of truth.
+
+---
+
+### BE-2.2.6 — Contract and OpenAPI
+
+**Description**
+
+1. users/me (and any separate preferences path) follow project response and error format.
+
+1. Document GET/PATCH /users/me request/response (profile, role, optional notification preferences) in OpenAPI; mark auth required.
+
+#### [DPH-573] [UX] Welcome Modal: First-time role selection, filtered Entra roles, confirm to catalogue + welcome notification
+
+**Jira:** [DPH-573](https://datacomgroup.atlassian.net/browse/DPH-573) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Welcome Modal: First-time role selection, filtered Entra roles, confirm to catalogue + welcome notification |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-574] [UX] Profile Settings Page + Header Dropdown + My Apps Role Filter
+
+**Jira:** [DPH-574](https://datacomgroup.atlassian.net/browse/DPH-574) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Profile Settings Page + Header Dropdown + My Apps Role Filter |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-575] [UX] Feedback from devs
+
+**Jira:** [DPH-575](https://datacomgroup.atlassian.net/browse/DPH-575) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Feedback from devs |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-576] [UX] Final Design + Dev Handover
+
+**Jira:** [DPH-576](https://datacomgroup.atlassian.net/browse/DPH-576) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Final Design + Dev Handover |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+
+## Front‑End Task Breakdown
+
+### 1. Profile Access Entry Point
+
+- Add click handler to **profile photo in the header**
+- On click:
+
+        - Open **Profile Settings page** (or panel, per UX)
+- Ensure navigation works from all authenticated pages
+
+---
+
+### 2. Profile Settings Page Layout
+
+- Create **Profile Settings page** structure
+- Sections include:
+
+        - User information
+        - Role management
+        - Notification preferences
+- Ensure page supports scrolling and clean section separation
+
+---
+
+### 3. Display User Information (Read‑Only)
+
+- Display the following fields (read‑only):
+
+        - Display name (from Entra ID)
+        - Profile photo (from Entra ID)
+- Pull data from existing auth/user state
+- Handle missing profile photo gracefully (fallback avatar)
+
+---
+
+### 4. First‑Time Login Role Selection Modal
+
+- On first‑time login:
+
+        - Display **Role Selection modal**
+- Modal behaviour:
+
+        - Role dropdown with Entra ID role pre‑selected
+        - Confirm button enabled only when role is selected
+- On confirm:
+
+        - Save role to mocked profile state
+        - Redirect user to **Catalogue page**
+        - Display “Welcome to Product Hub” notification
+
+---
+
+### 5. Global Role State (Jotai)
+
+- Create shared Jotai atom for:
+
+        - User role
+        - Role update status
+- Ensure role state is accessible across:
+
+        - Catalogue
+        - Recommendations
+        - My Apps
+- Allow role to be updated and persisted in mock storage
+
+---
+
+### 6. Update Role from Profile Settings
+
+- Add role dropdown to **Profile Settings**
+- Allow user to change role
+- Add **Save** button
+- On save:
+
+        - Update role in mocked profile storage
+        - Update role atom
+        - Display success notification
+
+---
+
+### 7. Role Usage for App Recommendations (Mocked)
+
+- Use role state to:
+
+        - Influence app recommendations (mock logic)
+        - Filter or rank apps based on role
+- Ensure role changes immediately affect recommendation UI
+
+---
+
+### 8. Notification Preferences UI
+
+- Add notification preference toggles for:
+
+        - Admin approval updates
+        - Security test approval updates
+        - Development suggestions
+- Display current preferences from mocked profile data
+- Allow toggles to be changed locally
+
+---
+
+### 9. Save Notification Preferences (Mocked)
+
+- Add Save action for notification preferences
+- On save:
+
+        - Update mocked profile storage
+        - Display success notification
+- Ensure preferences persist across page reloads (mocked)
+
+---
+
+### 10. Role Editable in My Apps (Filter Category)
+
+- Add role dropdown to **My Apps** as a filter category
+- Allow role selection and update
+- Include explicit **[Save]** action
+- Sync role updates with global role state
+
+---
+
+### 11. Responsive Behaviour
+
+- Ensure Profile Settings page is responsive:
+
+        - Mobile
+        - Tablet
+        - Desktop
+- Verify:
+
+        - Dropdowns usable on touch
+        - Toggles accessible on small screens
+        - Modal layouts scale correctly
+
+---
+
+### 12. Accessibility & UX
+
+- Ensure:
+
+        - Keyboard navigation for dropdowns and toggles
+        - ARIA labels for form controls
+        - Clear focus states
+- Provide inline validation and disabled states where applicable
+
+---
+
+### 13. Mocked Profile Persistence (Temporary)
+
+- Store profile data locally (mock DB):
+
+        - Role
+        - Notification preferences
+- Populate profile atoms from mock data on app load
+- Ensure structure aligns with expected backend schema
+
+---
+
+### 14. UI Testing with Mock Data
+
+- Verify:
+
+        - First‑time login role modal appears correctly
+        - Role updates persist and reflect across app
+        - Notifications show on successful save
+- Test role updates from:
+
+        - Profile Settings
+        - My Apps filter
+
+---
+
+### 15. Replace Mock Profile with Backend Integration (Final Task)
+
+- Remove mocked profile storage
+- Integrate backend endpoints for:
+
+        - Fetching user profile
+        - Updating user role
+        - Updating notification preferences
+- Update profile and role atoms from backend responses
+- Validate:
+
+        - First‑time login → Role Selection → Catalogue
+        - Role updates reflected across recommendations and filters
+- Final regression testing
+
+---
+
+## Notes / Assumptions
+
+- Entra ID provides display name, profile photo, and initial role
+- Jotai is the source of truth for profile, role, and preferences
+- Profile and preference data are mocked until backend is ready
+- Role impacts recommendations via mocked logic initially
+- UX wireframes will be applied once provided
+
+#### [DPH-542] [2.2-BE] User profile, role and notification preferences — API and persistence
+
+**Jira:** [DPH-542](https://datacomgroup.atlassian.net/browse/DPH-542) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.2-BE] User profile, role and notification preferences — API and persistence |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Medium (P3) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-2.2.1 — Current user profile (Entra read-only)
+
+**Description**
+
+1. Expose API for current user profile (e.g. GET /api/v1/users/me), auth required.
+
+1. Return display name and profile photo URL from Entra ID (or resolve via token/Graph and return).
+
+1. Response fields read-only; align with header display name and photo.
+
+---
+
+### BE-2.2.2 — First-time login and role confirmation
+
+**Description**
+
+1. Persist “has completed first-time role selection” (e.g. hasCompletedOnboarding or equivalent on user store).
+
+1. Provide way for frontend to set this when user confirms role (or combine with role save in BE-2.2.3).
+
+1. Optionally expose “is first-time login” so frontend can show role selection modal.
+
+---
+
+### BE-2.2.3 — Role save and update
+
+**Description**
+
+1. Expose API to update current user’s role (e.g. PATCH /api/v1/users/me with role in body), auth required.
+
+1. Validate role against allowed enum and persist (user profile/preferences or user_roles).
+
+1. Return 200 and updated payload for success toast; stored role used by recommendations/filters.
+
+---
+
+### BE-2.2.4 — Notification preferences read/write
+
+**Description**
+
+1. Support three notification toggles in user model: admin approval updates, security test approval updates, development suggestions (boolean or enum).
+
+1. Expose GET current preferences and PATCH to update (e.g. under users/me or /users/me/notification-preferences).
+
+1. Persist for use by notification/push logic later.
+
+---
+
+### BE-2.2.5 — User profile and preferences data model
+
+**Description**
+
+1. Design or extend user store (table or Cosmos container) for role, hasCompletedOnboarding, notification preferences, optional Entra cache.
+
+1. Use userId (e.g. Entra sub/oid) as unique key; align with existing auth.
+
+1. Ensure GET/PATCH users/me and recommendation/filter logic use same source of truth.
+
+---
+
+### BE-2.2.6 — Contract and OpenAPI
+
+**Description**
+
+1. users/me (and any separate preferences path) follow project response and error format.
+
+1. Document GET/PATCH /users/me request/response (profile, role, optional notification preferences) in OpenAPI; mark auth required.
+
+#### [DPH-573] [UX] Welcome Modal: First-time role selection, filtered Entra roles, confirm to catalogue + welcome notification
+
+**Jira:** [DPH-573](https://datacomgroup.atlassian.net/browse/DPH-573) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Welcome Modal: First-time role selection, filtered Entra roles, confirm to catalogue + welcome notification |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-574] [UX] Profile Settings Page + Header Dropdown + My Apps Role Filter
+
+**Jira:** [DPH-574](https://datacomgroup.atlassian.net/browse/DPH-574) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Profile Settings Page + Header Dropdown + My Apps Role Filter |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-575] [UX] Feedback from devs
+
+**Jira:** [DPH-575](https://datacomgroup.atlassian.net/browse/DPH-575) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Feedback from devs |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-576] [UX] Final Design + Dev Handover
+
+**Jira:** [DPH-576](https://datacomgroup.atlassian.net/browse/DPH-576) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Final Design + Dev Handover |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+
+## Front‑End Task Breakdown
+
+### 1. Profile Access Entry Point
+
+- Add click handler to **profile photo in the header**
+- On click:
+
+        - Open **Profile Settings page** (or panel, per UX)
+- Ensure navigation works from all authenticated pages
+
+---
+
+### 2. Profile Settings Page Layout
+
+- Create **Profile Settings page** structure
+- Sections include:
+
+        - User information
+        - Role management
+        - Notification preferences
+- Ensure page supports scrolling and clean section separation
+
+---
+
+### 3. Display User Information (Read‑Only)
+
+- Display the following fields (read‑only):
+
+        - Display name (from Entra ID)
+        - Profile photo (from Entra ID)
+- Pull data from existing auth/user state
+- Handle missing profile photo gracefully (fallback avatar)
+
+---
+
+### 4. First‑Time Login Role Selection Modal
+
+- On first‑time login:
+
+        - Display **Role Selection modal**
+- Modal behaviour:
+
+        - Role dropdown with Entra ID role pre‑selected
+        - Confirm button enabled only when role is selected
+- On confirm:
+
+        - Save role to mocked profile state
+        - Redirect user to **Catalogue page**
+        - Display “Welcome to Product Hub” notification
+
+---
+
+### 5. Global Role State (Jotai)
+
+- Create shared Jotai atom for:
+
+        - User role
+        - Role update status
+- Ensure role state is accessible across:
+
+        - Catalogue
+        - Recommendations
+        - My Apps
+- Allow role to be updated and persisted in mock storage
+
+---
+
+### 6. Update Role from Profile Settings
+
+- Add role dropdown to **Profile Settings**
+- Allow user to change role
+- Add **Save** button
+- On save:
+
+        - Update role in mocked profile storage
+        - Update role atom
+        - Display success notification
+
+---
+
+### 7. Role Usage for App Recommendations (Mocked)
+
+- Use role state to:
+
+        - Influence app recommendations (mock logic)
+        - Filter or rank apps based on role
+- Ensure role changes immediately affect recommendation UI
+
+---
+
+### 8. Notification Preferences UI
+
+- Add notification preference toggles for:
+
+        - Admin approval updates
+        - Security test approval updates
+        - Development suggestions
+- Display current preferences from mocked profile data
+- Allow toggles to be changed locally
+
+---
+
+### 9. Save Notification Preferences (Mocked)
+
+- Add Save action for notification preferences
+- On save:
+
+        - Update mocked profile storage
+        - Display success notification
+- Ensure preferences persist across page reloads (mocked)
+
+---
+
+### 10. Role Editable in My Apps (Filter Category)
+
+- Add role dropdown to **My Apps** as a filter category
+- Allow role selection and update
+- Include explicit **[Save]** action
+- Sync role updates with global role state
+
+---
+
+### 11. Responsive Behaviour
+
+- Ensure Profile Settings page is responsive:
+
+        - Mobile
+        - Tablet
+        - Desktop
+- Verify:
+
+        - Dropdowns usable on touch
+        - Toggles accessible on small screens
+        - Modal layouts scale correctly
+
+---
+
+### 12. Accessibility & UX
+
+- Ensure:
+
+        - Keyboard navigation for dropdowns and toggles
+        - ARIA labels for form controls
+        - Clear focus states
+- Provide inline validation and disabled states where applicable
+
+---
+
+### 13. Mocked Profile Persistence (Temporary)
+
+- Store profile data locally (mock DB):
+
+        - Role
+        - Notification preferences
+- Populate profile atoms from mock data on app load
+- Ensure structure aligns with expected backend schema
+
+---
+
+### 14. UI Testing with Mock Data
+
+- Verify:
+
+        - First‑time login role modal appears correctly
+        - Role updates persist and reflect across app
+        - Notifications show on successful save
+- Test role updates from:
+
+        - Profile Settings
+        - My Apps filter
+
+---
+
+### 15. Replace Mock Profile with Backend Integration (Final Task)
+
+- Remove mocked profile storage
+- Integrate backend endpoints for:
+
+        - Fetching user profile
+        - Updating user role
+        - Updating notification preferences
+- Update profile and role atoms from backend responses
+- Validate:
+
+        - First‑time login → Role Selection → Catalogue
+        - Role updates reflected across recommendations and filters
+- Final regression testing
+
+---
+
+## Notes / Assumptions
+
+- Entra ID provides display name, profile photo, and initial role
+- Jotai is the source of truth for profile, role, and preferences
+- Profile and preference data are mocked until backend is ready
+- Role impacts recommendations via mocked logic initially
+- UX wireframes will be applied once provided
+
+#### [DPH-542] [2.2-BE] User profile, role and notification preferences — API and persistence
+
+**Jira:** [DPH-542](https://datacomgroup.atlassian.net/browse/DPH-542) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.2-BE] User profile, role and notification preferences — API and persistence |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | 3 |
+| **Priority** | Medium (P3) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-2.2.1 — Current user profile (Entra read-only)
+
+**Description**
+
+1. Expose API for current user profile (e.g. GET /api/v1/users/me), auth required.
+
+1. Return display name and profile photo URL from Entra ID (or resolve via token/Graph and return).
+
+1. Response fields read-only; align with header display name and photo.
+
+---
+
+### BE-2.2.2 — First-time login and role confirmation
+
+**Description**
+
+1. Persist “has completed first-time role selection” (e.g. hasCompletedOnboarding or equivalent on user store).
+
+1. Provide way for frontend to set this when user confirms role (or combine with role save in BE-2.2.3).
+
+1. Optionally expose “is first-time login” so frontend can show role selection modal.
+
+---
+
+### BE-2.2.3 — Role save and update
+
+**Description**
+
+1. Expose API to update current user’s role (e.g. PATCH /api/v1/users/me with role in body), auth required.
+
+1. Validate role against allowed enum and persist (user profile/preferences or user_roles).
+
+1. Return 200 and updated payload for success toast; stored role used by recommendations/filters.
+
+---
+
+### BE-2.2.4 — Notification preferences read/write
+
+**Description**
+
+1. Support three notification toggles in user model: admin approval updates, security test approval updates, development suggestions (boolean or enum).
+
+1. Expose GET current preferences and PATCH to update (e.g. under users/me or /users/me/notification-preferences).
+
+1. Persist for use by notification/push logic later.
+
+---
+
+### BE-2.2.5 — User profile and preferences data model
+
+**Description**
+
+1. Design or extend user store (table or Cosmos container) for role, hasCompletedOnboarding, notification preferences, optional Entra cache.
+
+1. Use userId (e.g. Entra sub/oid) as unique key; align with existing auth.
+
+1. Ensure GET/PATCH users/me and recommendation/filter logic use same source of truth.
+
+---
+
+### BE-2.2.6 — Contract and OpenAPI
+
+**Description**
+
+1. users/me (and any separate preferences path) follow project response and error format.
+
+1. Document GET/PATCH /users/me request/response (profile, role, optional notification preferences) in OpenAPI; mark auth required.
+
+#### [DPH-573] [UX] Welcome Modal: First-time role selection, filtered Entra roles, confirm to catalogue + welcome notification
+
+**Jira:** [DPH-573](https://datacomgroup.atlassian.net/browse/DPH-573) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Welcome Modal: First-time role selection, filtered Entra roles, confirm to catalogue + welcome notification |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-574] [UX] Profile Settings Page + Header Dropdown + My Apps Role Filter
+
+**Jira:** [DPH-574](https://datacomgroup.atlassian.net/browse/DPH-574) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Profile Settings Page + Header Dropdown + My Apps Role Filter |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-575] [UX] Feedback from devs
+
+**Jira:** [DPH-575](https://datacomgroup.atlassian.net/browse/DPH-575) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Feedback from devs |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-576] [UX] Final Design + Dev Handover
+
+**Jira:** [DPH-576](https://datacomgroup.atlassian.net/browse/DPH-576) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Final Design + Dev Handover |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+
+## Front‑End Task Breakdown
+
+### 1. Profile Access Entry Point
+
+- Add click handler to **profile photo in the header**
+- On click:
+
+        - Open **Profile Settings page** (or panel, per UX)
+- Ensure navigation works from all authenticated pages
+
+---
+
+### 2. Profile Settings Page Layout
+
+- Create **Profile Settings page** structure
+- Sections include:
+
+        - User information
+        - Role management
+        - Notification preferences
+- Ensure page supports scrolling and clean section separation
+
+---
+
+### 3. Display User Information (Read‑Only)
+
+- Display the following fields (read‑only):
+
+        - Display name (from Entra ID)
+        - Profile photo (from Entra ID)
+- Pull data from existing auth/user state
+- Handle missing profile photo gracefully (fallback avatar)
+
+---
+
+### 4. First‑Time Login Role Selection Modal
+
+- On first‑time login:
+
+        - Display **Role Selection modal**
+- Modal behaviour:
+
+        - Role dropdown with Entra ID role pre‑selected
+        - Confirm button enabled only when role is selected
+- On confirm:
+
+        - Save role to mocked profile state
+        - Redirect user to **Catalogue page**
+        - Display “Welcome to Product Hub” notification
+
+---
+
+### 5. Global Role State (Jotai)
+
+- Create shared Jotai atom for:
+
+        - User role
+        - Role update status
+- Ensure role state is accessible across:
+
+        - Catalogue
+        - Recommendations
+        - My Apps
+- Allow role to be updated and persisted in mock storage
+
+---
+
+### 6. Update Role from Profile Settings
+
+- Add role dropdown to **Profile Settings**
+- Allow user to change role
+- Add **Save** button
+- On save:
+
+        - Update role in mocked profile storage
+        - Update role atom
+        - Display success notification
+
+---
+
+### 7. Role Usage for App Recommendations (Mocked)
+
+- Use role state to:
+
+        - Influence app recommendations (mock logic)
+        - Filter or rank apps based on role
+- Ensure role changes immediately affect recommendation UI
+
+---
+
+### 8. Notification Preferences UI
+
+- Add notification preference toggles for:
+
+        - Admin approval updates
+        - Security test approval updates
+        - Development suggestions
+- Display current preferences from mocked profile data
+- Allow toggles to be changed locally
+
+---
+
+### 9. Save Notification Preferences (Mocked)
+
+- Add Save action for notification preferences
+- On save:
+
+        - Update mocked profile storage
+        - Display success notification
+- Ensure preferences persist across page reloads (mocked)
+
+---
+
+### 10. Role Editable in My Apps (Filter Category)
+
+- Add role dropdown to **My Apps** as a filter category
+- Allow role selection and update
+- Include explicit **[Save]** action
+- Sync role updates with global role state
+
+---
+
+### 11. Responsive Behaviour
+
+- Ensure Profile Settings page is responsive:
+
+        - Mobile
+        - Tablet
+        - Desktop
+- Verify:
+
+        - Dropdowns usable on touch
+        - Toggles accessible on small screens
+        - Modal layouts scale correctly
+
+---
+
+### 12. Accessibility & UX
+
+- Ensure:
+
+        - Keyboard navigation for dropdowns and toggles
+        - ARIA labels for form controls
+        - Clear focus states
+- Provide inline validation and disabled states where applicable
+
+---
+
+### 13. Mocked Profile Persistence (Temporary)
+
+- Store profile data locally (mock DB):
+
+        - Role
+        - Notification preferences
+- Populate profile atoms from mock data on app load
+- Ensure structure aligns with expected backend schema
+
+---
+
+### 14. UI Testing with Mock Data
+
+- Verify:
+
+        - First‑time login role modal appears correctly
+        - Role updates persist and reflect across app
+        - Notifications show on successful save
+- Test role updates from:
+
+        - Profile Settings
+        - My Apps filter
+
+---
+
+### 15. Replace Mock Profile with Backend Integration (Final Task)
+
+- Remove mocked profile storage
+- Integrate backend endpoints for:
+
+        - Fetching user profile
+        - Updating user role
+        - Updating notification preferences
+- Update profile and role atoms from backend responses
+- Validate:
+
+        - First‑time login → Role Selection → Catalogue
+        - Role updates reflected across recommendations and filters
+- Final regression testing
+
+---
+
+## Notes / Assumptions
+
+- Entra ID provides display name, profile photo, and initial role
+- Jotai is the source of truth for profile, role, and preferences
+- Profile and preference data are mocked until backend is ready
+- Role impacts recommendations via mocked logic initially
+- UX wireframes will be applied once provided
+
+#### [DPH-542] [2.2-BE] User profile, role and notification preferences — API and persistence
+
+**Jira:** [DPH-542](https://datacomgroup.atlassian.net/browse/DPH-542) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [2.2-BE] User profile, role and notification preferences — API and persistence |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | 3 |
+| **Priority** | Medium (P3) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-2.2.1 — Current user profile (Entra read-only)
+
+**Description**
+
+1. Expose API for current user profile (e.g. GET /api/v1/users/me), auth required.
+
+1. Return display name and profile photo URL from Entra ID (or resolve via token/Graph and return).
+
+1. Response fields read-only; align with header display name and photo.
+
+---
+
+### BE-2.2.2 — First-time login and role confirmation
+
+**Description**
+
+1. Persist “has completed first-time role selection” (e.g. hasCompletedOnboarding or equivalent on user store).
+
+1. Provide way for frontend to set this when user confirms role (or combine with role save in BE-2.2.3).
+
+1. Optionally expose “is first-time login” so frontend can show role selection modal.
+
+---
+
+### BE-2.2.3 — Role save and update
+
+**Description**
+
+1. Expose API to update current user’s role (e.g. PATCH /api/v1/users/me with role in body), auth required.
+
+1. Validate role against allowed enum and persist (user profile/preferences or user_roles).
+
+1. Return 200 and updated payload for success toast; stored role used by recommendations/filters.
+
+---
+
+### BE-2.2.4 — Notification preferences read/write
+
+**Description**
+
+1. Support three notification toggles in user model: admin approval updates, security test approval updates, development suggestions (boolean or enum).
+
+1. Expose GET current preferences and PATCH to update (e.g. under users/me or /users/me/notification-preferences).
+
+1. Persist for use by notification/push logic later.
+
+---
+
+### BE-2.2.5 — User profile and preferences data model
+
+**Description**
+
+1. Design or extend user store (table or Cosmos container) for role, hasCompletedOnboarding, notification preferences, optional Entra cache.
+
+1. Use userId (e.g. Entra sub/oid) as unique key; align with existing auth.
+
+1. Ensure GET/PATCH users/me and recommendation/filter logic use same source of truth.
+
+---
+
+### BE-2.2.6 — Contract and OpenAPI
+
+**Description**
+
+1. users/me (and any separate preferences path) follow project response and error format.
+
+1. Document GET/PATCH /users/me request/response (profile, role, optional notification preferences) in OpenAPI; mark auth required.
+
+#### [DPH-573] [UX] Welcome Modal: First-time role selection, filtered Entra roles, confirm to catalogue + welcome notification
+
+**Jira:** [DPH-573](https://datacomgroup.atlassian.net/browse/DPH-573) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Welcome Modal: First-time role selection, filtered Entra roles, confirm to catalogue + welcome notification |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-574] [UX] Profile Settings Page + Header Dropdown + My Apps Role Filter
+
+**Jira:** [DPH-574](https://datacomgroup.atlassian.net/browse/DPH-574) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Profile Settings Page + Header Dropdown + My Apps Role Filter |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-575] [UX] Feedback from devs
+
+**Jira:** [DPH-575](https://datacomgroup.atlassian.net/browse/DPH-575) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Feedback from devs |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-576] [UX] Final Design + Dev Handover
+
+**Jira:** [DPH-576](https://datacomgroup.atlassian.net/browse/DPH-576) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Final Design + Dev Handover |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+## [EPIC-3]: Product Upload & Assisted Development
+
+
+### [Task-3.1]: Manually Upload currently published Datacom Products / Micro-apps on Product Hub with informatics and link to each product page.
+
+# [Task-3.1]: Manually Upload currently published Datacom Products / Micro-apps on Product Hub with informatics and link to each product page.
+
+**Jira:** [DPH-248](https://datacomgroup.atlassian.net/browse/DPH-248)
+
+
+### Epic details
+
+**Jira:** [DPH-242](https://datacomgroup.atlassian.net/browse/DPH-242)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-3]: Product Upload & Assisted Development |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [Task-3.1]: Manually Upload currently published Datacom Apps |
+| **Description** | See below |
+| **Work type** | Large Task |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+Make bespoke micro-site to display on the Catalogue → include marketing material.
+
+refer to Microsite US and Ben input (Rith)
+
+
+
+### List of links / live products to list on Product Hub
+
+https://marketplace.datacomsocialconnectedness.com/
+
+https://datacom-agent-skills-dev-ui.politebay-0193f592.eastus2.azurecontainerapps.io/  
+
+
+
+   (Datascreen)
+
+- there is a pptx dipesh provided mikha → use the cover image from the slide to add thumbnail to product detail page
+
+
+
+- TACO
+- CONVER
+
+
+### Subtasks
+
+#### [DPH-592] [3.2-BE] Tasks
+
+**Jira:** [DPH-592](https://datacomgroup.atlassian.net/browse/DPH-592) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.2-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. [T3.2-BE]
+
+#### [DPH-610] [3.2-UX] Discovery, Collect all current documents / tutorials for Conver
+
+**Jira:** [DPH-610](https://datacomgroup.atlassian.net/browse/DPH-610) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.2-UX] Discovery, Collect all current documents / tutorials for Conver |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-611] [3.2-UX] Discovery, Collect all current documents / tutorials for Agent Library
+
+**Jira:** [DPH-611](https://datacomgroup.atlassian.net/browse/DPH-611) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.2-UX] Discovery, Collect all current documents / tutorials for Agent Library |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-612] [3.2-UX] Discovery, Collect all current documents / tutorials for Taco
+
+**Jira:** [DPH-612](https://datacomgroup.atlassian.net/browse/DPH-612) · **Status:** Blocked
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.2-UX] Discovery, Collect all current documents / tutorials for Taco |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Blocked |
+| **Story point estimate** | — |
+| **Priority** | Low |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-613] Design Microsite / Page Conver
+
+**Jira:** [DPH-613](https://datacomgroup.atlassian.net/browse/DPH-613) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | Design Microsite / Page Conver |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-3.1]: Upload Project in Various Formats
+
+# [US-3.1]: Upload Project in Various Formats
+
+**Jira:** [DPH-243](https://datacomgroup.atlassian.net/browse/DPH-243)
+
+
+### Epic details
+
+**Jira:** [DPH-242](https://datacomgroup.atlassian.net/browse/DPH-242)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-3]: Product Upload & Assisted Development |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-3.1]: Upload Project in Various Formats |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 5 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | In Progress |
+| **Linked work items** | — |
+
+
+---
+**User Story:**  
+As an app-creator,  
+I want to upload my project in various formats (ZIP, GitHub repo)
+So that I can submit my micro-app regardless of how I've built it
+
+**Acceptance Criteria:**
+
+1. **Given:** An app-creator is on the `Submit an App` page  
+**Then:** Three upload format options are displayed: ZIP file upload, GitHub repository URL, Live URL
+2. **Given:** An app-creator selects ZIP file upload  
+**When:** They upload a file  
+**Then:** The system validates:
+
+        - File format is .zip
+        - File size does not exceed 500MB
+        - ZIP contains valid project structure (has files/folders)
+3. **Given:** An app-creator selects GitHub repository URL  
+**When:** They enter a URL  
+**Then:** The system validates:
+
+        - URL format matches GitHub repository pattern (https://github.com/username/repo)
+        - Repository is publicly accessible
+        - Repository contains code files
+4. **Given:** Upload validation passes (1st and 2nd step are done → prompt users on how they would like notification) passing step might take a long time - so system could emails app-creator once upload is complete)
+
+        1. **Then:** Basic metadata is automatically extracted and stored:
+
+                1. Project name (from repo name, ZIP name)
+                2. File count and total size
+                3. Primary programming language detected
+        2. **And**:
+5. **Given:** Upload validation fails  
+**Then:** Error message is displayed with specific reason and user can retry
+6. **Given:** Upload is successful  
+**Then:** A Development Instance/App Draft with status Draft is created with 5-day expiry and user proceeds to next step
+
+---
+
+**Mock-up/Wireframe:** To be provided by UX designer
+
+
+### Subtasks
+
+#### [DPH-590] [3.1-BE] Tasks
+
+**Jira:** [DPH-590](https://datacomgroup.atlassian.net/browse/DPH-590) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. [BE]ZIP Upload + ZIP Metadata Extraction Endpoint
+2. [BE]GitHub URL Metadata Extraction Endpoint
+3. [BE]API Contract + Error Mapping
+
+#### [DPH-591] [3.1-UX] Tasks
+
+**Jira:** [DPH-591](https://datacomgroup.atlassian.net/browse/DPH-591) · **Status:** In Progress
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.1-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | In Progress |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+1. Design Handover: Figma + Components + Dev Walkthrough
+2. Create page view & modal view prototype
+3. Create UI during long Inferencing (Time Remaining)
+4. Final Design: (Brand Guidelines pass, specs, assets)
+5. Iterate on feedback
+6. Present to stakeholder
+7. Create page view & modal view mockup
+8. Create Status  states (Error/Success)
+9. Create Validate states  (Error/Success)
+10. Create auto upload state (zip being dragged onto the modal) or file explorer
+11. Create "Product Upload" modal
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-3.2]: App-Creator Accesses and Manages App Draft (Dev environment)
+
+# [US-3.2]: App-Creator Accesses and Manages App Draft (Dev environment)
+
+**Jira:** [DPH-250](https://datacomgroup.atlassian.net/browse/DPH-250)
+
+
+### Epic details
+
+**Jira:** [DPH-242](https://datacomgroup.atlassian.net/browse/DPH-242)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-3]: Product Upload & Assisted Development |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-3.2]: App-Creator Accesses and Manages App Draft (Dev environment) |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 7 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an **app-creator**,  
+I want to access and manage my Development Instance/App Draft,  
+So that I can continue my micro-app submission at my own pace.
+
+**Acceptance Criteria:**
+
+1. From the My Apps page, clicking `Continue Building` redirects me to my App draft modal (modal for now)
+2. A countdown timer displays time remaining (days, or hours if under 24hrs)
+
+        1. My App page card to display timer
+        2. email notification reminder to app-creator that “instance is going to expire”  (research about it)
+3. When 2 days or less remain, an `Extend Instance` button appears — confirming adds 5 days
+4. The page displays a progress checklist with completion percentage: Code Uploaded, Code Validated, Code Refactored, Tags Specified, Ready for Approval
+5. Navigating away saves my progress — I can return via `Continue Building` at any time
+
+
+### Subtasks
+
+#### [DPH-498] [3.2-UX] Tasks
+
+**Jira:** [DPH-498](https://datacomgroup.atlassian.net/browse/DPH-498) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.2-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- [UX] Design `Development Instance` page with countdown and checklist
+
+#### [DPH-499] [3.2-FE] Tasks
+
+**Jira:** [DPH-499](https://datacomgroup.atlassian.net/browse/DPH-499) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.2-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [FE] Implement progress checklist: Upload, Validate, Refactor, Tags, Approval
+- [Dev] [FE] Implement `Extend Instance` button at 2 days remaining
+- [Dev] [FE] Implement countdown timer: days remaining, hours on last day
+
+#### [DPH-500] [3.2-BE] Development instance and draft progress — expiry, extend, checklist and notification data
+
+**Jira:** [DPH-500](https://datacomgroup.atlassian.net/browse/DPH-500) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.2-BE] Development instance and draft progress — expiry, extend, checklist and notification data |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-3.2.1 — Development instance / draft data model
+
+**Description**
+
+- Persist a “development instance” or draft submission per app-creator: link to user and product/app id, created time.
+
+- Include expiry field (e.g. expiresAt) for countdown (days/hours).
+
+- Include progress checklist fields: Code Uploaded, Code Validated, Code Refactored, Tags Specified, Ready for Approval (boolean or enum); support computing completion percentage.
+
+---
+
+### BE-3.2.2 — Get “my development instance” and countdown
+
+**Description**
+
+- Expose API (e.g. GET /api/v1/users/me/development-instance or /submissions/draft) returning current user’s dev instance/draft.
+
+- Response includes expiresAt, time remaining (or let frontend derive from expiresAt), checklist steps and status, completion percentage, and identifier/URL to continue editing.
+
+- Return 404 or empty when no draft so frontend can decide “Continue Building” visibility.
+
+---
+
+### BE-3.2.3 — Extend instance API
+
+**Description**
+
+- Expose API to extend dev instance (e.g. POST .../development-instances/{id}/extend or .../submissions/draft/extend), auth required and restricted to instance owner.
+
+- On confirm, add 5 days to expiresAt and persist.
+
+- Return new expiresAt (and optional time remaining) for frontend timer and “Extend Instance” visibility (e.g. show when ≤2 days left).
+
+---
+
+### BE-3.2.4 — Progress checklist save and read
+
+**Description**
+
+- Support updating progress on dev instance/draft (e.g. PATCH or PUT progress): Code Uploaded, Code Validated, Code Refactored, Tags Specified, Ready for Approval.
+
+- Recompute and return completion percentage on save; support “save on navigate away” (multiple PATCH or single payload).
+
+- GET dev instance includes full checklist and percentage for progress bar and list.
+
+---
+
+### BE-3.2.5 — Expiring-soon data for email reminder
+
+**Description**
+
+- Expose data for a job or workflow: list dev instances expiring within N days with app-creator email (or user id) for “instance is going to expire” email.
+
+- Optionally expose API (e.g. GET .../admin/development-instances/expiring?withinDays=2) for internal or notification service; or document query approach only.
+
+- Do not implement email sending; only provide data or query.
+
+---
+
+### BE-3.2.6 — Contract and OpenAPI
+
+**Description**
+
+- Dev instance APIs follow project response and error format.
+
+- Document in OpenAPI: GET my dev instance, extend instance, update progress (request/response with expiresAt, checklist fields, percentage); mark auth required.
+
+#### [DPH-577] [UX] Design "My Apps" card with timer (days/hours), progress checklist, Continue Building CTA
+
+**Jira:** [DPH-577](https://datacomgroup.atlassian.net/browse/DPH-577) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Design "My Apps" card with timer (days/hours), progress checklist, Continue Building CTA |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-578] [UX] Design Dev Instance Modal (countdown, progress checklist with %, extend, save on navigate)
+
+**Jira:** [DPH-578](https://datacomgroup.atlassian.net/browse/DPH-578) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Design Dev Instance Modal (countdown, progress checklist with %, extend, save on navigate) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-579] [UX] Feedback from devs
+
+**Jira:** [DPH-579](https://datacomgroup.atlassian.net/browse/DPH-579) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Feedback from devs |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-580] [UX] Final Design + Dev Handover
+
+**Jira:** [DPH-580](https://datacomgroup.atlassian.net/browse/DPH-580) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Final Design + Dev Handover |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+
+### BE-3.2.2 — Get “my development instance” and countdown
+
+**Description**
+
+- Expose API (e.g. GET /api/v1/users/me/development-instance or /submissions/draft) returning current user’s dev instance/draft.
+
+- Response includes expiresAt, time remaining (or let frontend derive from expiresAt), checklist steps and status, completion percentage, and identifier/URL to continue editing.
+
+- Return 404 or empty when no draft so frontend can decide “Continue Building” visibility.
+
+---
+
+### BE-3.2.3 — Extend instance API
+
+**Description**
+
+- Expose API to extend dev instance (e.g. POST .../development-instances/{id}/extend or .../submissions/draft/extend), auth required and restricted to instance owner.
+
+- On confirm, add 5 days to expiresAt and persist.
+
+- Return new expiresAt (and optional time remaining) for frontend timer and “Extend Instance” visibility (e.g. show when ≤2 days left).
+
+---
+
+### BE-3.2.4 — Progress checklist save and read
+
+**Description**
+
+- Support updating progress on dev instance/draft (e.g. PATCH or PUT progress): Code Uploaded, Code Validated, Code Refactored, Tags Specified, Ready for Approval.
+
+- Recompute and return completion percentage on save; support “save on navigate away” (multiple PATCH or single payload).
+
+- GET dev instance includes full checklist and percentage for progress bar and list.
+
+---
+
+### BE-3.2.5 — Expiring-soon data for email reminder
+
+**Description**
+
+- Expose data for a job or workflow: list dev instances expiring within N days with app-creator email (or user id) for “instance is going to expire” email.
+
+- Optionally expose API (e.g. GET .../admin/development-instances/expiring?withinDays=2) for internal or notification service; or document query approach only.
+
+- Do not implement email sending; only provide data or query.
+
+---
+
+### BE-3.2.6 — Contract and OpenAPI
+
+**Description**
+
+- Dev instance APIs follow project response and error format.
+
+- Document in OpenAPI: GET my dev instance, extend instance, update progress (request/response with expiresAt, checklist fields, percentage); mark auth required.
+
+#### [DPH-577] [UX] Design "My Apps" card with timer (days/hours), progress checklist, Continue Building CTA
+
+**Jira:** [DPH-577](https://datacomgroup.atlassian.net/browse/DPH-577) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Design "My Apps" card with timer (days/hours), progress checklist, Continue Building CTA |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-578] [UX] Design Dev Instance Modal (countdown, progress checklist with %, extend, save on navigate)
+
+**Jira:** [DPH-578](https://datacomgroup.atlassian.net/browse/DPH-578) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Design Dev Instance Modal (countdown, progress checklist with %, extend, save on navigate) |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-579] [UX] Feedback from devs
+
+**Jira:** [DPH-579](https://datacomgroup.atlassian.net/browse/DPH-579) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Feedback from devs |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-580] [UX] Final Design + Dev Handover
+
+**Jira:** [DPH-580](https://datacomgroup.atlassian.net/browse/DPH-580) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Final Design + Dev Handover |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+
+### BE-3.2.2 — Get “my development instance” and countdown
+
+**Description**
+
+- Expose API (e.g. GET /api/v1/users/me/development-instance or /submissions/draft) returning current user’s dev instance/draft.
+
+- Response includes expiresAt, time remaining (or let frontend derive from expiresAt), checklist steps and status, completion percentage, and identifier/URL to continue editing.
+
+- Return 404 or empty when no draft so frontend can decide “Continue Building” visibility.
+
+---
+
+### BE-3.2.3 — Extend instance API
+
+**Description**
+
+- Expose API to extend dev instance (e.g. POST .../development-instances/{id}/extend or .../submissions/draft/extend), auth required and restricted to instance owner.
+
+- On confirm, add 5 days to expiresAt and persist.
+
+- Return new expiresAt (and optional time remaining) for frontend timer and “Extend Instance” visibility (e.g. show when ≤2 days left).
+
+---
+
+### BE-3.2.4 — Progress checklist save and read
+
+**Description**
+
+- Support updating progress on dev instance/draft (e.g. PATCH or PUT progress): Code Uploaded, Code Validated, Code Refactored, Tags Specified, Ready for Approval.
+
+- Recompute and return completion percentage on save; support “save on navigate away” (multiple PATCH or single payload).
+
+- GET dev instance includes full checklist and percentage for progress bar and list.
+
+---
+
+### BE-3.2.5 — Expiring-soon data for email reminder
+
+**Description**
+
+- Expose data for a job or workflow: list dev instances expiring within N days with app-creator email (or user id) for “instance is going to expire” email.
+
+- Optionally expose API (e.g. GET .../admin/development-instances/expiring?withinDays=2) for internal or notification service; or document query approach only.
+
+- Do not implement email sending; only provide data or query.
+
+---
+
+### BE-3.2.6 — Contract and OpenAPI
+
+**Description**
+
+- Dev instance APIs follow project response and error format.
+
+- Document in OpenAPI: GET my dev instance, extend instance, update progress (request/response with expiresAt, checklist fields, percentage); mark auth required.
+
+#### [DPH-577] [UX] Design "My Apps" card with timer (days/hours), progress checklist, Continue Building CTA
+
+**Jira:** [DPH-577](https://datacomgroup.atlassian.net/browse/DPH-577) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Design "My Apps" card with timer (days/hours), progress checklist, Continue Building CTA |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-578] [UX] Design Dev Instance Modal (countdown, progress checklist with %, extend, save on navigate)
+
+**Jira:** [DPH-578](https://datacomgroup.atlassian.net/browse/DPH-578) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Design Dev Instance Modal (countdown, progress checklist with %, extend, save on navigate) |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-579] [UX] Feedback from devs
+
+**Jira:** [DPH-579](https://datacomgroup.atlassian.net/browse/DPH-579) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Feedback from devs |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-580] [UX] Final Design + Dev Handover
+
+**Jira:** [DPH-580](https://datacomgroup.atlassian.net/browse/DPH-580) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Final Design + Dev Handover |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+
+### BE-3.2.2 — Get “my development instance” and countdown
+
+**Description**
+
+- Expose API (e.g. GET /api/v1/users/me/development-instance or /submissions/draft) returning current user’s dev instance/draft.
+
+- Response includes expiresAt, time remaining (or let frontend derive from expiresAt), checklist steps and status, completion percentage, and identifier/URL to continue editing.
+
+- Return 404 or empty when no draft so frontend can decide “Continue Building” visibility.
+
+---
+
+### BE-3.2.3 — Extend instance API
+
+**Description**
+
+- Expose API to extend dev instance (e.g. POST .../development-instances/{id}/extend or .../submissions/draft/extend), auth required and restricted to instance owner.
+
+- On confirm, add 5 days to expiresAt and persist.
+
+- Return new expiresAt (and optional time remaining) for frontend timer and “Extend Instance” visibility (e.g. show when ≤2 days left).
+
+---
+
+### BE-3.2.4 — Progress checklist save and read
+
+**Description**
+
+- Support updating progress on dev instance/draft (e.g. PATCH or PUT progress): Code Uploaded, Code Validated, Code Refactored, Tags Specified, Ready for Approval.
+
+- Recompute and return completion percentage on save; support “save on navigate away” (multiple PATCH or single payload).
+
+- GET dev instance includes full checklist and percentage for progress bar and list.
+
+---
+
+### BE-3.2.5 — Expiring-soon data for email reminder
+
+**Description**
+
+- Expose data for a job or workflow: list dev instances expiring within N days with app-creator email (or user id) for “instance is going to expire” email.
+
+- Optionally expose API (e.g. GET .../admin/development-instances/expiring?withinDays=2) for internal or notification service; or document query approach only.
+
+- Do not implement email sending; only provide data or query.
+
+---
+
+### BE-3.2.6 — Contract and OpenAPI
+
+**Description**
+
+- Dev instance APIs follow project response and error format.
+
+- Document in OpenAPI: GET my dev instance, extend instance, update progress (request/response with expiresAt, checklist fields, percentage); mark auth required.
+
+#### [DPH-577] [UX] Design "My Apps" card with timer (days/hours), progress checklist, Continue Building CTA
+
+**Jira:** [DPH-577](https://datacomgroup.atlassian.net/browse/DPH-577) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Design "My Apps" card with timer (days/hours), progress checklist, Continue Building CTA |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-578] [UX] Design Dev Instance Modal (countdown, progress checklist with %, extend, save on navigate)
+
+**Jira:** [DPH-578](https://datacomgroup.atlassian.net/browse/DPH-578) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Design Dev Instance Modal (countdown, progress checklist with %, extend, save on navigate) |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-579] [UX] Feedback from devs
+
+**Jira:** [DPH-579](https://datacomgroup.atlassian.net/browse/DPH-579) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Feedback from devs |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-580] [UX] Final Design + Dev Handover
+
+**Jira:** [DPH-580](https://datacomgroup.atlassian.net/browse/DPH-580) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [UX] Final Design + Dev Handover |
+| **Description** | See below |
+| **Work type** | Subtask |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+
+---
+
+
+### [US-3.3]: App-Creator Validates Code Quality
+
+# [US-3.3]: App-Creator Validates Code Quality
+
+**Jira:** [DPH-261](https://datacomgroup.atlassian.net/browse/DPH-261)
+
+
+### Epic details
+
+**Jira:** [DPH-242](https://datacomgroup.atlassian.net/browse/DPH-242)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-3]: Product Upload & Assisted Development |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-3.3]: App-Creator Validates Code Quality |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 9 |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an **app-creator**,  
+I want AI to validate and analyse my code,  
+So that I can see if my micro-app meets technical standards before proceeding.
+
+**Acceptance Criteria:**
+
+1. On upload, validation runs automatically — checking: code quality and linting, security vulnerabilities, and README completeness
+2. A loading indicator shows "Analysing code..." with progress percentage while running
+3. On completion, a validation report displays: overall quality score, critical issues (must fix), warnings (recommended), and passed checks
+4. Each issue shows: type, severity, file name, line number, description, and suggested fix
+5. Critical issues block progression — a message reads "Please resolve critical issues before proceeding" with the app status changed to Validation Failed
+6. No critical issues allows progression to refactoring (US-3.4)
+7. A `Revalidate Code` button is available at any time — each run increments and displays a validation attempt counter (e.g., "Validation Attempt #3")
+8. There is no limit on revalidation attempts (this is because we would need to have a validation **attempt tracking for each user account** instead of per upload - since they can just just reupload and have infinite attempts anyway) (for MVP, exclude having limit)
+
+
+### Subtasks
+
+#### [DPH-501] [3.3-UX] Tasks
+
+**Jira:** [DPH-501](https://datacomgroup.atlassian.net/browse/DPH-501) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.3-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [UX] Design validation report UI: score, critical issues, warnings
+
+#### [DPH-502] [3.3-FE] Frontend scope (Code quality validation)
+
+**Jira:** [DPH-502](https://datacomgroup.atlassian.net/browse/DPH-502) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.3-FE] Frontend scope (Code quality validation) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+**Trigger & loading**
+
+- FE-1 — Automatic validation after upload: When the user lands on this page or upload has just completed, the UI enters "analysing" state and polls or subscribes to backend status. No separate "Start validation" click is required (AC1).
+
+- FE-2 — Analysing state: Show a loading indicator with the text "Analysing code..." and a progress percentage from the backend status/progress API (AC2).
+
+**Report display**
+
+- FE-3 — Validation report on completion: Display the full report with overall quality score, Critical issues (must fix), Warnings (recommended), and Passed checks in clear sections (AC3).
+
+- FE-4 — Per-issue details: For each issue show Type, Severity, File name, Line number, Description, and Suggested fix (list or expandable rows) (AC4).
+
+**Blocking & progression**
+
+- FE-5 — When critical issues exist: Show the message "Please resolve critical issues before proceeding" and disable the "Next" or US-3.4 (refactoring) entry until the product is no longer in "Validation Failed" (AC5).
+
+- FE-6 — When no critical issues: Enable progression to the refactoring stage (US-3.4); show "Next" or the appropriate entry (AC6).
+
+**Revalidate**
+
+- FE-7 — "Revalidate Code" button: Always visible and clickable; on click call the backend revalidate endpoint; on success refresh validation status and report and update the attempt count display (AC7).
+
+- FE-8 — Show revalidation attempt count: e.g. "Validation Attempt #3". MVP: do not implement an attempt limit (AC8).
+
+#### [DPH-503] [3.3-BE] Code quality validation — trigger, async run, report shape and progression gate
+
+**Jira:** [DPH-503](https://datacomgroup.atlassian.net/browse/DPH-503) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.3-BE] Code quality validation — trigger, async run, report shape and progression gate |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-3.3.1 — Validation trigger and execution (on upload / revalidate)
+
+**Description**
+
+- Trigger validation when code upload completes or user clicks “Revalidate Code” (or on upstream event).
+
+- Run or orchestrate checks: code quality & lint, security vulnerabilities, README completeness (call existing or external validation service as needed).
+
+- Run validation asynchronously; return job/task id or status for frontend to poll progress.
+
+---
+
+### BE-3.3.2 — Validation job status and progress
+
+**Description**
+
+- Expose API to get validation status (e.g. GET .../development-instances/{id}/validation/status or by job id).
+
+- Response includes running / completed / failed, optional progress percentage, and report id or summary when done.
+
+- Frontend uses this for “Analysing code...” and progress percentage.
+
+---
+
+### BE-3.3.3 — Validation report model and response
+
+**Description**
+
+- Persist validation result: overall score, list of issues (type, severity, file, line, description, suggested fix), categorized as critical / warning / passed.
+
+- Expose API to get latest report (e.g. GET .../validation/report) returning score, must-fix items, recommended items, passed items.
+
+- Per-issue shape supports type, severity, file, line, description, suggested fix for frontend detail view.
+
+---
+
+### BE-3.3.4 — Progression gate (block when critical issues exist)
+
+**Description**
+
+- Expose in report or dev instance response whether critical issues exist (e.g. hasCriticalIssues) or whether user can proceed (e.g. canProceedToRefactor / canProceedToTagSpec).
+
+- Block progression to refactor (US-3.4) or tag specification (US-3.5) when critical present; allow when none.
+
+- Frontend uses this to show “Please resolve critical issues before proceeding” or enable next stage.
+
+---
+
+### BE-3.3.5 — Revalidate API and attempt counter
+
+**Description**
+
+- Expose API to trigger revalidation (e.g. POST .../validation/run), auth required and restricted to dev instance owner.
+
+- Increment and persist validation attempt count on each run (including first run after upload); return current count in response or subsequent GET (e.g. validationAttemptNumber: 3).
+
+- MVP: do not enforce a limit on revalidation attempts; no backend cap.
+
+---
+
+### BE-3.3.6 — Contract and OpenAPI
+
+**Description**
+
+- Validation APIs follow project response, error and async-status format.
+
+- Document in OpenAPI: trigger validation, get status/progress, get report; schema for score, issues, hasCriticalIssues / canProceed; mark auth required.
+
+#### [DPH-614] [3.3-UX] Infrencing Modal / Checking animation
+
+**Jira:** [DPH-614](https://datacomgroup.atlassian.net/browse/DPH-614) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.3-UX] Infrencing Modal / Checking animation |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-615] [3.3-UX] Code report template
+
+**Jira:** [DPH-615](https://datacomgroup.atlassian.net/browse/DPH-615) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.3-UX] Code report template |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-616] [3.3-UX] Create Diff report template (Each issue shows: type, severity, file name, line number, description, and suggested fix)
+
+**Jira:** [DPH-616](https://datacomgroup.atlassian.net/browse/DPH-616) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.3-UX] Create Diff report template (Each issue shows: type, severity, file name, line number, description, and suggested fix) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+
+### BE-3.3.2 — Validation job status and progress
+
+**Description**
+
+- Expose API to get validation status (e.g. GET .../development-instances/{id}/validation/status or by job id).
+
+- Response includes running / completed / failed, optional progress percentage, and report id or summary when done.
+
+- Frontend uses this for “Analysing code...” and progress percentage.
+
+---
+
+### BE-3.3.3 — Validation report model and response
+
+**Description**
+
+- Persist validation result: overall score, list of issues (type, severity, file, line, description, suggested fix), categorized as critical / warning / passed.
+
+- Expose API to get latest report (e.g. GET .../validation/report) returning score, must-fix items, recommended items, passed items.
+
+- Per-issue shape supports type, severity, file, line, description, suggested fix for frontend detail view.
+
+---
+
+### BE-3.3.4 — Progression gate (block when critical issues exist)
+
+**Description**
+
+- Expose in report or dev instance response whether critical issues exist (e.g. hasCriticalIssues) or whether user can proceed (e.g. canProceedToRefactor / canProceedToTagSpec).
+
+- Block progression to refactor (US-3.4) or tag specification (US-3.5) when critical present; allow when none.
+
+- Frontend uses this to show “Please resolve critical issues before proceeding” or enable next stage.
+
+---
+
+### BE-3.3.5 — Revalidate API and attempt counter
+
+**Description**
+
+- Expose API to trigger revalidation (e.g. POST .../validation/run), auth required and restricted to dev instance owner.
+
+- Increment and persist validation attempt count on each run (including first run after upload); return current count in response or subsequent GET (e.g. validationAttemptNumber: 3).
+
+- MVP: do not enforce a limit on revalidation attempts; no backend cap.
+
+---
+
+### BE-3.3.6 — Contract and OpenAPI
+
+**Description**
+
+- Validation APIs follow project response, error and async-status format.
+
+- Document in OpenAPI: trigger validation, get status/progress, get report; schema for score, issues, hasCriticalIssues / canProceed; mark auth required.
+
+---
+---
+
+### BE-3.3.2 — Validation job status and progress
+
+**Description**
+
+- Expose API to get validation status (e.g. GET .../development-instances/{id}/validation/status or by job id).
+
+- Response includes running / completed / failed, optional progress percentage, and report id or summary when done.
+
+- Frontend uses this for “Analysing code...” and progress percentage.
+
+---
+
+### BE-3.3.3 — Validation report model and response
+
+**Description**
+
+- Persist validation result: overall score, list of issues (type, severity, file, line, description, suggested fix), categorized as critical / warning / passed.
+
+- Expose API to get latest report (e.g. GET .../validation/report) returning score, must-fix items, recommended items, passed items.
+
+- Per-issue shape supports type, severity, file, line, description, suggested fix for frontend detail view.
+
+---
+
+### BE-3.3.4 — Progression gate (block when critical issues exist)
+
+**Description**
+
+- Expose in report or dev instance response whether critical issues exist (e.g. hasCriticalIssues) or whether user can proceed (e.g. canProceedToRefactor / canProceedToTagSpec).
+
+- Block progression to refactor (US-3.4) or tag specification (US-3.5) when critical present; allow when none.
+
+- Frontend uses this to show “Please resolve critical issues before proceeding” or enable next stage.
+
+---
+
+### BE-3.3.5 — Revalidate API and attempt counter
+
+**Description**
+
+- Expose API to trigger revalidation (e.g. POST .../validation/run), auth required and restricted to dev instance owner.
+
+- Increment and persist validation attempt count on each run (including first run after upload); return current count in response or subsequent GET (e.g. validationAttemptNumber: 3).
+
+- MVP: do not enforce a limit on revalidation attempts; no backend cap.
+
+---
+
+### BE-3.3.6 — Contract and OpenAPI
+
+**Description**
+
+- Validation APIs follow project response, error and async-status format.
+
+- Document in OpenAPI: trigger validation, get status/progress, get report; schema for score, issues, hasCriticalIssues / canProceed; mark auth required.
+
+---
+---
+
+### BE-3.3.2 — Validation job status and progress
+
+**Description**
+
+- Expose API to get validation status (e.g. GET .../development-instances/{id}/validation/status or by job id).
+
+- Response includes running / completed / failed, optional progress percentage, and report id or summary when done.
+
+- Frontend uses this for “Analysing code...” and progress percentage.
+
+---
+
+### BE-3.3.3 — Validation report model and response
+
+**Description**
+
+- Persist validation result: overall score, list of issues (type, severity, file, line, description, suggested fix), categorized as critical / warning / passed.
+
+- Expose API to get latest report (e.g. GET .../validation/report) returning score, must-fix items, recommended items, passed items.
+
+- Per-issue shape supports type, severity, file, line, description, suggested fix for frontend detail view.
+
+---
+
+### BE-3.3.4 — Progression gate (block when critical issues exist)
+
+**Description**
+
+- Expose in report or dev instance response whether critical issues exist (e.g. hasCriticalIssues) or whether user can proceed (e.g. canProceedToRefactor / canProceedToTagSpec).
+
+- Block progression to refactor (US-3.4) or tag specification (US-3.5) when critical present; allow when none.
+
+- Frontend uses this to show “Please resolve critical issues before proceeding” or enable next stage.
+
+---
+
+### BE-3.3.5 — Revalidate API and attempt counter
+
+**Description**
+
+- Expose API to trigger revalidation (e.g. POST .../validation/run), auth required and restricted to dev instance owner.
+
+- Increment and persist validation attempt count on each run (including first run after upload); return current count in response or subsequent GET (e.g. validationAttemptNumber: 3).
+
+- MVP: do not enforce a limit on revalidation attempts; no backend cap.
+
+---
+
+### BE-3.3.6 — Contract and OpenAPI
+
+**Description**
+
+- Validation APIs follow project response, error and async-status format.
+
+- Document in OpenAPI: trigger validation, get status/progress, get report; schema for score, issues, hasCriticalIssues / canProceed; mark auth required.
+
+---
+---
+
+### BE-3.3.2 — Validation job status and progress
+
+**Description**
+
+- Expose API to get validation status (e.g. GET .../development-instances/{id}/validation/status or by job id).
+
+- Response includes running / completed / failed, optional progress percentage, and report id or summary when done.
+
+- Frontend uses this for “Analysing code...” and progress percentage.
+
+---
+
+### BE-3.3.3 — Validation report model and response
+
+**Description**
+
+- Persist validation result: overall score, list of issues (type, severity, file, line, description, suggested fix), categorized as critical / warning / passed.
+
+- Expose API to get latest report (e.g. GET .../validation/report) returning score, must-fix items, recommended items, passed items.
+
+- Per-issue shape supports type, severity, file, line, description, suggested fix for frontend detail view.
+
+---
+
+### BE-3.3.4 — Progression gate (block when critical issues exist)
+
+**Description**
+
+- Expose in report or dev instance response whether critical issues exist (e.g. hasCriticalIssues) or whether user can proceed (e.g. canProceedToRefactor / canProceedToTagSpec).
+
+- Block progression to refactor (US-3.4) or tag specification (US-3.5) when critical present; allow when none.
+
+- Frontend uses this to show “Please resolve critical issues before proceeding” or enable next stage.
+
+---
+
+### BE-3.3.5 — Revalidate API and attempt counter
+
+**Description**
+
+- Expose API to trigger revalidation (e.g. POST .../validation/run), auth required and restricted to dev instance owner.
+
+- Increment and persist validation attempt count on each run (including first run after upload); return current count in response or subsequent GET (e.g. validationAttemptNumber: 3).
+
+- MVP: do not enforce a limit on revalidation attempts; no backend cap.
+
+---
+
+### BE-3.3.6 — Contract and OpenAPI
+
+**Description**
+
+- Validation APIs follow project response, error and async-status format.
+
+- Document in OpenAPI: trigger validation, get status/progress, get report; schema for score, issues, hasCriticalIssues / canProceed; mark auth required.
+
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-3.4]: App-Creator Refactors and Reviews Code Changes
+
+# [US-3.4]: App-Creator Refactors and Reviews Code Changes
+
+**Jira:** [DPH-262](https://datacomgroup.atlassian.net/browse/DPH-262)
+
+
+### Epic details
+
+**Jira:** [DPH-242](https://datacomgroup.atlassian.net/browse/DPH-242)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-3]: Product Upload & Assisted Development |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-3.4]: App-Creator Refactors and Reviews Code Changes |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | Mikha Jeon |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an **app-creator**,  
+I want AI to suggest and apply code refactoring,  
+So that I can bring my micro-app up to technical standards before submission.
+
+**Acceptance Criteria:**
+
+1. After validation (US-3.3), a refactoring checklist is displayed showing: proposed changes, estimated impact (Low/Medium/High), and per-item options to auto-refactor or manually fix
+2. For each item I can select `Auto-refactor` (AI fixes it) or `Manual fix` (I fix it locally and re-upload)
+3. Clicking `Submit for Auto-refactoring` triggers AI refactoring on all selected items — a progress indicator shows "Refactoring code..."
+4. On completion, a code comparison view is displayed showing: side-by-side diff (original left, refactored right), files changed, and lines added/removed — with syntax highlighting and line-by-line differences (green additions, red deletions)
+5. I can: `Accept All Changes`, `Reject All Changes`, or `Accept Selected Files` (per-file checkboxes)
+6. Accepting runs validation automatically on the refactored code
+7. Rejecting returns me to the refactoring checklist with original code retained
+8. A `Download Refactored Code` button is available to save changes locally
+
+
+### Subtasks
+
+#### [DPH-504] [3.4-UX] Tasks
+
+**Jira:** [DPH-504](https://datacomgroup.atlassian.net/browse/DPH-504) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.4-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [UX] Design refactoring checklist UI with `Auto-refactor` and `Manual fix` options
+
+#### [DPH-505] [3.4-FE] Tasks
+
+**Jira:** [DPH-505](https://datacomgroup.atlassian.net/browse/DPH-505) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.4-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [FE] Implement refactoring checklist with submission
+
+#### [DPH-506] [3.4-BE] Tasks
+
+**Jira:** [DPH-506](https://datacomgroup.atlassian.net/browse/DPH-506) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.4-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [BE] Implement AI auto-refactoring for selected items
+- [Dev] [BE] Generate AI refactoring checklist from validation results
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-3.5]: App-Creator Specifies Tags and App Visibility
+
+# [US-3.5]: App-Creator Specifies Tags and App Visibility
+
+**Jira:** [DPH-263](https://datacomgroup.atlassian.net/browse/DPH-263)
+
+
+### Epic details
+
+**Jira:** [DPH-242](https://datacomgroup.atlassian.net/browse/DPH-242)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-3]: Product Upload & Assisted Development |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-3.5]: App-Creator Specifies Tags and App Visibility |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | In Progress |
+| **Linked work items** | — |
+
+
+---
+As an **app-creator**,  
+I want to tag my micro-app,  
+So that it is searchable and discoverable on the Product Hub.
+
+**Acceptance Criteria:**
+
+1. After validation passes, I am presented with a tag selection interface showing predefined categories: 
+
+        1. Business Analysis,
+        2. User Experience,
+        3. Productivity,
+        4. Documentation,
+        5. Development Tools,
+        6. Data Analysis,
+        7. Other
+2. App-creator may choose a team → app gets recommended to people in those teams when they visit the Product Catalogue (Directory)
+3. Selected tags are highlighted and added to a "Selected Tags" section
+4. I must select at least 1 tag and no more than 10 — once the limit is reached, unselected tags are disabled with tooltip: "Maximum 10 tags allowed"
+5. Custom tags are not available in this MVP version
+6. After selecting tags, the app-creator selects a visibility scope: 
+
+        1. Private; or
+        2. Datacom Only.
+7. Selected Visibility scope is saved and applied on production release. The scope can be changed anytime from My Apps — before or after release. Only an admin can set the scope to Public.
+8. Clicking `Save Category and Visibility` saves the selections and proceeds me to content generation (Epic 4)
+9. App-creator can request for this app to go public (for admin to review and confirm) (if creator indicates, it needs to complete security testing etc. Have a criteria or checkbox etc (does it pass security, etc) (mikha to refine this - do questionnaries for jo etc for **criteria for public use of Datacom Products**)
+(could also be a NO at this time) (COULD P3)
+
+BA & UX → come up with the categories for AC.1 when more is needed
+
+
+### Subtasks
+
+#### [DPH-546] [3.5-UX] Tasks
+
+**Jira:** [DPH-546](https://datacomgroup.atlassian.net/browse/DPH-546) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.5-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+Visual Tags are created.
+
+Tagging system must be specified first
+
+Research how to create an intuitive tagging system for users to be able to find products they are interested in easily - filter / search for what they are needing
+
+#### [DPH-547] [3.5-FE] Frontend scope (Tags and app visibility)
+
+**Jira:** [DPH-547](https://datacomgroup.atlassian.net/browse/DPH-547) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.5-FE] Frontend scope (Tags and app visibility) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+**Page and layout**
+
+- FE-1 — Tags and visibility page/step: Reachable after validation. Display predefined categories and tags from backend (AC1).
+
+- FE-2 — "Selected Tags" section: Show selected tags highlighted in a dedicated "Selected Tags" area, separate from unselected tags (AC3).
+
+**Tag rules and interaction**
+
+- FE-3 — Tag limits: Enforce minimum 1 and maximum 10 tags. When 10 are selected, disable all other unselected tags (AC4).
+
+- FE-4 — When 10 tags selected, show tooltip: "Maximum 10 tags allowed." (AC4).
+
+- FE-5 — MVP: No custom tags; only predefined tags are selectable (AC5).
+
+**Team and visibility**
+
+- FE-6 — Team selection: Provide team dropdown or picker; selected team(s) used for directory "recommended for your team" (AC2).
+
+- FE-7 — Visibility scope: Single choice between Private and Datacom Only (required). Do not show or enable Public for app-creator (AC6, AC7).
+
+**Save and My Apps**
+
+- FE-8 — Save button: On click submit tags, team, and visibility to backend; show success and optionally proceed (AC8).
+
+- FE-9 — Edit visibility in My Apps: Allow changing visibility (private/datacomOnly) from My Apps; if user is admin, allow setting Public (AC7).
+
+**Optional (P3)**
+
+- FE-10 — Request public visibility: e.g. "Request public visibility" button and flow for admin approval; can be omitted in MVP.
+
+**Suggested implementation order**
+
+FE-1 → FE-2 → FE-3 → FE-4 → FE-6 → FE-7 → FE-8 → FE-5 → FE-9 → FE-10 (optional).
+
+#### [DPH-548] [3.5-BE]  Tags and optional team — predefined list, save validation and progression
+
+**Jira:** [DPH-548](https://datacomgroup.atlassian.net/browse/DPH-548) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [3.5-BE]  Tags and optional team — predefined list, save validation and progression |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+### BE-3.5.1 — Predefined tag/category list
+
+**Description**
+
+- Expose API to get selectable tag/category options (e.g. GET /api/v1/tags or /catalogue/tag-options) for the tag selection UI.
+
+- List includes predefined categories from AC (e.g. Business Analysis, User Experience, Productivity, Documentation, Development Tools, Data Analysis and others); align with final BA/UX list.
+
+- MVP: only this predefined set; no custom tags. List may be read from config or DB and cached.
+
+---
+
+### BE-3.5.2 — Save tags API and validation
+
+**Description**
+
+- Expose API to save selected tags for current dev instance/draft (e.g. PATCH .../development-instances/{id}/tags or PUT .../tags), auth required and restricted to instance owner.
+
+- Request body: array of tag ids or codes. Validate: min 1, max 10; each value must be in predefined list; return 400 with clear message otherwise.
+
+- On success persist to dev instance/draft and return saved tags for frontend “Selected Tags” and disabled state.
+
+---
+
+### BE-3.5.3 — Tags, progress and content-generation gate
+
+**Description**
+
+- On save, update dev instance progress (e.g. set “Tags Specified” done) and return updated progress/percentage in response or GET dev instance.
+
+- Expose state so Epic 4 content generation can run when “tags specified” (or equivalent) is true; do not implement content generation here, only data and state.
+
+---
+
+### BE-3.5.4 — Optional: team selection for recommendations (AC.1a)
+
+**Description**
+
+- If AC.1a (choose team → recommend to that team) is in scope: support saving “target team(s)” (or equivalent) on dev instance/submission; expose team list API (or from directory/Entra) for frontend.
+
+- Optionally save team selection with tags; data consumed by in-Hub recommendation logic (recommendation engine can be later).
+
+- If out of scope this sprint, note “Out of scope for MVP” or “Placeholder” in subtask.
+
+---
+
+### BE-3.5.5 — Contract and OpenAPI
+
+**Description**
+
+- Tag list, save tags, and dev instance GET follow project request/response format.
+
+- Document in OpenAPI: GET tag options, PATCH/PUT tags (body array and validation rules), and tags + progress in dev instance response; mark auth required.
+
+---
+---
+
+### BE-3.5.2 — Save tags API and validation
+
+**Description**
+
+- Expose API to save selected tags for current dev instance/draft (e.g. PATCH .../development-instances/{id}/tags or PUT .../tags), auth required and restricted to instance owner.
+
+- Request body: array of tag ids or codes. Validate: min 1, max 10; each value must be in predefined list; return 400 with clear message otherwise.
+
+- On success persist to dev instance/draft and return saved tags for frontend “Selected Tags” and disabled state.
+
+---
+
+### BE-3.5.3 — Tags, progress and content-generation gate
+
+**Description**
+
+- On save, update dev instance progress (e.g. set “Tags Specified” done) and return updated progress/percentage in response or GET dev instance.
+
+- Expose state so Epic 4 content generation can run when “tags specified” (or equivalent) is true; do not implement content generation here, only data and state.
+
+---
+
+### BE-3.5.4 — Optional: team selection for recommendations (AC.1a)
+
+**Description**
+
+- If AC.1a (choose team → recommend to that team) is in scope: support saving “target team(s)” (or equivalent) on dev instance/submission; expose team list API (or from directory/Entra) for frontend.
+
+- Optionally save team selection with tags; data consumed by in-Hub recommendation logic (recommendation engine can be later).
+
+- If out of scope this sprint, note “Out of scope for MVP” or “Placeholder” in subtask.
+
+---
+
+### BE-3.5.5 — Contract and OpenAPI
+
+**Description**
+
+- Tag list, save tags, and dev instance GET follow project request/response format.
+
+- Document in OpenAPI: GET tag options, PATCH/PUT tags (body array and validation rules), and tags + progress in dev instance response; mark auth required.
+
+---
+---
+
+### BE-3.5.2 — Save tags API and validation
+
+**Description**
+
+- Expose API to save selected tags for current dev instance/draft (e.g. PATCH .../development-instances/{id}/tags or PUT .../tags), auth required and restricted to instance owner.
+
+- Request body: array of tag ids or codes. Validate: min 1, max 10; each value must be in predefined list; return 400 with clear message otherwise.
+
+- On success persist to dev instance/draft and return saved tags for frontend “Selected Tags” and disabled state.
+
+---
+
+### BE-3.5.3 — Tags, progress and content-generation gate
+
+**Description**
+
+- On save, update dev instance progress (e.g. set “Tags Specified” done) and return updated progress/percentage in response or GET dev instance.
+
+- Expose state so Epic 4 content generation can run when “tags specified” (or equivalent) is true; do not implement content generation here, only data and state.
+
+---
+
+### BE-3.5.4 — Optional: team selection for recommendations (AC.1a)
+
+**Description**
+
+- If AC.1a (choose team → recommend to that team) is in scope: support saving “target team(s)” (or equivalent) on dev instance/submission; expose team list API (or from directory/Entra) for frontend.
+
+- Optionally save team selection with tags; data consumed by in-Hub recommendation logic (recommendation engine can be later).
+
+- If out of scope this sprint, note “Out of scope for MVP” or “Placeholder” in subtask.
+
+---
+
+### BE-3.5.5 — Contract and OpenAPI
+
+**Description**
+
+- Tag list, save tags, and dev instance GET follow project request/response format.
+
+- Document in OpenAPI: GET tag options, PATCH/PUT tags (body array and validation rules), and tags + progress in dev instance response; mark auth required.
+
+---
+---
+
+### BE-3.5.2 — Save tags API and validation
+
+**Description**
+
+- Expose API to save selected tags for current dev instance/draft (e.g. PATCH .../development-instances/{id}/tags or PUT .../tags), auth required and restricted to instance owner.
+
+- Request body: array of tag ids or codes. Validate: min 1, max 10; each value must be in predefined list; return 400 with clear message otherwise.
+
+- On success persist to dev instance/draft and return saved tags for frontend “Selected Tags” and disabled state.
+
+---
+
+### BE-3.5.3 — Tags, progress and content-generation gate
+
+**Description**
+
+- On save, update dev instance progress (e.g. set “Tags Specified” done) and return updated progress/percentage in response or GET dev instance.
+
+- Expose state so Epic 4 content generation can run when “tags specified” (or equivalent) is true; do not implement content generation here, only data and state.
+
+---
+
+### BE-3.5.4 — Optional: team selection for recommendations (AC.1a)
+
+**Description**
+
+- If AC.1a (choose team → recommend to that team) is in scope: support saving “target team(s)” (or equivalent) on dev instance/submission; expose team list API (or from directory/Entra) for frontend.
+
+- Optionally save team selection with tags; data consumed by in-Hub recommendation logic (recommendation engine can be later).
+
+- If out of scope this sprint, note “Out of scope for MVP” or “Placeholder” in subtask.
+
+---
+
+### BE-3.5.5 — Contract and OpenAPI
+
+**Description**
+
+- Tag list, save tags, and dev instance GET follow project request/response format.
+
+- Document in OpenAPI: GET tag options, PATCH/PUT tags (body array and validation rules), and tags + progress in dev instance response; mark auth required.
+
+---
+
+---
+
+
+## [EPIC-4]: AI Content Generator
+
+
+### [US-4.1]: App-Creator Generates Basic Content
+
+# [US-4.1]: App-Creator Generates Basic Content
+
+**Jira:** [DPH-398](https://datacomgroup.atlassian.net/browse/DPH-398)
+
+
+### Epic details
+
+**Jira:** [DPH-244](https://datacomgroup.atlassian.net/browse/DPH-244)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-4]: AI Content Generator |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-4.1]: App-Creator Generates Basic Content |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 11 |
+| **Sprint** | DPH Sprint 2 |
+| **Status** | To Do |
+| **Linked work items** | [DPH-609](https://datacomgroup.atlassian.net/browse/DPH-609) (Requirement) |
+
+
+---
+## US-4.1: App-Creator Generates Basic Content
+
+As an **app-creator**,  
+I want the Product Hub to auto-generate basic content for my micro-app,  
+So that I have a complete product listing without writing it manually.
+
+**Acceptance Criteria:**
+
+1. After completing tag specification (Epic 3), a `Generate Basic Content` button is displayed on the Content Generation page
+2. On click, the AI reads my uploaded code and metadata and generates: Introduction, Business Value (Problem + Value Levers: Time, Cost, Risk), and Example Use Case
+3. A loading indicator is displayed while content is being generated
+4. Each generated section is editable inline, with a per-section regeneration instruction field and `Regenerate` button
+5. Clicking `Regenerate` on a section only updates that section
+6. Clicking `Save` saves all sections at once and displays a success notification
+7. Navigating away without saving triggers a warning: "You have unsaved changes. Are you sure you want to leave?"
+8. Returning to the page after saving displays previously saved content; returning without saving shows a blank page
+
+
+### Subtasks
+
+#### [DPH-495] Test output quality of ChatGPT when you upload a project zip or Github repo URL.
+
+**Jira:** [DPH-495](https://datacomgroup.atlassian.net/browse/DPH-495) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | Test output quality of ChatGPT when you upload a project zip or Github repo URL. |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | 11 |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-507] [4.1-UX] Tasks
+
+**Jira:** [DPH-507](https://datacomgroup.atlassian.net/browse/DPH-507) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.1-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- [UX] Design `Content Generation` page with text sections
+
+#### [DPH-508] [4.1-FE] Frontend scope (React + Content Generation page)
+
+**Jira:** [DPH-508](https://datacomgroup.atlassian.net/browse/DPH-508) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.1-FE] Frontend scope (React + Content Generation page) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+**Page & routing**
+
+- FE-1 — Content generation page and route: Add a “Content Generation” page (e.g. `/submit-a-product/content` or the next step in the Epic 3 wizard). The page is only reachable after Epic 3 tag specification is complete (AC1).
+
+- FE-2 — “Generate Basic Content” button: On the Content Generation page, show the main CTA only after tag specification is complete. On click, trigger the “generate all” flow (AC1).
+
+**Generation & loading**
+
+- FE-3 — Call “generate all” and show result: On button click, call the backend “generate all” endpoint; show a loading indicator while the request is in progress (AC3). On success, render Introduction, Business Value, and Example Use Case (AC2).
+
+- FE-4 — UI for the three sections: For each section (Introduction, Business Value, Example Use Case): inline-editable area, optional “regeneration instructions” field, and a “Regenerate” button for that section (AC4).
+
+**Single-section regenerate & save**
+
+- FE-5 — Single-section Regenerate: When the user clicks “Regenerate” on a section, send only that section (and its instructions) to the backend and update only that section with the response; do not regenerate the others (AC5).
+
+- FE-6 — Save and success feedback: Provide a “Save” button that submits all three sections in one request. On success, show a success notification (AC6).
+
+**Unsaved state & persistence**
+
+- FE-7 — Unsaved-changes prompt on leave: When there are unsaved changes, show a confirmation before leaving the page (e.g. “You have unsaved changes. Are you sure you want to leave?”) (AC7).
+
+- FE-8 — Load content on page entry: When entering the Content Generation page, if basic content was previously saved for that product, load it via the backend and display it; if it was never saved, show an empty state (do not restore unsaved draft) (AC8).
+
+**Suggested implementation order**
+
+FE-1 → FE-2 → FE-3 → FE-4 → FE-5 → FE-6 → FE-7 → FE-8 (FE-7 and FE-8 can be done around FE-6).
+
+#### [DPH-509] [4.1-BE] Tasks
+
+**Jira:** [DPH-509](https://datacomgroup.atlassian.net/browse/DPH-509) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [BE] Integrate PH AI with RAG to generate: Introduction, Business Value, Use Case
+
+
+
+# Product Hub Backend - Content Generation Tasks
+
+You're right, this is **Product Hub backend** work (different from Asset Flow Engine).
+
+Here's the flow:
+
+cssCopy code
+
+`Product Hub UI ↓ Product Hub Backend (new endpoints you need to build) ↓ Asset Flow Engine (calls the /api/asset-flow/submit endpoint) ↓ Asset Flow Engine generates docs ↓ Asset Flow Engine returns results ↓ Product Hub stores in database ↓ Product Hub returns to UI for display/save`
+
+---
+
+## Backend Tasks for Product Hub
+
+### Task 1: Create "Trigger Content Generation" Endpoint
+
+cssCopy code
+
+`POST /api/apps/{appId}/generate-content Request: { "appId": "app_xyz123", "contentType": "basic" // or "full" later } Response: { "jobId": "job_abc456", "status": "processing", "estimatedTime": 45 // seconds }`
+
+**What it does:**
+
+1. Get the app's uploaded code/metadata from database
+2. Call Asset Flow Engine: `POST /api/asset-flow/submit` with repo_url/zip_file
+3. Store the job_id in database (links to this app)
+4. Return job_id to frontend for polling
+
+**Database changes:**
+
+sqlCopy code
+
+`-- Add to apps table or create new table CREATE TABLE content_generation_jobs ( jobId UUID PRIMARY KEY, appId UUID, assetFlowSubmissionId VARCHAR,  -- ID returned from Asset Flow Engine status VARCHAR,  -- processing | completed | failed generatedContent JSON,  -- Stores the 6 sections once done createdAt TIMESTAMP, completedAt TIMESTAMP )`
+
+---
+
+### Task 2: Create "Check Generation Status" Endpoint (Polling)
+
+bashCopy code
+
+`GET /api/apps/{appId}/generate-content/status Response: { "jobId": "job_abc456", "status": "completed", // or "processing" | "failed" "progress": 100, "content": { "what_it_is": "...", "who_its_for": "...","why_it_matters": "...", "how_to_use": "...", "examples": "...", "run_it": "..." } }`
+
+**What it does:**
+
+1. Check database for job with this appId
+2. If status is "processing", call Asset Flow Engine: `GET /api/asset-flow/submit/{submissionId}`
+3. If Asset Flow Engine returns "completed", update database with generated content
+4. Return current status + content to frontend
+
+---
+
+### Task 3: Create "Save Generated Content" Endpoint
+
+bashCopy code
+
+`POST /api/apps/{appId}/microsite-content Request: { "appId": "app_xyz123", "sections": { "what_it_is": "...", "who_its_for": "...", "why_it_matters": "...", "how_to_use": "...", "examples": "...", "run_it": "..." }, "source": "generated" // or "manual" } Response: { "success": true, "message": "Content saved","appId": "app_xyz123" }`
+
+**What it does:**
+
+1. Validate all 6 sections present
+2. Save to database (microsite_content table or extend apps table)
+3. Mark content_generation_job as "saved"
+4. Return success response
+
+**Database changes:**
+
+sqlCopy code
+
+`CREATE TABLE microsite_content ( id UUID PRIMARY KEY, appId UUID, whatItIs TEXT, whoItsFor TEXT, whyItMatters TEXT, howToUseIt TEXT, examples TEXT, runIt TEXT, source VARCHAR,  -- "generated" | "manual"savedAt TIMESTAMP, updatedAt TIMESTAMP )`
+
+---
+
+### Task 4: Create "Get Saved Content" Endpoint
+
+bashCopy code
+
+`GET /api/apps/{appId}/microsite-content Response: { "appId": "app_xyz123", "hasSavedContent": true,"content": { "what_it_is": "...", "who_its_for": "...", "why_it_matters": "...", "how_to_use": "...","examples": "...", "run_it": "..." }, "savedAt": "2025-01-15T10:30:00Z", "source": "generated" // or "manual" }`
+
+**What it does:**
+
+1. Query database for microsite_content with this appId
+2. Return content if exists
+3. Return empty/null if not saved yet
+
+---
+
+### Task 5: Create "Update Content" Endpoint (for manual edits)
+
+bashCopy code
+
+`PUT /api/apps/{appId}/microsite-content Request: { "appId": "app_xyz123", "sections": { "what_it_is": "User edited this...", "who_its_for": "...", ... } } Response: { "success": true, "message": "Content updated" }`
+
+**What it does:**
+
+1. Update microsite_content in database
+2. Set source to "manual" (since user edited)
+3. Return success
+
+---
+
+## Architecture Diagram
+
+sqlCopy code
+
+`PRODUCT HUB FRONTEND ├─ Click "Generate Basic Content" │ └─ POST /api/apps/{appId}/generate-content │ └─ PRODUCT HUB BACKEND ├─ Get app metadata from database ├─ Call Asset Flow Engine: POST /api/asset-flow/submit ├─ Store jobId in database └─ Return jobId to frontend │ └─ FRONTEND STARTS POLLING │ └─ GET/api/apps/{appId}/generate-content/status │ └─ PRODUCT HUB BACKEND ├─ Call Asset Flow Engine: GET/api/asset-flow/submit/{submissionId} ├─ If completed: fetch content ├─ Update database with content └─ Return to frontend │ └─ FRONTEND DISPLAYS CONTENT │ └─ User clicks "Save" │ └─ POST /api/apps/{appId}/microsite-content │ └─ PRODUCT HUB BACKEND ├─ Validate sections ├─ Save to database └─ Return success`
+
+---
+
+## Implementation Order
+
+### Phase 1: Basic Generation Flow
+
+1. ✅ Task 1: Trigger generation endpoint
+
+        - Fetch app repo_url from database
+        - Call Asset Flow Engine
+        - Store job tracking
+2. ✅ Task 2: Poll status endpoint
+
+        - Check Asset Flow Engine status
+        - Fetch results when ready
+        - Store in database
+3. ✅ Task 4: Get saved content endpoint
+
+        - Retrieve from database
+        - Return to frontend
+
+### Phase 2: Saving & Editing
+
+1. ✅ Task 3: Save content endpoint
+
+        - Validate input
+        - Store in database
+        - Mark as saved
+2. ✅ Task 5: Update content endpoint
+
+        - Allow user edits
+        - Track source (manual vs generated)
+
+---
+
+## Database Schema (Quick Reference)
+
+sqlCopy code
+
+`-- Extend existing apps table or create new one TABLE apps ( id UUID PRIMARY KEY, name VARCHAR, repoUrl VARCHAR, uploadedAt TIMESTAMP, ...existing fields... ) -- Track generation jobs TABLEcontent_generation_jobs ( jobId UUID PRIMARY KEY, appId UUID FOREIGN KEY, assetFlowSubmissionId VARCHAR, status VARCHAR,  -- processing | completed | failed createdAt TIMESTAMP, completedAt TIMESTAMP, FOREIGN KEY (appId) REFERENCES apps(id) ) -- Store generated/edited content TABLE microsite_content ( id UUID PRIMARYKEY, appId UUID FOREIGN KEY, whatItIs TEXT, whoItsFor TEXT, whyItMatters TEXT, howToUseIt TEXT, examples TEXT, runIt TEXT, source VARCHAR,  -- generated | manual savedAt TIMESTAMP, updatedAt TIMESTAMP, FOREIGN KEY (appId) REFERENCES apps(id) )`
+
+---
+
+## Polling Strategy
+
+**Frontend polls status until completion:**
+
+javascriptRun CodeCopy code
+
+`// Pseudo-code async function pollGenerationStatus(appId, jobId) { let status = "processing" let attempts = 0 const maxAttempts = 60  // 60 * 2sec = 2 minutes max while (status === "processing" && attempts < maxAttempts) { const response = await fetch(`/api/apps/${appId}/generate-content/status`) const data = await response.json() if (data.status === "completed") { // Display content, enable Save buttondisplayGeneratedContent(data.content) break } if (data.status === "failed") { showError("Generation failed, try again") break } // Still processing, wait 2 seconds and try again await sleep(2000) attempts++ } }`
+
+---
+
+## Error Handling
+
+Each endpoint should handle:
+
+yamlCopy code
+
+`POST /api/apps/{appId}/generate-content ├─ 400: appId not found ├─ 400: app has no repoUrl/zipFile (can'textract metadata) ├─ 500: Asset Flow Engine unavailable └─ 200: job created (polling should happen next)GET /api/apps/{appId}/generate-content/status ├─ 400: appId not found ├─ 404: no generation job for thisapp ├─ 500: Asset Flow Engine unavailable └─ 200: current status + content (if completed) POST/api/apps/{appId}/microsite-content ├─ 400: missing required sections ├─ 400: appId not found ├─ 400:sections fail validation (word count, etc) └─ 200: saved GET /api/apps/{appId}/microsite-content ├─ 400:appId not found ├─ 204: no content saved yet └─ 200: return content`
+
+---
+
+## Summary
+
+**You need to build 5 endpoints in Product Hub:**
+
+1. `POST /api/apps/{appId}/generate-content` — Trigger generation
+2. `GET /api/apps/{appId}/generate-content/status` — Poll for results
+3. `POST /api/apps/{appId}/microsite-content` — Save generated content
+4. `GET /api/apps/{appId}/microsite-content` — Retrieve saved content
+5. `PUT /api/apps/{appId}/microsite-content` — Update/edit content
+
+**The flow is:**
+
+- Trigger → Poll → Display → Save → Retrieve
+
+**Asset Flow Engine only needs to do:**
+
+- Generate the 6 sections and return JSON
+
+#### [DPH-608] [4.1-PM] Create a resource group for AssetFlow Engine (Azure Container App)
+
+**Jira:** [DPH-608](https://datacomgroup.atlassian.net/browse/DPH-608) · **Status:** Done
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.1-PM] Create a resource group for AssetFlow Engine (Azure Container App) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | Done |
+| **Story point estimate** | — |
+| **Priority** | Critical (P1) |
+| **Assignee** | Dipesh Trikam |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-617] [4.1-UX] Design My apps -> Edit Product -> Regenerate Content
+
+**Jira:** [DPH-617](https://datacomgroup.atlassian.net/browse/DPH-617) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.1-UX] Design My apps -> Edit Product -> Regenerate Content |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Lowest |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-618] [4.1-UX] Edit Product -> accept / save changes 
+
+**Jira:** [DPH-618](https://datacomgroup.atlassian.net/browse/DPH-618) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.1-UX] Edit Product -> accept / save changes  |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Lowest |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | DPH Sprint 2 |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-4.2]: App-Creator Generates AI Assets via AssetFlow Engine
+
+# [US-4.2]: App-Creator Generates AI Assets via AssetFlow Engine
+
+**Jira:** [DPH-399](https://datacomgroup.atlassian.net/browse/DPH-399)
+
+
+### Epic details
+
+**Jira:** [DPH-244](https://datacomgroup.atlassian.net/browse/DPH-244)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-4]: AI Content Generator |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-4.2]: App-Creator Generates Advanced Content via AssetFlow Engine |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | 10 |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | [DPH-609](https://datacomgroup.atlassian.net/browse/DPH-609) (Requirement) |
+
+
+---
+As an **app-creator**,  
+I want to optionally generate a user guide and video guide for my micro-app,  
+So that app-users can learn how to use my product through step-by-step and visual formats.
+
+**Acceptance Criteria:**
+
+1. After basic content is saved (US-4.1), `Generate User Guide` and `Generate Video Guide` buttons are displayed
+2. On click, the Product Hub AI reads my code and metadata and sends a structured generation request to the AssetFlow Engine (AFE) via REST API
+3. A status indicator is shown while generating — video generation notes it may take 20–60 minutes
+4. Generation continues in the background if I navigate away
+5. I can cancel generation at any time via a `Cancel` button (confirmed by modal); AFE stops the job and the generate button becomes available again
+6. On completion, AFE returns the generated asset (HTML slideshow or MP4) to Product Hub via webhook callback
+7. The asset is displayed on my product listing with `Accept` and `Reject` options
+8. Accepting saves the asset to my product listing; rejecting discards it and re-enables the generate button
+9. On failure, an error message is displayed with a `Regenerate` button
+10. Both user guide and video guide are optional — I can proceed without either
+11. The `Submit for Approval` button is locked until I have accepted or rejected any guide I chose to generate
+12. AFE uses a consistent format template across all products to ensure uniform output
+
+
+### Subtasks
+
+#### [DPH-510] [4.2-FE]  Frontend scope (React + AI assets via AssetFlow Engine)
+
+**Jira:** [DPH-510](https://datacomgroup.atlassian.net/browse/DPH-510) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.2-FE]  Frontend scope (React + AI assets via AssetFlow Engine) |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Gavin Yan |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+**Entry & buttons (depends on US-4.1)**
+
+- FE-1 — Show "Generate User Guide" and "Generate Video Guide" only after basic content is saved (US-4.1). Hide or disable both until then (AC1).
+
+- FE-2 — On "Generate User Guide" or "Generate Video Guide" click, call backend to start the job; on success switch to "generating" state (hide that Generate button, show status) (AC2, AC3).
+
+**Status & long-running**
+
+- FE-3 — Generating state: show a clear status indicator (e.g. "Generating…" or step text). For Video Guide, show that it may take 20–60 minutes (AC3).
+
+- FE-4 — Poll or push for job status: use backend job-status API (or WebSocket/SSE) so the user sees up-to-date state; if the user leaves and comes back, show the correct status (AC4).
+
+**Cancel**
+
+- FE-5 — Cancel button and confirmation: show a "Cancel" button while generating; on click open a confirmation modal (e.g. "Are you sure you want to cancel?"); on confirm call backend cancel; on success hide status and show the Generate button again (AC5).
+
+**Asset display & review**
+
+- FE-6 — Show generated asset on product listing/detail: when status is completed, render User Guide (HTML slideshow in iframe or safe HTML) and Video Guide (video player or MP4 link) in "my product" list or product detail (AC7).
+
+- FE-7 — Accept and Reject: show "Accept" and "Reject" next to the asset. Accept calls backend and updates UI (e.g. mark as accepted, remove from "pending review"). Reject calls backend, clears the asset from view, and shows the Generate button again for that type (AC8).
+
+**Failure & retry**
+
+- FE-8 — Failed state: show error message from backend and a "Regenerate" button; on click call backend again to start a new generation (AC9).
+
+**Submit lock & optionality**
+
+- FE-9 — "Submit for Approval" lock: use backend "can submit" or local state so that if there is any User Guide or Video Guide that was generated but not yet Accepted or Rejected, "Submit for Approval" is disabled; enable it only when all such guides are Accepted or Rejected (AC11).
+
+- FE-10 — Optional flow: do not require generating either guide; user can skip both and continue. Only when the user has chosen to generate a guide must they Accept or Reject before Submit is allowed (AC10).
+
+**Suggested implementation order**
+
+FE-1 → FE-2 → FE-3 → FE-4 → FE-6 → FE-7 → FE-5 → FE-8 → FE-9 → FE-10.
+
+#### [DPH-511] [4.2-BE] Tasks
+
+**Jira:** [DPH-511](https://datacomgroup.atlassian.net/browse/DPH-511) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.2-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [BE] Handle AFE webhook for user guide completion
+- [Dev] [BE] Generate standardised instruction and send to AFE API
+
+#### [DPH-552] Rithvik's old tasks
+
+**Jira:** [DPH-552](https://datacomgroup.atlassian.net/browse/DPH-552) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | Rithvik's old tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | Rithvik Sharma |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [BE] API skeleton: basic CRUD for submissions, local file storage
+- [FE] Checkpoint 1 UI: step editor + approval
+- [FE] Script pipeline: mock LLM, checkpoint 2 UI
+- [BE] Video pipeline: mock HeyGen with polling + status
+- [BE] Integration: swap mocks for real services behind env flags
+- [BE] Hardening: validation, error handling, rate limits, logging
+- [UX] Refer to Dipesh notes and instructions for researching about Multi-agent flow for generating documentation (for security team and product hub content)
+
+#### [DPH-605] [4.2-UX] Tasks
+
+**Jira:** [DPH-605](https://datacomgroup.atlassian.net/browse/DPH-605) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.2-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+UX indicate Background generation for user
+
+#### [DPH-619] [4.2-UX] Generate video / user guide progress update / estimated time remaining on "My Apps"
+
+**Jira:** [DPH-619](https://datacomgroup.atlassian.net/browse/DPH-619) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.2-UX] Generate video / user guide progress update / estimated time remaining on "My Apps" |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-620] [4.2-UX] cancel / accept / status changes
+
+**Jira:** [DPH-620](https://datacomgroup.atlassian.net/browse/DPH-620) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.2-UX] cancel / accept / status changes |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-621] [4.2-UX] `submit for approval` button / modal
+
+**Jira:** [DPH-621](https://datacomgroup.atlassian.net/browse/DPH-621) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.2-UX] `submit for approval` button / modal |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Lowest |
+| **Assignee** | Ben Schaumkel |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-4.3]: App-Creator Reviews Generated Content and Submits for Approval
+
+# [US-4.3]: App-Creator Reviews Generated Content and Submits for Approval
+
+**Jira:** [DPH-400](https://datacomgroup.atlassian.net/browse/DPH-400)
+
+
+### Epic details
+
+**Jira:** [DPH-244](https://datacomgroup.atlassian.net/browse/DPH-244)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-4]: AI Content Generator |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-4.3]: App-Creator Reviews Generated Content and Submits for Approval |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an **app-creator**,  
+I want to review my generated content and submit for approval,  
+So that my product listing is complete and ready for admin review.
+
+**Acceptance Criteria:**
+
+1. The `Submit for Approval` button is visible once basic content is saved
+2. The button remains locked if I have triggered a user guide or video guide but not yet accepted or rejected it — a tooltip explains why
+3. Once all content is ready, clicking `Submit for Approval` shows a confirmation modal summarising: Introduction, Business Value, Example Use Case, and any accepted guides (user guide and/or video)
+4. On confirmation, the app status updates to Pending Approval and a success message is displayed
+5. The admin receives an email notification (per US-0.2) with: product name, app-creator name, submission timestamp, and a direct link to the product in the dashboard
+6. The app appears in the admin's pending approval queue immediately after submission
+7. Only one admin can review a submission at a time to prevent duplicate reviews
+8. I cannot edit my content while the submission is pending — editing is re-enabled only after the admin responds
+9. The content generation page is accessible at any time from My Apps → My Uploads → Development in Progress
+10. Returning to the page always shows content in its last saved state
+
+
+### Subtasks
+
+#### [DPH-512] [4.3-FE] Tasks
+
+**Jira:** [DPH-512](https://datacomgroup.atlassian.net/browse/DPH-512) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.3-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [FE] Lock `Submit for Approval` until video accepted/rejected
+- [Dev] [FE] Display MP4 video with `Accept` and `Reject` options
+- [Dev] [FE] Display video generation status 20-60 min with cancel option
+
+#### [DPH-513] [4.3-BE] Tasks
+
+**Jira:** [DPH-513](https://datacomgroup.atlassian.net/browse/DPH-513) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [4.3-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [BE] Handle AFE webhook and send email notification
+- [Dev] [BE] Generate standardised instruction and send to AFE API
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+## [EPIC-5]: Product Approval & Admin Dashboard
+
+
+### [US-5.1]: Admin Dashboard Setup & Pending Approval Queue
+
+# [US-5.1]: Admin Dashboard Setup & Pending Approval Queue
+
+**Jira:** [DPH-256](https://datacomgroup.atlassian.net/browse/DPH-256)
+
+
+### Epic details
+
+**Jira:** [DPH-245](https://datacomgroup.atlassian.net/browse/DPH-245)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-5]: Product Approval & Admin Dashboard |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-5.1]: Admin Dashboard Setup & Pending Approval Queue |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an **admin**,  
+I want a unified dashboard to manage Product Hub submissions,  
+So that I can review and action pending micro-app approvals in one place.
+
+**Acceptance Criteria:**
+
+1. Base it off Agent Library in terms of UI but create the Hub-specific Admin App. (might be worth discussing with Dipesh - he may know to create the base for the admin app)
+2. I can access both Agent Library management and the Product Hub approval queue from the same interface.
+3. Authentication uses Entra ID, consistent with Agent Library branding and navigation.
+4. The pending approval queue displays: product name, app-creator name, submission date, and current status — sorted oldest first.
+5. Clicking a product in the queue opens a read-only detail view showing: 
+
+        1. introduction,
+        2. business value,
+        3. example use case,
+        4. user guide,
+        5. video guide (if generated),
+        6. code analysis results (if exists),
+        7. and product tags.
+6. Clicking the email notification link takes me directly to the relevant product in the dashboard.
+7. The dashboard shows a summary of app counts: 
+
+        1. total submitted,
+        2. total approved,
+        3. total rejected,
+        4. approval rate %,
+        5. active count, and
+        6. inactive count
+8. Dashboard metrics to be updated when user takes an action. (so I can see queue and catalog health at a glance)
+
+
+### Subtasks
+
+#### [DPH-514] [5.1-UX] Tasks
+
+**Jira:** [DPH-514](https://datacomgroup.atlassian.net/browse/DPH-514) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.1-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [UX] Design Product Hub sections within Agent Library UI
+
+#### [DPH-515] [5.1-FE] Tasks
+
+**Jira:** [DPH-515](https://datacomgroup.atlassian.net/browse/DPH-515) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.1-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [FE] Maintain consistent Agent Library branding and navigation
+- [Dev] [FE] Integrate Product Hub tabs: Pending Queue, Analytics, Status Management
+- [Dev] [FE] Rename dashboard to approved name TBC by Dipesh
+
+#### [DPH-516] [5.1-BE] Tasks
+
+**Jira:** [DPH-516](https://datacomgroup.atlassian.net/browse/DPH-516) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [BE] Configure Entra ID authentication for unified dashboard
+- [Dev] [BE] Fork Agent Library admin dashboard codebase
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-5.2]: Admin Approves or Rejects a Submission
+
+# [US-5.2]: Admin Approves or Rejects a Submission
+
+**Jira:** [DPH-252](https://datacomgroup.atlassian.net/browse/DPH-252)
+
+
+### Epic details
+
+**Jira:** [DPH-245](https://datacomgroup.atlassian.net/browse/DPH-245)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-5]: Product Approval & Admin Dashboard |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-5.2]: Admin Approves or Rejects a Submission |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an **admin**,  
+I want to approve or reject submitted micro-apps,  
+So that only quality apps are published and app-creators understand why they were rejected.
+
+**Acceptance Criteria:**
+
+1. I see `Approve` and `Reject` action buttons when viewing a product in the queue
+2. On approval: the product status updates to Approved, it is removed from the pending queue, and the app-creator is notified by email (per US-0.2)
+3. On rejection: a modal appears requiring a rejection reason (required) and specific improvement feedback (required)
+4. On rejection submission: the product status updates to Rejected, the app-creator is emailed the rejection reason and feedback with a link back to content generation (per US-0.2)
+5. Each rejection is logged against the app with a count, timestamp, and admin feedback — visible to admin on resubmission
+6. After rejection, the app-creator can update their content and resubmit
+
+
+### Subtasks
+
+#### [DPH-519] [5.3-UX] Tasks
+
+**Jira:** [DPH-519](https://datacomgroup.atlassian.net/browse/DPH-519) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.3-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [UX] Design product detail view: basic content, advanced content, code analysis, tags
+- [UX] Design pending approval queue UI with product cards
+
+#### [DPH-520] [5.3-FE] Tasks
+
+**Jira:** [DPH-520](https://datacomgroup.atlassian.net/browse/DPH-520) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.3-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [FE] Implement email link redirect to pre-loaded product detail
+- [Dev] [FE] Implement read-only product detail view
+- [Dev] [FE] Implement pending approval queue sorted by submission date
+
+#### [DPH-521] [5.3-BE] Tasks
+
+**Jira:** [DPH-521](https://datacomgroup.atlassian.net/browse/DPH-521) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.3-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [BE] Create API endpoint to fetch pending products
+
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-5.3]: Admin Manages App Publishing & Visibility
+
+# [US-5.3]: Admin Manages App Publishing & Visibility
+
+**Jira:** [DPH-253](https://datacomgroup.atlassian.net/browse/DPH-253)
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-5.3]: Admin Manages App Publishing & Visibility |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Medium (P3) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+---
+
+As an admin,
+I want to manage product Publish/Unpublish and Featured status,
+So that I control what's live and how it's promoted, and app-creators can update their apps without losing those settings.
+
+
+
+#### What "Published" means
+
+• Product card appears in the catalogue.
+• App-users can open the detail modal and see full content.
+• Launch app / demo is available.
+• Product can be Featured (if admin checks it) and Public (if admin sets it).
+
+#### What "Unpublished" means
+
+• Product card still appears in the catalogue, but the card clearly shows "Unpublished" (e.g. badge or label).
+• App-users cannot open the detail modal — it's locked.
+• App-users cannot launch the demo — it's locked.
+• Featured and Public are not cleared: they are stored and restored automatically when the product is Published again.
+
+---
+
+#### Who can Publish / Unpublish
+
+First time (after admin + security approval): App-creator publishes when ready.
+Any time after that: Admin and app-creator can both Publish and Unpublish.
+
+App-creator updating their app: They can Unpublish → make changes → Publish again.
+• If they changed code or significant content → they must resubmit for approval before they can Publish.
+• If the change is minor (e.g. copy only) → they can Publish again without re-approval.
+(Exact definition of "minor" can be agreed with the team.)
+
+---
+
+#### Acceptance criteria
+
+1. Publish / Unpublish control
+Each approved product has a Publish / Unpublish control (no Active/Inactive). Available on the admin dashboard and, where relevant, on the app-creator's My Apps / product management.
+2. Published behaviour
+When Published: product in catalogue, detail modal openable, Launch/demo available.
+When Unpublished: product card still in catalogue and clearly labelled "Unpublished"; detail modal and demo not accessible to app-users.
+3. Featured
+Admin can set a Featured checkbox on the dashboard. Only Published products can be Featured; checkbox disabled when Unpublished. When a product is Unpublished, its Featured value is saved and restored when Published again.
+4. Public visibility
+Only the admin can set a product's visibility to Public (from the dashboard). App-creator cannot change it: the scope selector on My Apps is disabled with the note "Contact admin to change visibility." When a product is Unpublished, its Public value is saved and restored when Published again.
+5. Audit trail
+Every Publish, Unpublish, and Featured change is logged with the user's name and timestamp.
+6. No notification to app-creator
+App-creators are not notified when an admin publishes, unpublishes, or changes Featured for their product.
+7. Re-approval after big changes
+If the app-creator changed code or significant content while Unpublished, they must resubmit for approval before they can Publish. Minor changes (e.g. copy only) can be Published without re-approval.
+
+        1. Admin approval flow for marketing content
+        2. Security approval flow for code changes
+
+
+### Subtasks
+
+#### [DPH-522] [5.4-UX] Tasks
+
+**Jira:** [DPH-522](https://datacomgroup.atlassian.net/browse/DPH-522) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.4-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [UX] Design approval action buttons and rejection feedback modal
+
+#### [DPH-523] [5.4-FE] Tasks
+
+**Jira:** [DPH-523](https://datacomgroup.atlassian.net/browse/DPH-523) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.4-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [FE] Build rejection feedback form with required fields
+- [Dev] [FE] Implement `Approve` and `Reject` buttons
+
+#### [DPH-524] [5.4-BE] Tasks
+
+**Jira:** [DPH-524](https://datacomgroup.atlassian.net/browse/DPH-524) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.4-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [BE] Allow app-creator to access content generation and tags after rejection
+- [Dev] [BE] Send rejection email with feedback and content generation link
+- [Dev] [BE] Update product status to 'Rejected' and log rejection history
+- [Dev] [BE] Send approval email notification to app-creator
+- [Dev] [BE] Update product status to 'Approved' and remove from queue
+
+---
+
+---
+
+
+### [US-5.3]: Admin Manages Product Visibility
+
+# [US-5.3]: Admin Manages Product Visibility
+
+**Jira:** [DPH-253](https://datacomgroup.atlassian.net/browse/DPH-253)
+
+
+### Epic details
+
+**Jira:** [DPH-245](https://datacomgroup.atlassian.net/browse/DPH-245)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-5]: Product Approval & Admin Dashboard |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-5.3]: Admin Manages App Publishing & Visibility |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Medium (P3) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+
+**In short:** Products use **Publish** / **Unpublish** (like Confluence). When **Unpublished**, the card still shows in the catalogue with a clear “Unpublished” label, but the detail modal and demo are locked. **Featured** and **Public** are set by the admin and are kept when a product is Unpublished, then restored when it’s Published again. App-creators can unpublish to update their app; re-approval is needed only if they change code or significant content.
+
+---
+
+### User story
+
+As an **admin**,  
+I want to manage product **Publish/Unpublish** and **Featured** status,  
+So that I control what’s live and how it’s promoted, and app-creators can update their apps without losing those settings.
+
+---
+
+### What “Published” means
+
+- Product **card** appears in the catalogue.
+- App-users can **open the detail modal** and see full content.
+- **Launch app / demo** is available.
+- Product can be **Featured** (if admin checks it) and **Public** (if admin sets it).
+
+### What “Unpublished” means
+
+- Product **card** still appears in the catalogue, but the card **clearly shows “Unpublished”** (e.g. badge or label).
+- App-users **cannot** open the detail modal — it’s locked.
+- App-users **cannot** launch the demo — it’s locked.
+- **Featured** and **Public** are **not** cleared: they are stored and **restored automatically** when the product is Published again.
+
+---
+
+### Who can Publish / Unpublish
+
+| When | Who |
+|------|-----|
+| **First time** (after admin + security approval) | **App-creator** publishes when ready. |
+| **Any time after that** | **Admin** and **app-creator** can both Publish and Unpublish. |
+
+**App-creator updating their app:** They can Unpublish → make changes → Publish again.
+
+- If they changed **code or significant content** → they must **resubmit for approval** before they can Publish.
+- If the change is **minor** (e.g. copy only) → they can Publish again **without** re-approval.  
+  (Exact definition of “minor” can be agreed with the team.)
+
+---
+
+### Acceptance criteria
+
+1. **Publish / Unpublish control**  
+   Each approved product has a Publish / Unpublish control (no Active/Inactive). Available on the admin dashboard and, where relevant, on the app-creator’s My Apps / product management.
+
+2. **Published behaviour**  
+   When Published: product in catalogue, detail modal openable, Launch/demo available.  
+   When Unpublished: product card still in catalogue and **clearly labelled “Unpublished”**; detail modal and demo **not** accessible to app-users.
+
+3. **Featured**  
+   Admin can set a **Featured** checkbox on the dashboard. Only **Published** products can be Featured; checkbox disabled when Unpublished. When a product is Unpublished, its Featured value is **saved** and **restored** when Published again.
+
+4. **Public visibility**  
+   Only the **admin** can set a product’s visibility to **Public** (from the dashboard). App-creator cannot change it: the scope selector on My Apps is disabled with the note “Contact admin to change visibility.” When a product is Unpublished, its Public value is **saved** and **restored** when Published again.
+
+5. **Audit trail**  
+   Every Publish, Unpublish, and Featured change is logged with the user’s name and timestamp.
+
+6. **No notification to app-creator**  
+   App-creators are not notified when an admin publishes, unpublishes, or changes Featured for their product.
+
+7. **Re-approval after big changes**  
+   If the app-creator changed **code or significant content** while Unpublished, they must **resubmit for approval** before they can Publish. **Minor** changes (e.g. copy only) can be Published without re-approval.
+
+---
+
+### Subtasks
+
+#### [DPH-522] [5.4-UX] Tasks
+
+**Jira:** [DPH-522](https://datacomgroup.atlassian.net/browse/DPH-522) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.4-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [UX] Design approval action buttons and rejection feedback modal
+
+#### [DPH-523] [5.4-FE] Tasks
+
+**Jira:** [DPH-523](https://datacomgroup.atlassian.net/browse/DPH-523) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.4-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [FE] Build rejection feedback form with required fields
+- [Dev] [FE] Implement `Approve` and `Reject` buttons
+
+#### [DPH-524] [5.4-BE] Tasks
+
+**Jira:** [DPH-524](https://datacomgroup.atlassian.net/browse/DPH-524) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [5.4-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- [Dev] [BE] Allow app-creator to access content generation and tags after rejection
+- [Dev] [BE] Send rejection email with feedback and content generation link
+- [Dev] [BE] Update product status to 'Rejected' and log rejection history
+- [Dev] [BE] Send approval email notification to app-creator
+- [Dev] [BE] Update product status to 'Approved' and remove from queue
+
+---
+---
+
+---
+
+
+### [US-5.4]: Admin Monitors Hub Analytics
+
+# [US-5.4]: Admin Monitors Hub Analytics
+
+**Jira:** [DPH-598](https://datacomgroup.atlassian.net/browse/DPH-598)
+
+
+### Epic details
+
+**Jira:** [DPH-245](https://datacomgroup.atlassian.net/browse/DPH-245)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-5]: Product Approval & Admin Dashboard |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-5.4]: Admin Monitors Hub Analytics |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an **admin**, 
+
+I want to view improvement-focused analytics on a **dedicated Analytics page**, 
+
+so that I can see how users move through the Hub and where to improve (and so we have a foundation for future A/B testing).
+
+**Acceptance criteria**
+
+1. **Navigation** — Analytics tab/nav from the admin dashboard; opens dedicated Analytics page; admin-only.
+2. **Date range** — Selector (e.g. last 7 days, last 30 days, custom); all metrics use the selected range.
+3. **Funnel metrics** — Funnel for key flows (landing → catalogue → detail → launch; submission started → submitted).
+4. **Click-through / engagement** — CTR or clicks on main CTAs, featured apps, category filter usage, search usage, My Products vs Catalogue usage.
+5. **Presentation** — Clear, scannable (cards/charts/tables); easy to compare via date range.
+
+**Out of scope (with reasoning)**
+
+- **A/B experiment UI** — Add later on top of this metrics foundation.
+- **Basic queue/catalog counts** — Stay on main dashboard (US-5.1).
+- **Export (CSV/reports)** — Defer until metrics are stable.
+- **App-creator / non-admin views** — Admin-only for this story.
+
+
+### Subtasks
+
+_No subtasks in Jira._
+
+---
+---
+
+---
+
+
+## [EPIC-6]: Assisted Security Testing & Deployment
+
+
+### [US-6.1]: Deploy apps to staging environment (for UAT and Security test)
+
+# [US-6.1]: Deploy apps to staging environment (for UAT and Security test)
+
+**Jira:** [DPH-474](https://datacomgroup.atlassian.net/browse/DPH-474)
+
+
+### Epic details
+
+**Jira:** [DPH-246](https://datacomgroup.atlassian.net/browse/DPH-246)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-6]: Assisted Security Testing & Deployment |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-6.1]: Deploy apps to staging environment (for UAT and Security test) |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an **app-creator**,  
+I want my approved app automatically deployed to staging environment,  
+So that UAT group members and the security team can access and review it on the Hub before any wider release.
+
+**Acceptance Criteria:**
+
+1. On admin approval, the system automatically triggers the staging deployment — no action required from the app-creator
+2. The app's detail page shows a live deployment status: Queued → Building → Deploying → Staged (if failed deploying to staging environment, print “failed” with a retry option. Status is back to Approved)
+3. On success, the staging URL is accessible to the app-creator, admin, UAT group members, and security reviewers
+4. The app appears in the Hub catalogue with a UAT status badge for UAT group members and security reviewers
+5. The app-creator is notified by email on completion (success or failure) (per US-0.2)
+6. Build logs are accessible to the app-creator and admin from the app's draft page
+
+
+### Subtasks
+
+#### [DPH-478] [6.1-BE] Tasks
+
+**Jira:** [DPH-478](https://datacomgroup.atlassian.net/browse/DPH-478) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [6.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Trigger deployment pipeline on admin approval event
+- Implement Docker build and npm build pipeline
+- Provision Azure Container App, managed identity, and budget allocation
+- Configure DNS and networking for restricted staging URL
+- Send email notification to app-creator on deployment complete or failed
+
+#### [DPH-477] [6.1-FE] Tasks
+
+**Jira:** [DPH-477](https://datacomgroup.atlassian.net/browse/DPH-477) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [6.1-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Display deployment status indicator: Queued, Building, Deploying, Deployed, Failed
+- Display restricted staging URL on successful deployment
+- Display error message and Retry Deployment option on failure
+- Expose build logs on app detail page
+
+---
+---
+---
+
+---
+
+
+### [US-6.2]: Security Team Reviews App via the Hub
+
+# [US-6.2]: Security Team Reviews App via the Hub
+
+**Jira:** [DPH-258](https://datacomgroup.atlassian.net/browse/DPH-258)
+
+
+### Epic details
+
+**Jira:** [DPH-246](https://datacomgroup.atlassian.net/browse/DPH-246)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-6]: Assisted Security Testing & Deployment |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-6.2]: Security Team Reviews App via the Hub |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As a **security team reviewer**,  
+I want to access all app materials directly within the Hub,  
+So that I can complete my review in one place without needing files sent to me.
+
+**Acceptance Criteria:**
+
+1. 1. On the app's detail page, **additional panels are displayed based on the viewer's role (admin, security) and the app's lifecycle stage**. A ``Security Review`` panel is visible to security reviewers and admins containing: 
+
+        1. GitHub repository URL
+        2. Tech stack, dependencies, and SAST findings summary
+        3. Architecture overview
+        4. Auto-generated docs from Epic 4 (user guide, business value, use cases)
+        5. AWAF / code validation report from Epic 3
+        6. Live staging URL
+2. Clicking the staging URL opens the live staging environment for hands-on testing
+3. The security reviewer can set the review status to Security Review In Progress, Security Approved, or Security Rejected
+4. On rejection, the reviewer can attach notes to the app record
+5. Security reviewers have read-only access — they cannot modify app details or deployment config
+6. The app-creator can click `Notify Security Team` (enabled after staging deployment) to alert reviewers via email/Hub notification (as per US-0.2)
+7. Until a reviewer accesses the app, it is flagged as Pending Security Review in the admin dashboard
+
+
+### Subtasks
+
+#### [DPH-480] [6.2-BE] Tasks
+
+**Jira:** [DPH-480](https://datacomgroup.atlassian.net/browse/DPH-480) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [6.2-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Build security doc generation service from app code analysis
+- Include SAST findings, dependency vulnerabilities, tech stack, staging URL, and architecture overview
+- Export generated document as PDF
+- Auto-populate and send security testing request email to security team
+- CC app-creator on security testing email
+- Save generated document against app record
+- Handle email send failure and trigger retry notification to app-creator and admin
+
+#### [DPH-479] [6.2-FE] Tasks
+
+**Jira:** [DPH-479](https://datacomgroup.atlassian.net/browse/DPH-479) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [6.2-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Display `Initiate Security Test` button, gated behind successful staging deployment
+- Display submission confirmation message with sent timestamp
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-6.3]: Admin Manages Security Outcome
+
+# [US-6.3]: Admin Manages Security Outcome
+
+**Jira:** [DPH-475](https://datacomgroup.atlassian.net/browse/DPH-475)
+
+
+### Epic details
+
+**Jira:** [DPH-246](https://datacomgroup.atlassian.net/browse/DPH-246)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-6]: Assisted Security Testing & Deployment |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-6.3]: Admin Monitors Security Review |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an **admin**,  
+I want to monitor security review progress, 
+So that I can control the pre-production rollout and keep the right people in the loop.
+
+**Acceptance Criteria:**
+
+1. The admin dashboard shows each staging app's security review status: Pending Security Review, Security Review in Progress, Security Approved, or Security Rejected
+2. When the security team approves an app, the admin is notified and the app-creator receives an email confirming it is ready for production release (per US-0.2)
+3. When the security team rejects an app, the admin is notified with the reviewer's notes, and the app-creator is emailed the rejection reasons (per US-0.2)
+4. The admin can add their own notes to any app record
+
+
+### Subtasks
+
+#### [DPH-483] [6.3-FE] Tasks
+
+**Jira:** [DPH-483](https://datacomgroup.atlassian.net/browse/DPH-483) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [6.3-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Add Security Testing status section to admin dashboard app record
+- Allow admin to attach security team report or findings to app record
+- Display security testing status history in admin app detail record
+
+#### [DPH-481] [6.3-BE] Tasks
+
+**Jira:** [DPH-481](https://datacomgroup.atlassian.net/browse/DPH-481) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [6.3-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Implement status options: Awaiting Testing, In Progress, Approved, Rejected
+- Log timestamp on each status change
+- Send email notification to app-creator on Approved status
+- Send email notification to app-creator on Rejected status with admin reasons
+
+---
+---
+---
+---
+
+---
+
+
+### [US-6.4]: Release to Production Environment
+
+# [US-6.4]: Release to Production Environment
+
+**Jira:** [DPH-476](https://datacomgroup.atlassian.net/browse/DPH-476)
+
+
+### Epic details
+
+**Jira:** [DPH-246](https://datacomgroup.atlassian.net/browse/DPH-246)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-6]: Assisted Security Testing & Deployment |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-6.4]: Deploy App to Production |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Critical (P1) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an **admin**,  
+I want to promote a security-approved app to a company-wide production release,  
+So that only fully cleared apps reach all Datacom staff.
+
+**Acceptance Criteria:**
+
+1. Once security review status is Security Approved, a `Release to Production` button is enabled on the app's admin dashboard record
+2. On release, the app is promoted from `staging` to `production` and status updates to Live
+3. On success, a public URL is generated at `[appname].hub.datacom.com`
+4. The app becomes discoverable per the app-creator's chosen visibility scope (Private or Datacom Only), replacing the UAT Badge with the corresponding visibility selection
+5. The app-creator is emailed (per US-0.2) their app's public production URL
+6. On failure, the admin is notified (per US-0.2) with a Retry Release option
+7. The staging instance remains accessible to UAT group members until the admin explicitly decommissions it
+
+
+### Subtasks
+
+#### [DPH-484] [6.4-FE] Tasks
+
+**Jira:** [DPH-484](https://datacomgroup.atlassian.net/browse/DPH-484) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [6.4-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Display `Deploy to Production` button, gated behind security Approved status
+- Display Retry Deployment option on production deployment failure
+
+#### [DPH-482] [6.4-BE] Tasks
+
+**Jira:** [DPH-482](https://datacomgroup.atlassian.net/browse/DPH-482) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [6.4-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Trigger production deployment pipeline on app-creator confirmation
+- Deploy app to production Azure environment
+- Generate public URL following convention: `[appname].hub.datacom.com`
+- Configure DNS and networking for public production URL
+- Publish app to Product Hub catalogue after successful production deployment
+- Send email notification to app-creator with public URL
+- Send failure notification to app-creator on production deployment failure
+
+---
+---
+---
+
+---
+
+
+## [EPIC-7]: User Reviews, Ratings, Sharing & Other
+
+
+### [US-7.1]: Rate & Review a micro-app
+
+# [US-7.1]: Rate & Review a micro-app
+
+**Jira:** [DPH-259](https://datacomgroup.atlassian.net/browse/DPH-259)
+
+
+### Epic details
+
+**Jira:** [DPH-247](https://datacomgroup.atlassian.net/browse/DPH-247)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-7]: User Reviews, Ratings, Sharing & Other |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-7.1]: Rate & Review a micro-app |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+**User Story:**
+As a logged-in user,
+I want to rate and review a micro-app,
+So that I can share my experience and help others make informed decisions
+
+**Acceptance Criteria:**
+
+1. **Given:** A logged-in user is on a micro-app's detail page
+**When:** The user scrolls to the Reviews & Ratings section
+**Then:** A `Write a Review` button is visible and enabled
+2. **Given:** The user clicks `Write a Review`
+**When:** The review form opens
+**Then:** The form contains:
+
+        - Star rating (1–5 stars)
+        - Value lever ratings: Time, Cost, and Risk (each rated 1–5 stars)
+        - Text review field (optional)
+        - `Submit Review` button
+3. **Given:** The user submits their review
+**When:** Submission is confirmed
+**Then:** The review goes live immediately on the app's detail page and the user's rating is reflected in the app's overall score
+4. **Given:** The user has already submitted a review for this app
+**When:** The user revisits the Reviews & Ratings section
+**Then:** Their existing review is displayed with an `Edit Review` option instead of `Write a Review`
+5. A user can only submit one review per micro-app
+6. The star rating field is required — the text review field is optional
+7. Value lever ratings (Time, Cost, Risk) feed into the app's business value score used for sorting and filtering in the catalogue
+
+---
+
+**Mock-up/Wireframe:** To be provided by UX designer
+
+
+### Subtasks
+
+#### [DPH-486] [7.1-UX] Tasks
+
+**Jira:** [DPH-486](https://datacomgroup.atlassian.net/browse/DPH-486) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.1-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Design Reviews & Ratings section on app detail page
+- Design review form: star rating, value lever ratings (Time, Cost, Risk), text field, and Submit button
+- Design `Edit Review` state for returning reviewers
+
+#### [DPH-489] [7.1-FE] Tasks
+
+**Jira:** [DPH-489](https://datacomgroup.atlassian.net/browse/DPH-489) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.1-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Implement Reviews & Ratings section on app detail page
+- Implement review form with star rating input (1–5)
+- Implement value lever rating inputs for Time, Cost, and Risk (1–5 each)
+- Implement optional text review field
+- Implement `Submit Review` button with validation (star rating required)
+- Display `Edit Review` option if user has already reviewed the app
+- Reflect updated overall rating score on submission
+
+#### [DPH-492] [7.1-BE] Tasks
+
+**Jira:** [DPH-492](https://datacomgroup.atlassian.net/browse/DPH-492) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.1-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Create reviews database schema (user, app, star rating, value lever ratings, text, timestamp)
+- Enforce one review per user per app at API level
+- Build POST endpoint to submit a review
+- Build PUT endpoint to edit an existing review
+- Calculate and update overall star rating average on submission
+- Calculate and update aggregate value lever scores (Time, Cost, Risk) on submission
+- Feed value lever scores into app's business value score for catalogue sorting and filtering
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-7.2]: Read ratings & Reviews
+
+# [US-7.2]: Read ratings & Reviews
+
+**Jira:** [DPH-485](https://datacomgroup.atlassian.net/browse/DPH-485)
+
+
+### Epic details
+
+**Jira:** [DPH-247](https://datacomgroup.atlassian.net/browse/DPH-247)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-7]: User Reviews, Ratings, Sharing & Other |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-7.2]: Read ratings & Reviews |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+## US-7.2: Read Ratings & Reviews
+
+**User Story:**
+As a logged-in user,
+I want to read ratings and reviews left by other users on a micro-app,
+So that I can make an informed decision about whether the app suits my needs
+
+**Acceptance Criteria:**
+
+1. **Given:** A logged-in user is on a micro-app's detail page
+**When:** The user scrolls to the Reviews & Ratings section
+**Then:** The following is displayed:
+
+        - Overall star rating (average of all user ratings)
+        - Aggregate value lever scores for Time, Cost, and Risk
+        - Total number of reviews
+        - List of individual user reviews
+2. **Given:** There are multiple reviews
+**When:** The user views the reviews list
+**Then:** Reviews are sorted by most recent by default
+3. **Given:** An individual review is displayed
+**Then:** It shows: reviewer's name, date submitted, star rating, value lever ratings, and text review (if provided)
+4. **Given:** No reviews have been submitted for the app yet
+**Then:** A message is displayed: "No reviews yet — be the first to review this app"
+5. The overall star rating and value lever scores are visible on the app's catalogue card to support discovery and filtering
+
+---
+
+**Mock-up/Wireframe:** To be provided by UX designer
+
+
+### Subtasks
+
+#### [DPH-487] [7.2-UX] Tasks
+
+**Jira:** [DPH-487](https://datacomgroup.atlassian.net/browse/DPH-487) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.2-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Design overall ratings summary block: average star rating, aggregate value lever scores, total review count
+- Design individual review card: reviewer name, date, star rating, value lever ratings, text review
+- Design empty state: "No reviews yet — be the first to review this app"
+- Design catalogue card update to surface aggregate rating and value lever scores
+
+#### [DPH-490] [7.2-FE] Tasks
+
+**Jira:** [DPH-490](https://datacomgroup.atlassian.net/browse/DPH-490) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.2-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Implement overall ratings summary block on app detail page
+- Implement reviews list sorted by most recent by default
+- Implement individual review card display
+- Implement empty state message when no reviews exist
+- Update catalogue card component to display overall star rating and value lever scores
+
+#### [DPH-493] [7.2-BE] Tasks
+
+**Jira:** [DPH-493](https://datacomgroup.atlassian.net/browse/DPH-493) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.2-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Build GET endpoint to retrieve all reviews for a given app
+- Return aggregate star rating, value lever scores, and total review count per app
+- Expose aggregate scores on the catalogue/listing API endpoint for filtering and sorting
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-7.3]: Share a Micro-app
+
+# [US-7.3]: Share a Micro-app
+
+**Jira:** [DPH-260](https://datacomgroup.atlassian.net/browse/DPH-260)
+
+
+### Epic details
+
+**Jira:** [DPH-247](https://datacomgroup.atlassian.net/browse/DPH-247)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-7]: User Reviews, Ratings, Sharing & Other |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-7.3]: Share a Micro-app |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+## US-7.3: Share a Micro-app
+
+**User Story:**
+As a logged-in user,
+I want to share a micro-app with my colleagues,
+So that I can recommend useful tools to the people I work with
+
+**Acceptance Criteria:**
+
+1. **Given:** A logged-in user is on a micro-app's catalogue card or detail page
+**When:** The user clicks the share icon
+**Then:** A share modal opens with two options:
+
+        - `Quick Share` — search and select staff to notify
+        - `Email Share` — share via a generated email link
+2. **Given:** The user selects `Quick Share`
+**When:** The share modal opens
+**Then:** A staff search bar is displayed where the user can search by name
+3. **Given:** The user types a name in the staff search bar
+**When:** Results appear
+**Then:** Matching staff members are listed and the user can select one or more recipients
+4. **Given:** The user selects recipients and clicks `Share`
+**When:** The action is confirmed
+**Then:** Each selected staff member receives an email containing the micro-app name, a brief description, and a link to the app's detail page
+5. **Given:** The user selects `Email Share`
+**When:** The option is clicked
+**Then:** The user's default email client opens with a pre-populated email containing the micro-app name and a link to its detail page
+6. A share confirmation message is displayed after a successful Quick Share
+7. The share icon is visible on both the catalogue card and the app detail page
+
+
+### Subtasks
+
+#### [DPH-488] [7.3-UX] Tasks
+
+**Jira:** [DPH-488](https://datacomgroup.atlassian.net/browse/DPH-488) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.3-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Design share icon placement on catalogue card and app detail page
+- Design share modal with Quick Share and Email Share tabs
+- Design staff search bar and recipient selection UI within Quick Share
+- Design share confirmation message
+
+#### [DPH-491] [7.3-FE] Tasks
+
+**Jira:** [DPH-491](https://datacomgroup.atlassian.net/browse/DPH-491) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.3-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Implement share icon on catalogue card and app detail page
+- Implement share modal with Quick Share and Email Share options
+- Implement staff search bar with live search results by name
+- Implement multi-select recipient selection in Quick Share
+- Display share confirmation message after successful Quick Share
+- Implement Email Share option that opens pre-populated mailto link with app name and detail page URL
+
+#### [DPH-494] [7.3-BE] Tasks
+
+**Jira:** [DPH-494](https://datacomgroup.atlassian.net/browse/DPH-494) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.3-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+- Build staff search API endpoint querying Entra ID by name
+- Build POST endpoint to trigger Quick Share email to selected recipients
+- Generate pre-populated email content: app name, brief description, and detail page link
+- Send Quick Share notification email to each selected recipient
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+### [US-7.4]: Voice search in Product Catalogue
+
+# [US-7.4]: Voice search in Product Catalogue
+
+**Jira:** [DPH-553](https://datacomgroup.atlassian.net/browse/DPH-553)
+
+
+### Epic details
+
+**Jira:** [DPH-247](https://datacomgroup.atlassian.net/browse/DPH-247)
+
+| Field | Value |
+|-------|--------|
+| **Name** | [EPIC-7]: User Reviews, Ratings, Sharing & Other |
+| **Description** | See below |
+| **Work type** | Epic |
+| **Status** | To Do |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+
+### Story details
+
+| Field | Value |
+|-------|--------|
+| **Name** | [US-7.4]: Voice search in Product Catalogue |
+| **Description** | See below |
+| **Work type** | User Story |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Priority** | Low (P4) |
+| **Story point estimate** | — |
+| **Sprint** | — |
+| **Status** | To Do |
+| **Linked work items** | — |
+
+
+---
+As an app-user,
+
+I would like to search the Product Catalogue using my voice,
+
+So that I can find micro-apps without typing.
+
+### AC
+
+1. A microphone icon is visible within the search bar on the Product Catalogue page
+2. When I click the microphone icon, the browser requests microphone permission if not already granted
+3. Once permission is granted, a visual indicator shows that voice recording is active (e.g. pulsing icon or animated border on the search bar)
+4. While recording is active, my spoken words are transcribed in real time and populated into the search bar
+5. When I finish speaking, the search executes automatically using the transcribed text and returns results consistent with a typed search on US-1.2
+6. I can manually edit the transcribed text in the search bar after recording stops, and the results will update accordingly
+7. If no speech is detected within 5 seconds, recording stops automatically and the search bar returns to its default state with no search executed
+8. If I deny microphone access in the browser prompt:
+
+        1. The microphone icon is greyed out
+        2. An inline message reads: "Microphone access is required for voice search. Please enable it in your browser settings."
+        3. The standard text search bar remains fully functional
+9. If the user's browser does not support voice input, the microphone icon is not displayed and the search bar functions as a standard text input
+
+
+### Subtasks
+
+#### [DPH-563] [7.4-UX] Tasks
+
+**Jira:** [DPH-563](https://datacomgroup.atlassian.net/browse/DPH-563) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.4-UX] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-564] [7.4-FE] Tasks
+
+**Jira:** [DPH-564](https://datacomgroup.atlassian.net/browse/DPH-564) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.4-FE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+#### [DPH-565] [7.4-BE] Tasks
+
+**Jira:** [DPH-565](https://datacomgroup.atlassian.net/browse/DPH-565) · **Status:** To Do
+
+| Field | Value |
+|-------|--------|
+| **Name** | [7.4-BE] Tasks |
+| **Description** | See below |
+| **Work type** | Task / Bug |
+| **Status** | To Do |
+| **Story point estimate** | — |
+| **Priority** | Low (P4) |
+| **Assignee** | — |
+| **Assignees** (extra) | — |
+| **Sprint** | — |
+| **Linked work items** | — |
+
+**Description:**
+
+_No description._
+
+---
+---
+---
+---
+---
+---
+---
+
+---
+
+
+*End of document.*

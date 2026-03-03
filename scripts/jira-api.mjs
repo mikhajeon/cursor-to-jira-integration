@@ -14,6 +14,8 @@
  *   node scripts/jira-api.mjs update DEMO-123 '{"summary":"New title","priority":{"name":"High (P2)"}}'
  *   node scripts/jira-api.mjs transition DEMO-123 "In Progress"
  *   node scripts/jira-api.mjs comment DEMO-123 "This is a comment"
+ *   node scripts/jira-api.mjs create DPH-162 "[US-0.2]: Email & notifications foundation"
+ *   node scripts/jira-api.mjs link <inward-key> <outward-key> [Blocks]
  */
 
 import { readFileSync, existsSync } from 'fs';
@@ -209,6 +211,66 @@ async function main() {
       if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
       const created = await res.json();
       console.log(`Comment added (id: ${created.id}).`);
+      return;
+    }
+
+    if (cmd === 'delete') {
+      const [key] = args;
+      if (!key) {
+        console.error('Usage: node scripts/jira-api.mjs delete <issue-key>');
+        process.exit(1);
+      }
+      const res = await request(`/rest/api/3/issue/${key}`, { method: 'DELETE' });
+      if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
+      console.log(`Deleted ${key}.`);
+      return;
+    }
+
+    if (cmd === 'create') {
+      const [parentKey, summary] = args;
+      if (!parentKey || !summary) {
+        console.error('Usage: node scripts/jira-api.mjs create <parent-epic-key> <summary>');
+        console.error('Creates a Story under the given Epic (e.g. DPH-162).');
+        process.exit(1);
+      }
+      const parentRes = await request(`/rest/api/3/issue/${parentKey}?fields=project`);
+      if (!parentRes.ok) throw new Error(`${parentRes.status} ${await parentRes.text()}`);
+      const parentIssue = await parentRes.json();
+      const projectKey = parentIssue.fields.project.key;
+      const fields = {
+        project: { key: projectKey },
+        parent: { key: parentKey },
+        summary,
+        issuetype: { name: 'Story' },
+      };
+      const res = await request('/rest/api/3/issue', {
+        method: 'POST',
+        body: JSON.stringify({ fields }),
+      });
+      if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
+      const created = await res.json();
+      console.log(JSON.stringify(created, null, 2));
+      return;
+    }
+
+    if (cmd === 'link') {
+      const [inwardKey, outwardKey, linkType = 'Blocks'] = args;
+      if (!inwardKey || !outwardKey) {
+        console.error('Usage: node scripts/jira-api.mjs link <inward-issue> <outward-issue> [linkType]');
+        console.error('Creates a link: inward issue "is blocked by" outward issue. Default type: Blocks.');
+        process.exit(1);
+      }
+      const body = {
+        type: { name: linkType },
+        inwardIssue: { key: inwardKey },
+        outwardIssue: { key: outwardKey },
+      };
+      const res = await request('/rest/api/3/issueLink', {
+        method: 'POST',
+        body: JSON.stringify(body),
+      });
+      if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
+      console.log(`Linked: ${inwardKey} is blocked by ${outwardKey} (${linkType}).`);
       return;
     }
 

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PM/BA Workspace</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --surface-elevated: #212d3d;
+      --border: #2d3a4f;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79b8ff;
+      --progress-bg: #2d3a4f;
+      --progress-fill: #3fb950;
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 0.75rem 1.25rem;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .layout {
+      display: flex;
+      flex: 1;
+      min-height: 0;
+    }
+    nav {
+      width: 220px;
+      flex-shrink: 0;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 0.75rem 0;
+      overflow-y: auto;
+    }
+    nav a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-left: 3px solid transparent;
+    }
+    nav a:hover { color: var(--accent); }
+    nav a.active {
+      color: var(--accent);
+      border-left-color: var(--accent);
+      background: rgba(88, 166, 255, 0.08);
+    }
+    main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem 2rem;
+      max-width: 56rem;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Page title & meta */
+    main .content > h1:first-child { font-size: 1.75rem; margin-top: 0; margin-bottom: 0.25rem; }
+    main .content > p:first-of-type { color: var(--text-muted); font-size: 0.9rem; margin-top: 0; margin-bottom: 1.5rem; }
+
+    /* Blocks: each major section (h2) in a card */
+    main .block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 1.25rem;
+      overflow: hidden;
+    }
+    main .block > h2 {
+      margin: 0;
+      padding: 0.85rem 1.1rem;
+      font-size: 1.15rem;
+      font-weight: 600;
+      background: var(--surface-elevated);
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    main .block > .block-body {
+      padding: 1rem 1.1rem;
+    }
+    main .block > .block-body > *:first-child { margin-top: 0; }
+    main .block > .block-body > *:last-child { margin-bottom: 0; }
+
+    /* Sub-blocks: h3 groups within a block */
+    main .sub-block {
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    main .sub-block:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    main .sub-block > h3 {
+      margin: 0 0 0.6rem 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    main .sub-block > .sub-block-body ul { margin: 0; padding-left: 1.25rem; }
+    main .sub-block > .sub-block-body li { margin: 0.4rem 0; }
+
+    /* Kanban: sprint board — columns side by side, cards per item */
+    main .block.kanban-board { overflow: visible; }
+    main .block.kanban-board .kanban-goal {
+      padding: 0.5rem 1rem 0.75rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+    }
+    main .block.kanban-board .kanban-goal strong { color: var(--text); }
+    main .block.kanban-board > .block-body {
+      display: block;
+      padding: 0;
+    }
+    main .block.kanban-board .kanban-columns {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 1rem;
+      padding: 1rem;
+      min-height: 320px;
+      align-items: flex-start;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+    main .block.kanban-board .sub-block {
+      flex: 0 0 280px;
+      min-width: 260px;
+      margin: 0;
+      padding: 0;
+      border: none;
+      border-bottom: none;
+      background: var(--surface-elevated);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      max-height: 70vh;
+      overflow: hidden;
+    }
+    main .block.kanban-board .sub-block > h3 {
+      flex-shrink: 0;
+      margin: 0;
+      padding: 0.65rem 0.9rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+    main .block.kanban-board .sub-block > .sub-block-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 0.5rem;
+    }
+    main .block.kanban-board .sub-block-body ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    main .block.kanban-board .sub-block-body li {
+      margin: 0.5rem 0;
+      padding: 0.65rem 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.88rem;
+      line-height: 1.4;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    }
+    main .block.kanban-board .sub-block-body li strong { color: var(--accent); }
+    main .block.kanban-board .sub-block-body li em { color: var(--text-muted); font-size: 0.8rem; }
+
+    /* Progress bar */
+    main .progress-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 0.75rem 0 1rem 0;
+    }
+    main .progress-bar {
+      flex: 1;
+      min-width: 0;
+      height: 10px;
+      background: var(--progress-bg);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    main .progress-fill {
+      height: 100%;
+      background: var(--progress-fill);
+      border-radius: 5px;
+      transition: width 0.3s ease;
+    }
+    main .progress-label {
+      flex-shrink: 0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--progress-fill);
+    }
+
+    /* Typography inside blocks */
+    main .content ul { padding-left: 1.5rem; }
+    main .content li { margin: 0.35rem 0; }
+    main .content strong { color: var(--accent); }
+    main .content em { color: var(--text-muted); }
+    main .content p { margin: 0.75rem 0; }
+    main .content hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+
+    /* Tables: sprint backlog etc. — status as badge on the right */
+    main .content table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.9rem; }
+    main .content table th, main .content table td { padding: 0.5rem 0.75rem; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+    main .content table th { background: var(--surface-elevated); color: var(--text-muted); font-weight: 600; }
+    main .content table td:last-child { text-align: right; white-space: nowrap; }
+    main .content table td:last-child strong { display: inline-block; padding: 0.25rem 0.6rem; border-radius: 6px; font-size: 0.8rem; font-weight: 600; background: var(--surface-elevated); color: var(--accent); border: 1px solid var(--border); }
+
+    .empty { color: var(--text-muted); font-style: italic; padding: 2rem; }
+    .loading { color: var(--text-muted); padding: 2rem; }
+  </style>
+</head>
+<body>
+  <header>PM/BA Workspace</header>
+  <div class="layout">
+    <nav id="nav"></nav>
+    <main>
+      <div id="panel" class="empty">Select a document from the sidebar.</div>
+    </main>
+  </div>
+  <script>
+    const panel = document.getElementById('panel');
+    const nav = document.getElementById('nav');
+
+    function render(md) {
+      if (typeof marked !== 'undefined') {
+        marked.setOptions({ gfm: true, breaks: true });
+        return marked.parse(md || '');
+      }
+      return '<pre>' + (md || '').replace(/</g, '&lt;') + '</pre>';
+    }
+
+    function injectProgressBars(container) {
+      const walk = (node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          const text = node.textContent;
+          const match = text.match(/Progress:\s*(\d+)\/(\d+)\s*(?:done)?\s*(?:\((\d+)%\))?/);
+          if (match) {
+            const done = +match[1], total = +match[2];
+            const pct = total ? Math.round((done / total) * 100) : 0;
+            const wrap = document.createElement('div');
+            wrap.className = 'progress-wrap';
+            wrap.innerHTML = '<div class="progress-bar"><div class="progress-fill" style="width:' + pct + '%"></div></div><span class="progress-label">' + pct + '% (' + done + '/' + total + ')</span>';
+            const p = node.parentNode;
+            if (p && p.tagName === 'P') {
+              p.after(wrap);
+              p.remove();
+            } else {
+              node.parentNode.insertBefore(wrap, node.nextSibling);
+            }
+          }
+          return;
+        }
+        if (node.nodeType === Node.ELEMENT_NODE) {
+          if (node.tagName === 'P') {
+            const text = node.textContent;
+            const match = text.match(/Progress:\s*(\d+)\/(\d+)\s*(?:done)?\s*(?:\((\d+)%\))?/);
+            if (match) {
+              const done = +match[1], total = +match[2];
+              const pct = total ? Math.round((done / total) * 100) : 0;
+              const wrap = document.createElement('div');
+              wrap.className = 'progress-wrap';
+              wrap.innerHTML = '<div class="progress-bar"><div class="progress-fill" style="width:' + pct + '%"></div></div><span class="progress-label">' + pct + '% (' + done + '/' + total + ')</span>';
+              node.after(wrap);
+              node.remove();
+              return;
+            }
+          }
+          for (let i = 0; i < node.childNodes.length; i++) walk(node.childNodes[i]);
+        }
+      };
+      walk(container);
+    }
+
+    function wrapInBlocks(container) {
+      const children = Array.from(container.children);
+      const blocks = [];
+      let current = [];
+      for (const el of children) {
+        if (el.tagName === 'H2') {
+          if (current.length) blocks.push(current);
+          current = [el];
+        } else {
+          current.push(el);
+        }
+      }
+      if (current.length) blocks.push(current);
+
+      for (const group of blocks) {
+        if (group[0].tagName !== 'H2') continue;
+
+        const wrap = document.createElement('div');
+        wrap.className = 'block';
+        const body = document.createElement('div');
+        body.className = 'block-body';
+        container.insertBefore(wrap, group[0]);
+        wrap.appendChild(group[0]);
+        group.slice(1).forEach((el) => body.appendChild(el));
+        wrap.appendChild(body);
+
+        const bodyChildren = Array.from(body.children);
+        const subBlocks = [];
+        let subCurrent = [];
+        for (const el of bodyChildren) {
+          if (el.tagName === 'H3') {
+            if (subCurrent.length) subBlocks.push(subCurrent);
+            subCurrent = [el];
+          } else {
+            subCurrent.push(el);
+          }
+        }
+        if (subCurrent.length) subBlocks.push(subCurrent);
+
+        for (const sub of subBlocks) {
+          const subWrap = document.createElement('div');
+          subWrap.className = 'sub-block';
+          const subBody = document.createElement('div');
+          subBody.className = 'sub-block-body';
+          body.insertBefore(subWrap, sub[0]);
+          subWrap.appendChild(sub[0]);
+          sub.slice(1).forEach((el) => subBody.appendChild(el));
+          subWrap.appendChild(subBody);
+        }
+      }
+    }
+
+    function enhanceContent(html) {
+      const wrap = document.createElement('div');
+      wrap.innerHTML = html;
+      const content = wrap.querySelector('.content') || wrap;
+      if (!content) return html;
+
+      injectProgressBars(content);
+      wrapInBlocks(content);
+      return wrap.innerHTML;
+    }
+
+    async function loadDoc(path) {
+      panel.innerHTML = '<div class="loading">Loading…</div>';
+      try {
+        const r = await fetch('/api/doc?path=' + encodeURIComponent(path));
+        const text = await r.text();
+        if (!r.ok) throw new Error(text || r.status);
+        const raw = '<div class="content">' + render(text) + '</div>';
+        panel.innerHTML = enhanceContent(raw);
+        if (path.includes('01-sprint-board')) {
+          const block = panel.querySelector('.block');
+          if (block) {
+            block.classList.add('kanban-board');
+            const body = block.querySelector('.block-body');
+            const firstSub = body?.querySelector('.sub-block');
+            if (firstSub && !firstSub.querySelector('h3')) {
+              const goalWrap = document.createElement('div');
+              goalWrap.className = 'kanban-goal';
+              goalWrap.innerHTML = firstSub.innerHTML;
+              firstSub.remove();
+              body.insertBefore(goalWrap, body.firstChild);
+            }
+            const columnsWrap = document.createElement('div');
+            columnsWrap.className = 'kanban-columns';
+            const subBlocks = body ? Array.from(body.querySelectorAll('.sub-block')) : [];
+            subBlocks.forEach((el) => columnsWrap.appendChild(el));
+            body?.appendChild(columnsWrap);
+          }
+        }
+        document.querySelectorAll('nav a').forEach((a) => {
+          a.classList.toggle('active', a.dataset.path === path);
+        });
+      } catch (e) {
+        panel.innerHTML = '<div class="empty">Failed to load: ' + e.message + '</div>';
+      }
+    }
+
+    async function init() {
+      const r = await fetch('/api/files');
+      const { files } = await r.json();
+      nav.innerHTML = files.map((f) =>
+        '<a href="#" data-path="' + f.path + '">' + f.label + '</a>'
+      ).join('');
+      nav.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          loadDoc(a.dataset.path);
+        });
+      });
+      if (files.length) loadDoc(files[0].path);
+    }
+
+    init();
+  </script>
+</body>
+</html>

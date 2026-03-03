@@ -86,13 +86,13 @@ function parseSerial(parentSummary) {
 
 const STORY_KEYS = [
   'DPH-15', 'DPH-183', 'DPH-184', 'DPH-185', 'DPH-188', 'DPH-347',
-  'DPH-182', 'DPH-189', 'DPH-201', 'DPH-340', 'DPH-241', 'DPH-249',
+  'DPH-189', 'DPH-201', 'DPH-340', 'DPH-241', 'DPH-249',
   'DPH-237', 'DPH-238', 'DPH-239',
   'DPH-243', 'DPH-248', 'DPH-250', 'DPH-261', 'DPH-262', 'DPH-263',
   'DPH-398', 'DPH-399', 'DPH-400',
   'DPH-256', 'DPH-251', 'DPH-252', 'DPH-253',
   'DPH-474', 'DPH-258', 'DPH-475', 'DPH-476',
-  'DPH-259', 'DPH-485', 'DPH-260',
+  'DPH-259', 'DPH-485', 'DPH-260', 'DPH-553',
 ];
 
 const DISCIPLINES = ['UX', 'FE', 'BE'];

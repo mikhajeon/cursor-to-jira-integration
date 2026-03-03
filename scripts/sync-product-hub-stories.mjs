@@ -42,18 +42,18 @@ async function getIssue(key) {
   return res.json();
 }
 
-/** Convert Atlassian Document Format (ADF) to Markdown */
-function adfToMarkdown(node) {
+/** Convert Atlassian Document Format (ADF) to Markdown. listIndent is used for nested list indentation. */
+function adfToMarkdown(node, listIndent = '') {
   if (!node) return '';
   if (typeof node === 'string') return node;
-  if (Array.isArray(node)) return node.map(adfToMarkdown).join('');
+  if (Array.isArray(node)) return node.map((n) => adfToMarkdown(n, listIndent)).join('');
 
   const { type, content = [], text, marks } = node;
 
-  if (type === 'doc') return adfToMarkdown(content).trim() + '\n';
+  if (type === 'doc') return adfToMarkdown(content, listIndent).trim() + '\n';
 
   if (type === 'paragraph') {
-    return adfToMarkdown(content) + '\n\n';
+    return adfToMarkdown(content, listIndent) + '\n\n';
   }
   if (type === 'hardBreak') return '\n';
   if (type === 'text') {
@@ -70,28 +70,39 @@ function adfToMarkdown(node) {
   if (type === 'heading') {
     const level = node.attrs?.level || 2;
     const prefix = '#'.repeat(level) + ' ';
-    return prefix + adfToMarkdown(content).trim() + '\n\n';
+    return prefix + adfToMarkdown(content, listIndent).trim() + '\n\n';
   }
   if (type === 'orderedList') {
     const items = (content || []).filter((c) => c.type === 'listItem');
-    return items.map((item, i) => `${i + 1}. ${adfToMarkdown(item).trim()}`).join('\n') + '\n\n';
+    const nested = listIndent + '    ';
+    return items
+      .map((item, i) => listIndent + `${i + 1}. ` + adfToMarkdown(item, nested).trimEnd())
+      .join('\n') + '\n\n';
   }
   if (type === 'bulletList') {
     const items = (content || []).filter((c) => c.type === 'listItem');
-    return items.map((item) => '- ' + adfToMarkdown(item).trim()).join('\n') + '\n\n';
+    const nested = listIndent + '    ';
+    return items
+      .map((item) => listIndent + '- ' + adfToMarkdown(item, nested).trimEnd())
+      .join('\n') + '\n\n';
   }
   if (type === 'listItem') {
-    return adfToMarkdown(content).trim().replace(/\n+/g, ' ');
+    const nested = listIndent + '    ';
+    const parts = (content || []).map((c) => {
+      if (c.type === 'orderedList' || c.type === 'bulletList') return adfToMarkdown(c, nested);
+      return adfToMarkdown(c, listIndent);
+    });
+    return parts.join('').trimEnd();
   }
   if (type === 'blockquote') {
-    return content.map((c) => '> ' + adfToMarkdown(c).trim()).join('\n') + '\n\n';
+    return content.map((c) => '> ' + adfToMarkdown(c, listIndent).trim()).join('\n') + '\n\n';
   }
   if (type === 'codeBlock') {
     const code = content.map((c) => (c.content || []).map((t) => t.text || '').join('')).join('');
     return '```\n' + code + '\n```\n\n';
   }
   if (type === 'rule') return '---\n\n';
-  return adfToMarkdown(content);
+  return adfToMarkdown(content, listIndent);
 }
 
 function safeFilename(summary) {
@@ -99,14 +110,14 @@ function safeFilename(summary) {
 }
 
 const EPIC_FOLDERS = [
-  { folder: '[EPIC-0]: App Foundations', keys: ['DPH-15', 'DPH-183', 'DPH-184', 'DPH-185', 'DPH-188', 'DPH-347'] },
-  { folder: '[EPIC-1]: Web app core layout', keys: ['DPH-182', 'DPH-189', 'DPH-201', 'DPH-340', 'DPH-241', 'DPH-249'] },
-  { folder: '[EPIC-2]: User Authentication & Role Management', keys: ['DPH-237', 'DPH-238', 'DPH-239'] },
+  { folder: '[EPIC-0]: App Foundations', keys: ['DPH-15', 'DPH-596', 'DPH-597', 'DPH-183', 'DPH-184', 'DPH-185', 'DPH-347'] },
+  { folder: '[EPIC-1]: Web app core layout', keys: ['DPH-189', 'DPH-201', 'DPH-340', 'DPH-241', 'DPH-249', 'DPH-599'] },
+  { folder: '[EPIC-2]: User Authentication & Role Management', keys: ['DPH-237', 'DPH-238'] },
   { folder: '[EPIC-3]: Product Upload & Assisted Development', keys: ['DPH-243', 'DPH-248', 'DPH-250', 'DPH-261', 'DPH-262', 'DPH-263'] },
   { folder: '[EPIC-4]: AI Content Generator', keys: ['DPH-398', 'DPH-399', 'DPH-400'] },
-  { folder: '[EPIC-5]: Product Approval & Admin Dashboard', keys: ['DPH-256', 'DPH-251', 'DPH-252', 'DPH-253'] },
-  { folder: '[EPIC-6]: Assisted Security Testing & Deployment', keys: ['DPH-474', 'DPH-258', 'DPH-475', 'DPH-476'] },
-  { folder: '[EPIC-7]: User Reviews, Ratings, & Sharing', keys: ['DPH-259', 'DPH-485', 'DPH-260'] },
+  { folder: '[EPIC-5]: Product Approval & Admin Dashboard', keys: ['DPH-256', 'DPH-252', 'DPH-253', 'DPH-598'] },
+  { folder: '[EPIC-6]: Assisted Security Testing & Deployment', keys: ['DPH-258', 'DPH-474', 'DPH-475', 'DPH-476'] },
+  { folder: '[EPIC-7]: User Reviews, Ratings, Sharing & Other', keys: ['DPH-259', 'DPH-260', 'DPH-485', 'DPH-553'] },
 ];
 
 async function main() {
@@ -120,7 +131,13 @@ async function main() {
     mkdirSync(dir, { recursive: true });
 
     for (const key of keys) {
-      const issue = await getIssue(key);
+      let issue;
+      try {
+        issue = await getIssue(key);
+      } catch (e) {
+        console.warn('Skip', key, e.message);
+        continue;
+      }
       const summary = issue.fields?.summary || key;
       const description = issue.fields?.description;
       const fileName = safeFilename(summary) + '.md';
@@ -134,8 +151,24 @@ async function main() {
       } else {
         body = '_No description in Jira._';
       }
-
-      const md = `# ${summary}
+      const filePath = join(dir, fileName);
+      let md;
+      if (existsSync(filePath)) {
+        const existing = readFileSync(filePath, 'utf8');
+        if (existing.includes('### Story details') && existing.includes('### Subtasks')) {
+          const afterStoryDetails = existing.indexOf('### Story details');
+          const dashIdx = existing.indexOf('\n---\n', afterStoryDetails);
+          const subtasksIdx = existing.indexOf('\n### Subtasks', dashIdx);
+          if (dashIdx !== -1 && subtasksIdx !== -1) {
+            const bodyStart = dashIdx + 5;
+            md = existing.slice(0, bodyStart) + body.trimEnd() + '\n\n' + existing.slice(subtasksIdx);
+            writeFileSync(filePath, md, 'utf8');
+            console.log(`Wrote ${folder}/${fileName} (preserved Story details & Subtasks)`);
+            continue;
+          }
+        }
+      }
+      md = `# ${summary}
 
 **Jira:** [${key}](${jiraLink})
 
@@ -143,7 +176,7 @@ async function main() {
 
 ${body}
 `;
-      writeFileSync(join(dir, fileName), md, 'utf8');
+      writeFileSync(filePath, md, 'utf8');
       console.log(`Wrote ${folder}/${fileName}`);
     }
   }
